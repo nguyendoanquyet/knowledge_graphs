@@ -1,5 +1,5 @@
 # Tập hợp các học liệu, tài liệu tham khảo về Đồ thị tri thức (Knowledge Graph (KG))
-##### Nguyễn Đoàn Quyết, Khoa Điện - Điện tử, Trường Đại học Nha Trang (NTU) (Nha Trang, Khánh Hoà, Việt Nam), Email: quyetnd@ntu.edu.vn
+##### Nguyễn Đoàn Quyết, Khoa Điện - Điện tử, Trường Đại học Nha Trang (NTU) (Nha Trang, Khánh Hoà, Việt Nam)
 ##### Ngày 14/8/2025
 
 ## Khoá học
