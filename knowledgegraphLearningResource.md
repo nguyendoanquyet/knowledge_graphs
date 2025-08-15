@@ -51,4 +51,4 @@
 * [knowledge graphs, github](https://github.com/shaoxiongji/knowledge-graphs)
 * [DICE, learn RDF](https://dice-research.org/news/2022-07-26_Learn-RDF/)
 * [KG construction tutorials](https://github.com/kg-construct/tutorials/tree/main)
-* \[Readings in Knowledge graph 2023](https://www.ifi.uzh.ch/en/dast/teaching/SRKG23.html) \[university](university) of Zurich
+* [Readings in Knowledge graph 2023](https://www.ifi.uzh.ch/en/dast/teaching/SRKG23.html) University of Zurich
