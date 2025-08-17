@@ -26,6 +26,8 @@
 * [Turing Institute, Knowledge graphs](https://github.com/turing-knowledge-graphs/teaching/tree/main/city)
 * [a gateway to knowledge graphs](https://ldtim-kgwithr.netlify.app/), Tim Williams
 * [City KG course](https://github.com/city-knowledge-graphs)
+* [Ontology Engineering in a Networked World, 2012](https://link.springer.com/book/10.1007/978-3-642-24794-1)
+* [Web of Data, Coursera](https://www.coursera.org/learn/web-data/) MOOC of EIT Digital, University of Nice Sophia-Antipolis/University Cote d'Azur, INRIA
 
 ## Tools
 
