@@ -28,6 +28,7 @@
 * [City KG course](https://github.com/city-knowledge-graphs)
 * [Ontology Engineering in a Networked World, 2012](https://link.springer.com/book/10.1007/978-3-642-24794-1)
 * [Web of Data, Coursera](https://www.coursera.org/learn/web-data/) MOOC of EIT Digital, University of Nice Sophia-Antipolis/University Cote d'Azur, INRIA
+* [Turing Institute, Courses on Knowledge Graph](https://github.com/turing-knowledge-graphs/teaching)
 
 ## Tools
 
@@ -54,3 +55,4 @@
 * [DICE, learn RDF](https://dice-research.org/news/2022-07-26_Learn-RDF/)
 * [KG construction tutorials](https://github.com/kg-construct/tutorials/tree/main)
 * [Readings in Knowledge graph 2023](https://www.ifi.uzh.ch/en/dast/teaching/SRKG23.html) University of Zurich
+
