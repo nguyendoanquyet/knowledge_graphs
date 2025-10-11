@@ -56,3 +56,11 @@
 * [KG construction tutorials](https://github.com/kg-construct/tutorials/tree/main)
 * [Readings in Knowledge graph 2023](https://www.ifi.uzh.ch/en/dast/teaching/SRKG23.html) University of Zurich
 
+## Ecosystem
+
+* [nanopublication](https://nanopub.net/)
+* [Whyis 2](https://whyis.readthedocs.io/en/latest/#)
+* [Blue Brain Nexus](https://bluebrainnexus.io/)
+* [CoyPu](https://coypu.org/)
+* [The World Avatar](https://theworldavatar.io/)
+
