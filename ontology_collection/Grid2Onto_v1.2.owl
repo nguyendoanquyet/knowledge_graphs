@@ -1,0 +1,1804 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="#contacts"/>
+        <Literal xml:lang="irt-systemx">emna.amdouni</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#contributors"/>
+        <Literal>AMDOUNI Emna (IRT-SystemX), MAROT Antoine (RTE), ROZIER Alexandre (RTE), CROCHEPIERRE Laure (RTE)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#creationDate"/>
+        <Literal>27th March 2023</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#creators"/>
+        <Literal>AMDOUNI Emna (IRT-SystemX)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#status"/>
+        <Literal>beta</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>V1.2</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#A_or"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action_battery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action_execution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action_prod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action_topo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atypic_observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Available_margins_for_dispatching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Base_infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Change_bus_vect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Critical_observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Current_action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Current_grid_KPI_measurement_datum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Datum_KPI_calcul"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decrease_energy_losses_objective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decrease_nb_actions_objective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decrease_nb_overloads"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decreasing_losses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decreasing_nb_actions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decreasing_nb_overloads"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decreasing_operator_workload"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distance_from_reference_topology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrical_grid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrical_grid_area"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrical_grid_component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrical_grid_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrical_grid_topology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Energy_losses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expected_grid_KPI_measurement_datum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Explanation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Final_situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forecast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gen_p"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gen_q"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gen_v"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Generator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grid_infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grid_operations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grid_region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grid_state"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hydro_generator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Increase_grid_optimisation_objective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Increase_operator_confort_objective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Initial_situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Issue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Junior_profile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KPI_datum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Line_status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#List_of_actions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#List_recommanded_actions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Load"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Load_p"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Load_q"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Load_v"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loss_of_line"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Machine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Make_grid_safe_objective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Node"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Normal_observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Normal_powerline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nuclear_generator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Number_of_actions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Number_of_available_assets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Number_of_available_flexibilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Number_of_overloads"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Objective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Optimisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#P_or"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Past_action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_grid_characteristics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Power_flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Powerline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Powerline_connection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Powerline_current_action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Powerline_disconnection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Powerline_overload_issue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Powerline_overload_past_action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Powerline_recommanded_action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Profile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Q_or"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Qualitative_measurement_datum_KPI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quantitative_measurement_datum_KPI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ranked_list_recommanded_actions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recommandation_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recommandation_process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recommanded_action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remedial_action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Renewable_energy_share"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Request_function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rho"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Safety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scalar_value_specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Senior_profile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Set_line_status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Set_topo_vect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Similar_situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solar_generator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stakeholders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Substation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Switch_line_status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thermal_generator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topo_vect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transformer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#V_or"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voltage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wind_generator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#achives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bearer_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_goal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_input"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_measurement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_measurement_unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_output"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_participant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_profile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_quality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_value_specification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_weights"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_about"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_associated_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_goal_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_input_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_measurement_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_output_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_quality_measurement_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_quality_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_realised_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#realises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requests"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_final_gen_p_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_final_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_final_value_gen_q"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_initial_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_initial_value_gen_q"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_intial_gen_p_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#electrical_grid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#issue_115"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#issue_120"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#issue_175"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#issue_751"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#issue_89"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#line_54_55_145"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#line_54_58_154"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#line_58_60_156"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rho_115"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rho_120"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rho_175"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rho_751"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rho_89"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#set_bus"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#acronym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#contacts"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#contributors"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#creationDate"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#creators"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#status"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#List_float"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Context"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_part"/>
+                <Class IRI="#Observation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_part"/>
+                <Class IRI="#Similar_situation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#is_about"/>
+                <Class IRI="#Issue"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Node"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_measurement"/>
+                <Class IRI="#Voltage"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_part"/>
+                <Class IRI="#Generator"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_part"/>
+                <Class IRI="#Load"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_part"/>
+                <Class IRI="#Powerline"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Observation"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_part"/>
+                <Class IRI="#Event"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_part"/>
+                <Class IRI="#Observation"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Powerline_current_action"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Current_action"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#is_associated_with"/>
+                <Class IRI="#Powerline_overload_issue"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Powerline_overload_issue"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Issue"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_measurement"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Rho"/>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="#has_value"/>
+                        <DatatypeRestriction>
+                            <Datatype abbreviatedIRI="xsd:float"/>
+                            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+                            </FacetRestriction>
+                        </DatatypeRestriction>
+                    </DataSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Powerline_overload_past_action"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Past_action"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#is_about"/>
+                <Class IRI="#Powerline"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#is_associated_with"/>
+                <Class IRI="#Powerline_overload_issue"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Powerline_recommanded_action"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Recommanded_action"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#is_about"/>
+                <Class IRI="#Powerline"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#is_associated_with"/>
+                <Class IRI="#Powerline_overload_issue"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Recommandation_data"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_part"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Explanation"/>
+                <Class IRI="#Recommanded_action"/>
+                <Class IRI="#Similar_situation"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Recommandation_process"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_input"/>
+                <Class IRI="#Grid_state"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_output"/>
+                <Class IRI="#Recommandation_data"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_part"/>
+                <Class IRI="#Request_function"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Substation"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="#Generator"/>
+                <Class IRI="#Load"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#has_part"/>
+                    <Class IRI="#Powerline"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_part"/>
+                <Class IRI="#Node"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#A_or"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="#Grid_operations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_realised_by"/>
+            <Class IRI="#Operator"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action_battery"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action_execution"/>
+        <Class IRI="#Grid_operations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action_prod"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action_prod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_about"/>
+            <Class IRI="#Load"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action_topo"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action_topo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_about"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Powerline"/>
+                <Class IRI="#Substation"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atypic_observation"/>
+        <Class IRI="#Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Available_margins_for_dispatching"/>
+        <Class IRI="#Qualitative_measurement_datum_KPI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Substation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Change_bus_vect"/>
+        <Class IRI="#Action_topo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Change_bus_vect"/>
+        <Class IRI="#Powerline_overload_past_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comfort"/>
+        <Class IRI="#Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comfort"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_about"/>
+            <Class IRI="#Operator"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Context"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Critical_observation"/>
+        <Class IRI="#Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Current_action"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Current_grid_KPI_measurement_datum"/>
+        <Class IRI="#KPI_datum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Datum_KPI_calcul"/>
+        <Class IRI="#Action_execution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Datum_KPI_calcul"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_input"/>
+                <Class IRI="#Initial_situation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_output"/>
+                <Class IRI="#Final_situation"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decrease_energy_losses_objective"/>
+        <Class IRI="#Increase_grid_optimisation_objective"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decrease_nb_actions_objective"/>
+        <Class IRI="#Increase_operator_confort_objective"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decrease_nb_overloads"/>
+        <Class IRI="#Make_grid_safe_objective"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decreasing_losses"/>
+        <Class IRI="#Request_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decreasing_nb_actions"/>
+        <Class IRI="#Request_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decreasing_nb_overloads"/>
+        <Class IRI="#Request_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decreasing_operator_workload"/>
+        <Class IRI="#Request_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distance_from_reference_topology"/>
+        <Class IRI="#Expected_grid_KPI_measurement_datum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distance_from_reference_topology"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_about"/>
+            <Class IRI="#Electrical_grid_topology"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distance_from_reference_topology"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_quality_measurement_of"/>
+            <Class IRI="#Comfort"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical_grid"/>
+        <Class IRI="#Grid_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical_grid"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_part"/>
+            <Class IRI="#Electrical_grid_component"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical_grid_area"/>
+        <Class IRI="#Electrical_grid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical_grid_area"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_part"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Powerline"/>
+                <Class IRI="#Substation"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical_grid_component"/>
+        <Class IRI="#Grid_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical_grid_system"/>
+        <Class IRI="#Grid_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical_grid_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_part"/>
+            <Class IRI="#Electrical_grid_area"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical_grid_topology"/>
+        <Class IRI="#Grid_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical_grid_topology"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_about"/>
+            <Class IRI="#Electrical_grid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Energy_losses"/>
+        <Class IRI="#Expected_grid_KPI_measurement_datum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Energy_losses"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_quality_measurement_of"/>
+            <Class IRI="#Optimisation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expected_grid_KPI_measurement_datum"/>
+        <Class IRI="#KPI_datum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Explanation"/>
+        <Class IRI="#Grid_operations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Final_situation"/>
+        <Class IRI="#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forecast"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gen_p"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gen_q"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gen_v"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Generator"/>
+        <Class IRI="#Electrical_grid_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goal"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grid_region"/>
+        <Class IRI="#Electrical_grid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grid_region"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_part"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Powerline"/>
+                <Class IRI="#Substation"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grid_state"/>
+        <Class IRI="#Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grid_state"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_part"/>
+            <Class IRI="#Line_status"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grid_state"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_part"/>
+            <Class IRI="#Topo_vect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <Class IRI="#Operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hydro_generator"/>
+        <Class IRI="#Generator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Increase_grid_optimisation_objective"/>
+        <Class IRI="#Objective"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Increase_operator_confort_objective"/>
+        <Class IRI="#Objective"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Initial_situation"/>
+        <Class IRI="#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Issue"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Junior_profile"/>
+        <Class IRI="#Profile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KPI_datum"/>
+        <Class IRI="#Base_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KPI_datum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_about"/>
+            <Class IRI="#Grid_state"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KPI_datum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_measurement_of"/>
+            <Class IRI="#Goal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Line_status"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Line_status"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_about"/>
+            <Class IRI="#Powerline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#List_of_actions"/>
+        <Class IRI="#Grid_operations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#List_recommanded_actions"/>
+        <Class IRI="#List_of_actions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Load"/>
+        <Class IRI="#Electrical_grid_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Load_p"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Load_q"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Load_v"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Loss_of_line"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine"/>
+        <Class IRI="#Operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintenance"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Make_grid_safe_objective"/>
+        <Class IRI="#Objective"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Node"/>
+        <Class IRI="#Electrical_grid_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Normal_observation"/>
+        <Class IRI="#Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Normal_powerline"/>
+        <Class IRI="#Powerline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nuclear_generator"/>
+        <Class IRI="#Generator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Number_of_actions"/>
+        <Class IRI="#Expected_grid_KPI_measurement_datum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Number_of_actions"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_about"/>
+            <Class IRI="#Action"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Number_of_actions"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_quality_measurement_of"/>
+            <Class IRI="#Comfort"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Number_of_available_assets"/>
+        <Class IRI="#Expected_grid_KPI_measurement_datum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Number_of_available_assets"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_quality_measurement_of"/>
+            <Class IRI="#Comfort"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Number_of_available_flexibilities"/>
+        <Class IRI="#Expected_grid_KPI_measurement_datum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Number_of_available_flexibilities"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_quality_measurement_of"/>
+            <Class IRI="#Optimisation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Number_of_overloads"/>
+        <Class IRI="#Quantitative_measurement_datum_KPI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Objective"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observation"/>
+        <Class IRI="#Base_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operator"/>
+        <Class IRI="#Stakeholders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_profile"/>
+            <Class IRI="#Profile"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_weights"/>
+            <Class IRI="#Goal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requests"/>
+            <Class IRI="#Request_function"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Optimisation"/>
+        <Class IRI="#Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Optimisation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_about"/>
+            <Class IRI="#Electrical_grid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P_or"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Past_action"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_grid_characteristics"/>
+        <Class IRI="#Grid_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_grid_characteristics"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_about"/>
+            <Class IRI="#Electrical_grid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Power_flow"/>
+        <Class IRI="#Physical_grid_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline"/>
+        <Class IRI="#Electrical_grid_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_measurement"/>
+            <Class IRI="#Power_flow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline_connection"/>
+        <Class IRI="#Powerline_current_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline_connection"/>
+        <Class IRI="#Powerline_overload_past_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline_connection"/>
+        <Class IRI="#Powerline_recommanded_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline_current_action"/>
+        <Class IRI="#Current_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline_disconnection"/>
+        <Class IRI="#Powerline_current_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline_disconnection"/>
+        <Class IRI="#Powerline_overload_past_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline_disconnection"/>
+        <Class IRI="#Powerline_recommanded_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline_overload_issue"/>
+        <Class IRI="#Issue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline_overload_issue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_associated_with"/>
+            <Class IRI="#Powerline_overload_past_action"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline_overload_past_action"/>
+        <Class IRI="#Past_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline_overload_past_action"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#is_about"/>
+            <Class IRI="#Powerline"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Powerline_recommanded_action"/>
+        <Class IRI="#Recommanded_action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Profile"/>
+        <Class IRI="#Stakeholders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Q_or"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Qualitative_measurement_datum_KPI"/>
+        <Class IRI="#Current_grid_KPI_measurement_datum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Qualitative_measurement_datum_KPI"/>
+        <Class IRI="#Expected_grid_KPI_measurement_datum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quantitative_measurement_datum_KPI"/>
+        <Class IRI="#Current_grid_KPI_measurement_datum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quantitative_measurement_datum_KPI"/>
+        <Class IRI="#Expected_grid_KPI_measurement_datum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ranked_list_recommanded_actions"/>
+        <Class IRI="#List_recommanded_actions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ranked_list_recommanded_actions"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_part"/>
+            <Class IRI="#Recommanded_action"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recommandation_data"/>
+        <Class IRI="#Grid_operations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recommandation_process"/>
+        <Class IRI="#Grid_operations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recommanded_action"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remedial_action"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renewable_energy_share"/>
+        <Class IRI="#Expected_grid_KPI_measurement_datum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renewable_energy_share"/>
+        <Class IRI="#Quantitative_measurement_datum_KPI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renewable_energy_share"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_quality_measurement_of"/>
+            <Class IRI="#Comfort"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Request_function"/>
+        <Class IRI="#Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Request_function"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#achives"/>
+            <Class IRI="#Goal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Request_function"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#bearer_of"/>
+            <Class IRI="#Electrical_grid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rho"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safety"/>
+        <Class IRI="#Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safety"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_about"/>
+            <Class IRI="#Electrical_grid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scalar_value_specification"/>
+        <Class IRI="#Base_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scalar_value_specification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_measurement_unit"/>
+            <Class IRI="#Unit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_profile"/>
+        <Class IRI="#Profile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Set_line_status"/>
+        <Class IRI="#Action_topo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Set_topo_vect"/>
+        <Class IRI="#Action_topo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Similar_situation"/>
+        <Class IRI="#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Situation"/>
+        <Class IRI="#Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solar_generator"/>
+        <Class IRI="#Generator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Storage"/>
+        <Class IRI="#Electrical_grid_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Substation"/>
+        <Class IRI="#Electrical_grid_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Switch_line_status"/>
+        <Class IRI="#Action_topo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thermal_generator"/>
+        <Class IRI="#Generator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Topo_vect"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Topo_vect"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#is_about"/>
+            <Class IRI="#Electrical_grid"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transformer"/>
+        <Class IRI="#Powerline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <Class IRI="#Base_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#V_or"/>
+        <Class IRI="#Grid_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Value"/>
+        <Class IRI="#Base_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voltage"/>
+        <Class IRI="#Physical_grid_characteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wind_generator"/>
+        <Class IRI="#Generator"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Electrical_grid"/>
+        <NamedIndividual IRI="#electrical_grid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Issue"/>
+        <NamedIndividual IRI="#issue_115"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Issue"/>
+        <NamedIndividual IRI="#issue_120"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Issue"/>
+        <NamedIndividual IRI="#issue_175"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Issue"/>
+        <NamedIndividual IRI="#issue_751"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Issue"/>
+        <NamedIndividual IRI="#issue_89"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Powerline"/>
+        <NamedIndividual IRI="#line_54_55_145"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Powerline"/>
+        <NamedIndividual IRI="#line_54_58_154"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Powerline"/>
+        <NamedIndividual IRI="#line_58_60_156"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rho"/>
+        <NamedIndividual IRI="#rho_115"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rho"/>
+        <NamedIndividual IRI="#rho_120"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rho"/>
+        <NamedIndividual IRI="#rho_175"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rho"/>
+        <NamedIndividual IRI="#rho_751"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rho"/>
+        <NamedIndividual IRI="#rho_89"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Change_bus_vect"/>
+        <NamedIndividual IRI="#set_bus"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_part"/>
+        <NamedIndividual IRI="#electrical_grid"/>
+        <NamedIndividual IRI="#line_54_55_145"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_part"/>
+        <NamedIndividual IRI="#electrical_grid"/>
+        <NamedIndividual IRI="#line_54_58_154"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_part"/>
+        <NamedIndividual IRI="#electrical_grid"/>
+        <NamedIndividual IRI="#line_58_60_156"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_measurement"/>
+        <NamedIndividual IRI="#issue_115"/>
+        <NamedIndividual IRI="#rho_115"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_associated_with"/>
+        <NamedIndividual IRI="#issue_115"/>
+        <NamedIndividual IRI="#set_bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_measurement"/>
+        <NamedIndividual IRI="#issue_120"/>
+        <NamedIndividual IRI="#rho_120"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_associated_with"/>
+        <NamedIndividual IRI="#issue_120"/>
+        <NamedIndividual IRI="#set_bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_measurement"/>
+        <NamedIndividual IRI="#issue_175"/>
+        <NamedIndividual IRI="#rho_175"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_associated_with"/>
+        <NamedIndividual IRI="#issue_175"/>
+        <NamedIndividual IRI="#set_bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_measurement"/>
+        <NamedIndividual IRI="#issue_751"/>
+        <NamedIndividual IRI="#rho_751"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_associated_with"/>
+        <NamedIndividual IRI="#issue_751"/>
+        <NamedIndividual IRI="#set_bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_measurement"/>
+        <NamedIndividual IRI="#issue_89"/>
+        <NamedIndividual IRI="#rho_751"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_associated_with"/>
+        <NamedIndividual IRI="#issue_89"/>
+        <NamedIndividual IRI="#set_bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#rho_115"/>
+        <NamedIndividual IRI="#line_54_55_145"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#rho_120"/>
+        <NamedIndividual IRI="#line_58_60_156"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#rho_175"/>
+        <NamedIndividual IRI="#line_54_55_145"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#rho_751"/>
+        <NamedIndividual IRI="#line_54_58_154"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#rho_89"/>
+        <NamedIndividual IRI="#line_54_58_154"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_value"/>
+        <NamedIndividual IRI="#rho_115"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_value"/>
+        <NamedIndividual IRI="#rho_120"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_value"/>
+        <NamedIndividual IRI="#rho_175"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_value"/>
+        <NamedIndividual IRI="#rho_751"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_value"/>
+        <NamedIndividual IRI="#rho_89"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.008</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_measurement_unit"/>
+        <ObjectProperty IRI="#has_value_specification"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_goal"/>
+        <ObjectProperty IRI="#is_goal_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_input"/>
+        <ObjectProperty IRI="#is_input_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_measurement"/>
+        <ObjectProperty IRI="#is_measurement_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_output"/>
+        <ObjectProperty IRI="#is_output_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_part"/>
+        <ObjectProperty IRI="#is_part_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_quality"/>
+        <ObjectProperty IRI="#is_quality_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#is_realised_by"/>
+        <ObjectProperty IRI="#realises"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#is_associated_with"/>
+    </SymmetricObjectProperty>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_final_gen_p_value"/>
+        <DataProperty IRI="#has_final_value"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_final_value"/>
+        <DataProperty IRI="#has_value"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_final_value_gen_q"/>
+        <DataProperty IRI="#has_final_value"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_initial_value"/>
+        <DataProperty IRI="#has_value"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_initial_value_gen_q"/>
+        <DataProperty IRI="#has_initial_value"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_intial_gen_p_value"/>
+        <DataProperty IRI="#has_initial_value"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#has_value"/>
+    </FunctionalDataProperty>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_value"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Action</IRI>
+        <Literal>Consider the temporal aspects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Action</IRI>
+        <Literal>See:https://grid2op.readthedocs.io/en/latest/action.html#main-action-properties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Atypic_observation</IRI>
+        <Literal>We could call it Abnormal (to be discussed later)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KPI_datum</IRI>
+        <Literal>is_extracted from Physical grid measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Line_status</IRI>
+        <Literal>Gives the status (connected / disconnected) for every powerline (True at position i means the powerline i is connected)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Load_p</IRI>
+        <Literal>The active load value of each consumption (expressed in MW).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ranked_list_recommanded_actions</IRI>
+        <Literal>add ranking function (how much does it answer to a specific goal).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Recommandation_data</IRI>
+        <Literal>The process should satisfy the goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Recommandation_process</IRI>
+        <Literal>Antoine: consider mapping this calss with the notion of issue and alarm. The agent receives an alarm. Task is a problem to be resolved by an agent and associated with a notification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Remedial_action</IRI>
+        <Literal>is an action that resolves a specific issue. 
+-&gt; create an axiom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rho</IRI>
+        <Literal>The capacity of each powerline. It is defined at the observed current flow divided by the thermal limit of each powerline (no unit).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Substation</IRI>
+        <Literal>The id of the substation to which the load is connected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Topo_vect</IRI>
+        <Literal>For each object (load, generator, ends of a powerline) it gives on which bus this object is connected in its substation.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

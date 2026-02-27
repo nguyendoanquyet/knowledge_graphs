@@ -1,0 +1,2281 @@
+@prefix aida: <http://aida.kmi.open.ac.uk/resource/> .
+@prefix aidaDB: <http://aida.kmi.open.ac.uk/resource/DBpedia/> .
+@prefix aidaschema: <http://aida.kmi.open.ac.uk/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aida:advisory_services a aidaschema:industrialSector ;
+    skos:broader aida:consultant ;
+    prov:wasDerivedFrom aidaDB:advisory_services,
+        aidaDB:call_center,
+        aidaDB:contract_research_organization,
+        aidaDB:customer_experience,
+        aidaDB:economic_consulting,
+        aidaDB:human_resources,
+        aidaDB:law_enforcement_agency,
+        aidaDB:licensing,
+        aidaDB:litigation,
+        aidaDB:omnichannel,
+        aidaDB:outsourcing,
+        aidaDB:professional_services,
+        aidaDB:regulatory_compliance,
+        aidaDB:risk_assessment,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/service_(economics)> .
+
+aida:agriculture a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:agribusiness,
+        aidaDB:agricultural_chemicals,
+        aidaDB:agricultural_machinery,
+        aidaDB:agricultural_supplies,
+        aidaDB:agriculture,
+        aidaDB:agrobusiness,
+        aidaDB:compound_feed,
+        aidaDB:farming,
+        aidaDB:horticulture .
+
+aida:biology a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:biomedicine,
+        aidaDB:marine_biotechnology .
+
+aida:chemical a aidaschema:industrialSector ;
+    prov:wasDerivedFrom <http://aida.kmi.open.ac.uk/resource/DBpedia/_and_to_protect_the_global_community_from_biological_and_chemical_risks.>,
+        aidaDB:chemical,
+        aidaDB:chemical_industry,
+        aidaDB:chemical_substance,
+        aidaDB:chemicals,
+        aidaDB:chemistry,
+        aidaDB:fine_chemicals,
+        aidaDB:pest_control,
+        aidaDB:petrochemicals,
+        aidaDB:polymer,
+        aidaDB:speciality_chemicals,
+        aidaDB:specialty_chemicals,
+        aidaDB:water_treatment .
+
+aida:cosmetics a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:cosmetics,
+        aidaDB:fashion_accessory,
+        aidaDB:fragrance,
+        aidaDB:perfumery .
+
+aida:defence_and_security a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:arms_industry,
+        aidaDB:border_control,
+        aidaDB:criminal_justice,
+        aidaDB:customer_management,
+        aidaDB:defence,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/defence_(military)>,
+        aidaDB:defence_contractor,
+        aidaDB:defence_industry,
+        aidaDB:defense,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/defense_(military)>,
+        aidaDB:defense_contractor,
+        aidaDB:defense_industry,
+        aidaDB:defense_technology,
+        aidaDB:explosive_detection,
+        aidaDB:industrial_forensics,
+        aidaDB:merchant_marine,
+        aidaDB:military,
+        aidaDB:military_technology,
+        aidaDB:national_security,
+        aidaDB:private_military_contractor,
+        aidaDB:public_safety,
+        aidaDB:safety_equipment,
+        aidaDB:security,
+        aidaDB:unmanned_aerial_vehicle .
+
+aida:design a aidaschema:industrialSector ;
+    skos:broader aida:photography ;
+    prov:wasDerivedFrom aidaDB:architectural_design,
+        aidaDB:creative_industries,
+        aidaDB:design,
+        aidaDB:design_firm,
+        aidaDB:graphic_arts,
+        aidaDB:product_design .
+
+aida:editorial a aidaschema:industrialSector ;
+    skos:broader aida:communications ;
+    prov:wasDerivedFrom <http://aida.kmi.open.ac.uk/resource/DBpedia/paper_&_paper_products>,
+        aidaDB:print_media,
+        aidaDB:printing_press,
+        aidaDB:publishing,
+        aidaDB:pulp_and_paper_industry .
+
+aida:education a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:academic,
+        aidaDB:education,
+        aidaDB:educational_technology,
+        aidaDB:for-profit_education,
+        aidaDB:for-profit_school .
+
+aida:energy a aidaschema:industrialSector ;
+    skos:broader aida:air_conditioning,
+        aida:nuclear_power,
+        aida:oil_and_gas_industry ;
+    prov:wasDerivedFrom aidaDB:alternative_energy,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/battery_(electricity)>,
+        aidaDB:clean_energy,
+        aidaDB:electric_power_distribution,
+        aidaDB:electric_power_industry,
+        aidaDB:electric_power_infrastructure,
+        aidaDB:electric_power_transmission,
+        aidaDB:electric_utilities,
+        aidaDB:electric_utility,
+        aidaDB:electrical_power,
+        aidaDB:electrical_power_industry,
+        aidaDB:electricity,
+        aidaDB:electricity_distribution,
+        aidaDB:electricity_generation,
+        aidaDB:electricity_retailing,
+        aidaDB:energy,
+        aidaDB:energy_industry,
+        aidaDB:energy_management,
+        aidaDB:energy_storage,
+        aidaDB:energy_supply,
+        aidaDB:fuel_cell,
+        aidaDB:photovoltaics,
+        aidaDB:power_generation,
+        aidaDB:power_transmission,
+        aidaDB:renewable_energy,
+        aidaDB:solar_energy,
+        aidaDB:solar_power,
+        aidaDB:sustainable_energy,
+        aidaDB:wave_power,
+        aidaDB:wind_energy .
+
+aida:engineering a aidaschema:industrialSector ;
+    skos:broader aida:architecture,
+        aida:basic_materials,
+        <http://aida.kmi.open.ac.uk/resource/characterization_(materials_science)>,
+        aida:commodities,
+        aida:construction,
+        aida:engines,
+        aida:environmental,
+        aida:machinery,
+        aida:manufacturing,
+        aida:metal,
+        aida:optical,
+        aida:plastics,
+        aida:plumbing ;
+    prov:wasDerivedFrom aidaDB:computer-aided_design,
+        aidaDB:computer-aided_engineering,
+        aidaDB:computer-aided_manufacturing,
+        aidaDB:engineering,
+        aidaDB:engineering_and_contracting,
+        aidaDB:engineering_vehicle,
+        aidaDB:infrastructure,
+        aidaDB:mechanical_engineering,
+        aidaDB:process_engineering,
+        aidaDB:product_development,
+        aidaDB:providing_engineering_services_to_global_automotive_and_transport_industries,
+        aidaDB:systems_engineering .
+
+aida:entertainment a aidaschema:industrialSector ;
+    skos:broader aida:gardening,
+        aida:sports,
+        aida:tourism,
+        aida:travel ;
+    prov:wasDerivedFrom aidaDB:casino,
+        aidaDB:computer_and_video_game_industry,
+        aidaDB:entertainment,
+        aidaDB:entertainment_industry,
+        aidaDB:film_industry,
+        aidaDB:gambling,
+        aidaDB:gambling_industry,
+        aidaDB:interactive_entertainment,
+        aidaDB:leisure_industry,
+        aidaDB:list_of_entertainment_industry_topics,
+        aidaDB:mobile_game,
+        aidaDB:music_industry,
+        aidaDB:outer_space,
+        aidaDB:pachinko,
+        aidaDB:slot_machine,
+        aidaDB:video_game .
+
+aida:financial a aidaschema:industrialSector ;
+    skos:broader aida:trading ;
+    prov:wasDerivedFrom aidaDB:bank,
+        aidaDB:banking,
+        aidaDB:capital_good,
+        aidaDB:corporate_venture_capital,
+        aidaDB:credit_card,
+        aidaDB:finance,
+        aidaDB:financial_market,
+        aidaDB:financial_services,
+        aidaDB:government_contractor,
+        aidaDB:holding_company,
+        aidaDB:insurance,
+        aidaDB:investment_banking,
+        aidaDB:investment_company,
+        aidaDB:investments,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/mint_(coin)>,
+        aidaDB:patent_monetization,
+        aidaDB:personal_finance,
+        aidaDB:philanthropy,
+        aidaDB:private_equity,
+        aidaDB:trading_company .
+
+aida:food a aidaschema:industrialSector ;
+    skos:broader aida:beverages ;
+    prov:wasDerivedFrom aidaDB:beverage,
+        aidaDB:coffeehouse,
+        aidaDB:dairy,
+        aidaDB:drying,
+        aidaDB:food,
+        aidaDB:food_industry,
+        aidaDB:food_packaging,
+        aidaDB:food_processing,
+        aidaDB:food_processing_industry,
+        aidaDB:foods,
+        aidaDB:foodservice,
+        aidaDB:grocery,
+        aidaDB:restaurant,
+        aidaDB:to_support_and_develop_a_sustainable_food_chain .
+
+aida:health_care a aidaschema:industrialSector ;
+    skos:broader aida:pharmaceutics ;
+    prov:wasDerivedFrom aidaDB:biocatalysis,
+        aidaDB:biomedical_imaging,
+        aidaDB:biopharmaceutical,
+        aidaDB:biotech,
+        aidaDB:biotech_company,
+        aidaDB:biotechnology,
+        aidaDB:blood_banking,
+        aidaDB:clinical_research_organization,
+        aidaDB:clinical_trial,
+        aidaDB:dental_equipment,
+        aidaDB:dentistry,
+        aidaDB:dermatology,
+        aidaDB:genetics,
+        aidaDB:health,
+        aidaDB:health_care,
+        aidaDB:health_club,
+        aidaDB:health_informatics,
+        aidaDB:healthcare,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/healthcare'_pharmaceuticals>,
+        aidaDB:healthcare_equipment_and_services,
+        aidaDB:healthcare_industry,
+        aidaDB:healthcare_it,
+        aidaDB:hearing_aid,
+        aidaDB:hospitality,
+        aidaDB:hospitality_industry,
+        aidaDB:industrial_biotechnology,
+        aidaDB:life_science,
+        aidaDB:life_sciences,
+        aidaDB:managed_health_care,
+        aidaDB:medical,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/medical_appliances_&_equipment>,
+        aidaDB:medical_device,
+        aidaDB:medical_devices,
+        aidaDB:medical_diagnosis,
+        aidaDB:medical_equipment,
+        aidaDB:medical_imaging,
+        aidaDB:medical_supply,
+        aidaDB:medical_technology,
+        aidaDB:medication,
+        aidaDB:molecular_diagnostics,
+        aidaDB:oncology,
+        aidaDB:optical_equipment,
+        aidaDB:optical_imaging,
+        aidaDB:optical_microscope,
+        aidaDB:personal_care,
+        aidaDB:personalized_medicine,
+        aidaDB:pharmaceutical,
+        aidaDB:pharmaceutical_company,
+        aidaDB:pharmaceutical_drug,
+        aidaDB:pharmaceutical_industry,
+        aidaDB:pharmaceuticals,
+        aidaDB:pharmacology,
+        aidaDB:public_health,
+        aidaDB:self_care,
+        aidaDB:thermography,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/wellness_(alternative_medicine)> .
+
+aida:management a aidaschema:industrialSector ;
+    skos:broader aida:logistics ;
+    prov:wasDerivedFrom aidaDB:business_consulting,
+        aidaDB:business_intelligence,
+        aidaDB:business_process_management,
+        aidaDB:classification_society,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/conglomerate_(business)>,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/conglomerate_(company)>,
+        aidaDB:document_management,
+        aidaDB:document_management_system,
+        aidaDB:enterprise_content_management,
+        aidaDB:enterprise_output_management,
+        aidaDB:european_rail_infrastructure_managers,
+        aidaDB:identity_management,
+        aidaDB:innovation_management,
+        aidaDB:investment_management,
+        aidaDB:management,
+        aidaDB:management_consulting,
+        aidaDB:operations_management,
+        aidaDB:planning,
+        aidaDB:product_lifecycle_management,
+        aidaDB:project_management,
+        aidaDB:public_relations,
+        aidaDB:supply_chain_management .
+
+aida:marine a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:marine_propulsion,
+        aidaDB:naval_architecture,
+        aidaDB:ship_decommissioning,
+        aidaDB:shipbuilding,
+        aidaDB:shiprepairing .
+
+aida:marketing a aidaschema:industrialSector ;
+    skos:broader aida:brand_marketing ;
+    prov:wasDerivedFrom aidaDB:advertising,
+        aidaDB:advertising_agency,
+        aidaDB:loyalty_marketing,
+        aidaDB:mobile_marketing,
+        aidaDB:multi-level_marketing,
+        aidaDB:multilevel_marketing .
+
+aida:metrology a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:metrology .
+
+aida:mining a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:mining .
+
+aida:retail a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:apparel,
+        aidaDB:clothing,
+        aidaDB:consumer_goods,
+        aidaDB:consumer_products,
+        aidaDB:fast-moving_consumer_goods,
+        aidaDB:footwear,
+        aidaDB:online_retailing,
+        aidaDB:packaging,
+        aidaDB:retail,
+        aidaDB:retailer,
+        aidaDB:toy,
+        aidaDB:toys .
+
+aida:stationery a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:greeting_card,
+        aidaDB:stationery .
+
+aida:technology a aidaschema:industrialSector ;
+    skos:broader aida:automation,
+        aida:computing_and_it,
+        aida:electronics,
+        aida:home_appliances,
+        aida:information_technology,
+        aida:lighting,
+        <http://aida.kmi.open.ac.uk/resource/r&d>,
+        aida:semiconductor,
+        aida:telecommunications ;
+    prov:wasDerivedFrom aidaDB:high_technology,
+        aidaDB:motion_and_control_technologies,
+        aidaDB:technology .
+
+aida:testing a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:inspection,
+        aidaDB:non-destructive_testing,
+        aidaDB:product_certification,
+        aidaDB:test_method .
+
+aida:tobacco a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:tobacco,
+        aidaDB:tobacco_industry .
+
+aida:transportation a aidaschema:industrialSector ;
+    skos:broader aida:aerospace,
+        aida:automotive ;
+    prov:wasDerivedFrom aidaDB:air_traffic_control,
+        aidaDB:air_travel,
+        aidaDB:airports,
+        aidaDB:aviation,
+        aidaDB:bicycles,
+        aidaDB:car_rental,
+        aidaDB:consumer_packaged_goods,
+        aidaDB:pipeline_transport,
+        aidaDB:port_management,
+        aidaDB:powertrain,
+        aidaDB:private_railway,
+        aidaDB:public_transport,
+        aidaDB:rail_transport,
+        aidaDB:rail_transportation,
+        aidaDB:railway,
+        aidaDB:railway_systems_engineering,
+        aidaDB:railway_transport,
+        aidaDB:roadworks,
+        aidaDB:ship_transport,
+        aidaDB:transport,
+        aidaDB:transportation .
+
+aida:utilities a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:public_utility,
+        aidaDB:utilities,
+        aidaDB:utility,
+        aidaDB:various .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/3d_printing> a aidaschema:DBpediaCategory .
+
+aidaDB:_a_healthy_natural_environment a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/_and_to_protect_the_global_community_from_biological_and_chemical_risks.> a aidaschema:DBpediaCategory .
+
+aidaDB:academic a aidaschema:DBpediaCategory .
+
+aidaDB:access_control a aidaschema:DBpediaCategory .
+
+aidaDB:actuarial_science a aidaschema:DBpediaCategory .
+
+aidaDB:adaptive_optics a aidaschema:DBpediaCategory .
+
+aidaDB:adhesives a aidaschema:DBpediaCategory .
+
+aidaDB:advertising a aidaschema:DBpediaCategory .
+
+aidaDB:advertising_agency a aidaschema:DBpediaCategory .
+
+aidaDB:advisory_services a aidaschema:DBpediaCategory .
+
+aidaDB:aeronautics a aidaschema:DBpediaCategory .
+
+aidaDB:aerospace a aidaschema:DBpediaCategory .
+
+aidaDB:aerospace_components a aidaschema:DBpediaCategory .
+
+aidaDB:aerospace_engineering a aidaschema:DBpediaCategory .
+
+aidaDB:aerospace_industry a aidaschema:DBpediaCategory .
+
+aidaDB:aerospace_manufacturer a aidaschema:DBpediaCategory .
+
+aidaDB:agribusiness a aidaschema:DBpediaCategory .
+
+aidaDB:agricultural_chemicals a aidaschema:DBpediaCategory .
+
+aidaDB:agricultural_machinery a aidaschema:DBpediaCategory .
+
+aidaDB:agricultural_supplies a aidaschema:DBpediaCategory .
+
+aidaDB:agriculture a aidaschema:DBpediaCategory .
+
+aidaDB:agrobusiness a aidaschema:DBpediaCategory .
+
+aidaDB:air_conditioning a aidaschema:DBpediaCategory .
+
+aidaDB:air_traffic_control a aidaschema:DBpediaCategory .
+
+aidaDB:air_transport a aidaschema:DBpediaCategory .
+
+aidaDB:air_travel a aidaschema:DBpediaCategory .
+
+aidaDB:airports a aidaschema:DBpediaCategory .
+
+aidaDB:alternative_energy a aidaschema:DBpediaCategory .
+
+aidaDB:aluminium a aidaschema:DBpediaCategory .
+
+aidaDB:aluminium_oxide a aidaschema:DBpediaCategory .
+
+aidaDB:apparel a aidaschema:DBpediaCategory .
+
+aidaDB:architectural_design a aidaschema:DBpediaCategory .
+
+aidaDB:architecture a aidaschema:DBpediaCategory .
+
+aidaDB:arms_industry a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/audio_compression_(data)> a aidaschema:DBpediaCategory .
+
+aidaDB:audio_electronics a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/auto_&_truck_parts> a aidaschema:DBpediaCategory .
+
+aidaDB:auto_parts a aidaschema:DBpediaCategory .
+
+aidaDB:automation a aidaschema:DBpediaCategory .
+
+aidaDB:automobile a aidaschema:DBpediaCategory .
+
+aidaDB:automotive a aidaschema:DBpediaCategory .
+
+aidaDB:automotive_industry a aidaschema:DBpediaCategory .
+
+aidaDB:automotive_parts a aidaschema:DBpediaCategory .
+
+aidaDB:automotive_safety a aidaschema:DBpediaCategory .
+
+aidaDB:aviation a aidaschema:DBpediaCategory .
+
+aidaDB:bank a aidaschema:DBpediaCategory .
+
+aidaDB:banking a aidaschema:DBpediaCategory .
+
+aidaDB:basic_materials a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/battery_(electricity)> a aidaschema:DBpediaCategory .
+
+aidaDB:beverage a aidaschema:DBpediaCategory .
+
+aidaDB:beverage_industry a aidaschema:DBpediaCategory .
+
+aidaDB:beverages a aidaschema:DBpediaCategory .
+
+aidaDB:bicycles a aidaschema:DBpediaCategory .
+
+aidaDB:biocatalysis a aidaschema:DBpediaCategory .
+
+aidaDB:bioharmaceutical_company a aidaschema:DBpediaCategory .
+
+aidaDB:bioinformatics a aidaschema:DBpediaCategory .
+
+aidaDB:biomedical_imaging a aidaschema:DBpediaCategory .
+
+aidaDB:biomedicine a aidaschema:DBpediaCategory .
+
+aidaDB:biometrics a aidaschema:DBpediaCategory .
+
+aidaDB:biopharmaceutical a aidaschema:DBpediaCategory .
+
+aidaDB:biopharmaceutical_industry a aidaschema:DBpediaCategory .
+
+aidaDB:biopharmaceuticals a aidaschema:DBpediaCategory .
+
+aidaDB:biotech a aidaschema:DBpediaCategory .
+
+aidaDB:biotech_company a aidaschema:DBpediaCategory .
+
+aidaDB:biotechnology a aidaschema:DBpediaCategory .
+
+aidaDB:blood_banking a aidaschema:DBpediaCategory .
+
+aidaDB:border_control a aidaschema:DBpediaCategory .
+
+aidaDB:brake_manufacturing a aidaschema:DBpediaCategory .
+
+aidaDB:brand_marketing a aidaschema:DBpediaCategory .
+
+aidaDB:brewing a aidaschema:DBpediaCategory .
+
+aidaDB:building a aidaschema:DBpediaCategory .
+
+aidaDB:building_material a aidaschema:DBpediaCategory .
+
+aidaDB:building_materials a aidaschema:DBpediaCategory .
+
+aidaDB:business_consulting a aidaschema:DBpediaCategory .
+
+aidaDB:business_intelligence a aidaschema:DBpediaCategory .
+
+aidaDB:business_process_management a aidaschema:DBpediaCategory .
+
+aidaDB:business_service_provider a aidaschema:DBpediaCategory .
+
+aidaDB:cable a aidaschema:DBpediaCategory .
+
+aidaDB:cable_television a aidaschema:DBpediaCategory .
+
+aidaDB:call_center a aidaschema:DBpediaCategory .
+
+aidaDB:camera a aidaschema:DBpediaCategory .
+
+aidaDB:capital_good a aidaschema:DBpediaCategory .
+
+aidaDB:car_rental a aidaschema:DBpediaCategory .
+
+aidaDB:casino a aidaschema:DBpediaCategory .
+
+aidaDB:cement a aidaschema:DBpediaCategory .
+
+aidaDB:central_heating a aidaschema:DBpediaCategory .
+
+aidaDB:ceramic a aidaschema:DBpediaCategory .
+
+aidaDB:ceramic_materials a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/characterization_(materials_science)> a aidaschema:DBpediaCategory .
+
+aidaDB:chemical a aidaschema:DBpediaCategory .
+
+aidaDB:chemical_industry a aidaschema:DBpediaCategory .
+
+aidaDB:chemical_substance a aidaschema:DBpediaCategory .
+
+aidaDB:chemicals a aidaschema:DBpediaCategory .
+
+aidaDB:chemistry a aidaschema:DBpediaCategory .
+
+aidaDB:classification_society a aidaschema:DBpediaCategory .
+
+aidaDB:clean_energy a aidaschema:DBpediaCategory .
+
+aidaDB:clinical_research_organization a aidaschema:DBpediaCategory .
+
+aidaDB:clinical_trial a aidaschema:DBpediaCategory .
+
+aidaDB:clothing a aidaschema:DBpediaCategory .
+
+aidaDB:cloud_computing a aidaschema:DBpediaCategory .
+
+aidaDB:coating a aidaschema:DBpediaCategory .
+
+aidaDB:coffeehouse a aidaschema:DBpediaCategory .
+
+aidaDB:cognitive_computing a aidaschema:DBpediaCategory .
+
+aidaDB:commercial_aerospace a aidaschema:DBpediaCategory .
+
+aidaDB:commercial_vehicles_systems_and_components a aidaschema:DBpediaCategory .
+
+aidaDB:commodities a aidaschema:DBpediaCategory .
+
+aidaDB:commodity a aidaschema:DBpediaCategory .
+
+aidaDB:communication a aidaschema:DBpediaCategory .
+
+aidaDB:communication_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:communications a aidaschema:DBpediaCategory .
+
+aidaDB:communications_satellite a aidaschema:DBpediaCategory .
+
+aidaDB:compound_feed a aidaschema:DBpediaCategory .
+
+aidaDB:computer a aidaschema:DBpediaCategory .
+
+aidaDB:computer-aided_design a aidaschema:DBpediaCategory .
+
+aidaDB:computer-aided_engineering a aidaschema:DBpediaCategory .
+
+aidaDB:computer-aided_manufacturing a aidaschema:DBpediaCategory .
+
+aidaDB:computer_aided_engineering a aidaschema:DBpediaCategory .
+
+aidaDB:computer_and_video_game_industry a aidaschema:DBpediaCategory .
+
+aidaDB:computer_data_storage a aidaschema:DBpediaCategory .
+
+aidaDB:computer_hardware a aidaschema:DBpediaCategory .
+
+aidaDB:computer_network a aidaschema:DBpediaCategory .
+
+aidaDB:computer_peripheral a aidaschema:DBpediaCategory .
+
+aidaDB:computer_printer a aidaschema:DBpediaCategory .
+
+aidaDB:computer_security a aidaschema:DBpediaCategory .
+
+aidaDB:computer_software a aidaschema:DBpediaCategory .
+
+aidaDB:computer_storage_device a aidaschema:DBpediaCategory .
+
+aidaDB:computer_vision a aidaschema:DBpediaCategory .
+
+aidaDB:concrete_mixer a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/conglomerate_(business)> a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/conglomerate_(company)> a aidaschema:DBpediaCategory .
+
+aidaDB:construction a aidaschema:DBpediaCategory .
+
+aidaDB:construction_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:construction_industry a aidaschema:DBpediaCategory .
+
+aidaDB:construction_materials a aidaschema:DBpediaCategory .
+
+aidaDB:consultant a aidaschema:DBpediaCategory .
+
+aidaDB:consumer_electronics a aidaschema:DBpediaCategory .
+
+aidaDB:consumer_goods a aidaschema:DBpediaCategory .
+
+aidaDB:consumer_packaged_goods a aidaschema:DBpediaCategory .
+
+aidaDB:consumer_products a aidaschema:DBpediaCategory .
+
+aidaDB:contract_manufacturer a aidaschema:DBpediaCategory .
+
+aidaDB:contract_research_organization a aidaschema:DBpediaCategory .
+
+aidaDB:corporate_venture_capital a aidaschema:DBpediaCategory .
+
+aidaDB:corrugated_packaging a aidaschema:DBpediaCategory .
+
+aidaDB:cosmetics a aidaschema:DBpediaCategory .
+
+aidaDB:courier a aidaschema:DBpediaCategory .
+
+aidaDB:creative_industries a aidaschema:DBpediaCategory .
+
+aidaDB:credit_card a aidaschema:DBpediaCategory .
+
+aidaDB:criminal_justice a aidaschema:DBpediaCategory .
+
+aidaDB:crowdsourcing a aidaschema:DBpediaCategory .
+
+aidaDB:customer_experience a aidaschema:DBpediaCategory .
+
+aidaDB:customer_management a aidaschema:DBpediaCategory .
+
+aidaDB:cybersecurity a aidaschema:DBpediaCategory .
+
+aidaDB:cycling a aidaschema:DBpediaCategory .
+
+aidaDB:dairy a aidaschema:DBpediaCategory .
+
+aidaDB:data_analytics a aidaschema:DBpediaCategory .
+
+aidaDB:data_protection a aidaschema:DBpediaCategory .
+
+aidaDB:data_publishing a aidaschema:DBpediaCategory .
+
+aidaDB:data_storage_device a aidaschema:DBpediaCategory .
+
+aidaDB:defence a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/defence_(military)> a aidaschema:DBpediaCategory .
+
+aidaDB:defence_contractor a aidaschema:DBpediaCategory .
+
+aidaDB:defence_industry a aidaschema:DBpediaCategory .
+
+aidaDB:defense a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/defense_(military)> a aidaschema:DBpediaCategory .
+
+aidaDB:defense_contractor a aidaschema:DBpediaCategory .
+
+aidaDB:defense_industry a aidaschema:DBpediaCategory .
+
+aidaDB:defense_technology a aidaschema:DBpediaCategory .
+
+aidaDB:dental_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:dentistry a aidaschema:DBpediaCategory .
+
+aidaDB:dermatology a aidaschema:DBpediaCategory .
+
+aidaDB:design a aidaschema:DBpediaCategory .
+
+aidaDB:design_firm a aidaschema:DBpediaCategory .
+
+aidaDB:development_testing a aidaschema:DBpediaCategory .
+
+aidaDB:digital_distribution a aidaschema:DBpediaCategory .
+
+aidaDB:digital_imaging a aidaschema:DBpediaCategory .
+
+aidaDB:digital_printing a aidaschema:DBpediaCategory .
+
+aidaDB:digital_tv a aidaschema:DBpediaCategory .
+
+aidaDB:display_technology a aidaschema:DBpediaCategory .
+
+aidaDB:distributed_computing a aidaschema:DBpediaCategory .
+
+aidaDB:diversified_machinery a aidaschema:DBpediaCategory .
+
+aidaDB:document_management a aidaschema:DBpediaCategory .
+
+aidaDB:document_management_system a aidaschema:DBpediaCategory .
+
+aidaDB:document_processing a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/downstream_(petroleum_industry)> a aidaschema:DBpediaCategory .
+
+aidaDB:drying a aidaschema:DBpediaCategory .
+
+aidaDB:economic_consulting a aidaschema:DBpediaCategory .
+
+aidaDB:education a aidaschema:DBpediaCategory .
+
+aidaDB:educational_technology a aidaschema:DBpediaCategory .
+
+aidaDB:electric_power_distribution a aidaschema:DBpediaCategory .
+
+aidaDB:electric_power_industry a aidaschema:DBpediaCategory .
+
+aidaDB:electric_power_infrastructure a aidaschema:DBpediaCategory .
+
+aidaDB:electric_power_transmission a aidaschema:DBpediaCategory .
+
+aidaDB:electric_utilities a aidaschema:DBpediaCategory .
+
+aidaDB:electric_utility a aidaschema:DBpediaCategory .
+
+aidaDB:electrical a aidaschema:DBpediaCategory .
+
+aidaDB:electrical_component a aidaschema:DBpediaCategory .
+
+aidaDB:electrical_engineering a aidaschema:DBpediaCategory .
+
+aidaDB:electrical_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:electrical_power a aidaschema:DBpediaCategory .
+
+aidaDB:electrical_power_industry a aidaschema:DBpediaCategory .
+
+aidaDB:electricity a aidaschema:DBpediaCategory .
+
+aidaDB:electricity_distribution a aidaschema:DBpediaCategory .
+
+aidaDB:electricity_generation a aidaschema:DBpediaCategory .
+
+aidaDB:electricity_retailing a aidaschema:DBpediaCategory .
+
+aidaDB:electronic_components a aidaschema:DBpediaCategory .
+
+aidaDB:electronic_design_automation a aidaschema:DBpediaCategory .
+
+aidaDB:electronic_engineering a aidaschema:DBpediaCategory .
+
+aidaDB:electronic_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:electronic_products a aidaschema:DBpediaCategory .
+
+aidaDB:electronic_test_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:electronic_testing a aidaschema:DBpediaCategory .
+
+aidaDB:electronics a aidaschema:DBpediaCategory .
+
+aidaDB:electronics_industry a aidaschema:DBpediaCategory .
+
+aidaDB:electronics_manufacturing a aidaschema:DBpediaCategory .
+
+aidaDB:electronics_manufacturing_services a aidaschema:DBpediaCategory .
+
+aidaDB:email_archiving a aidaschema:DBpediaCategory .
+
+aidaDB:embedded_software a aidaschema:DBpediaCategory .
+
+aidaDB:employee_benefits a aidaschema:DBpediaCategory .
+
+aidaDB:employment_agency a aidaschema:DBpediaCategory .
+
+aidaDB:energy a aidaschema:DBpediaCategory .
+
+aidaDB:energy_industry a aidaschema:DBpediaCategory .
+
+aidaDB:energy_management a aidaschema:DBpediaCategory .
+
+aidaDB:energy_storage a aidaschema:DBpediaCategory .
+
+aidaDB:energy_supply a aidaschema:DBpediaCategory .
+
+aidaDB:engine_manufacturing a aidaschema:DBpediaCategory .
+
+aidaDB:engineering a aidaschema:DBpediaCategory .
+
+aidaDB:engineering_and_construction a aidaschema:DBpediaCategory .
+
+aidaDB:engineering_and_consulting_services a aidaschema:DBpediaCategory .
+
+aidaDB:engineering_and_contracting a aidaschema:DBpediaCategory .
+
+aidaDB:engineering_vehicle a aidaschema:DBpediaCategory .
+
+aidaDB:engines a aidaschema:DBpediaCategory .
+
+aidaDB:enterprise_content_management a aidaschema:DBpediaCategory .
+
+aidaDB:enterprise_output_management a aidaschema:DBpediaCategory .
+
+aidaDB:enterprise_software a aidaschema:DBpediaCategory .
+
+aidaDB:entertainment a aidaschema:DBpediaCategory .
+
+aidaDB:entertainment_industry a aidaschema:DBpediaCategory .
+
+aidaDB:environmental_consultancy a aidaschema:DBpediaCategory .
+
+aidaDB:environmental_engineering a aidaschema:DBpediaCategory .
+
+aidaDB:european_rail_infrastructure_managers a aidaschema:DBpediaCategory .
+
+aidaDB:explosive_detection a aidaschema:DBpediaCategory .
+
+aidaDB:express_mail a aidaschema:DBpediaCategory .
+
+aidaDB:fabless_manufacturing a aidaschema:DBpediaCategory .
+
+aidaDB:fabless_semiconductor_company a aidaschema:DBpediaCategory .
+
+aidaDB:farming a aidaschema:DBpediaCategory .
+
+aidaDB:fashion_accessory a aidaschema:DBpediaCategory .
+
+aidaDB:fast-moving_consumer_goods a aidaschema:DBpediaCategory .
+
+aidaDB:fast_moving_consumer_goods a aidaschema:DBpediaCategory .
+
+aidaDB:film a aidaschema:DBpediaCategory .
+
+aidaDB:film_industry a aidaschema:DBpediaCategory .
+
+aidaDB:filtration a aidaschema:DBpediaCategory .
+
+aidaDB:final_good a aidaschema:DBpediaCategory .
+
+aidaDB:finance a aidaschema:DBpediaCategory .
+
+aidaDB:financial_market a aidaschema:DBpediaCategory .
+
+aidaDB:financial_services a aidaschema:DBpediaCategory .
+
+aidaDB:fine_chemicals a aidaschema:DBpediaCategory .
+
+aidaDB:fire_protection a aidaschema:DBpediaCategory .
+
+aidaDB:flexography a aidaschema:DBpediaCategory .
+
+aidaDB:food a aidaschema:DBpediaCategory .
+
+aidaDB:food_industry a aidaschema:DBpediaCategory .
+
+aidaDB:food_packaging a aidaschema:DBpediaCategory .
+
+aidaDB:food_processing a aidaschema:DBpediaCategory .
+
+aidaDB:food_processing_industry a aidaschema:DBpediaCategory .
+
+aidaDB:foods a aidaschema:DBpediaCategory .
+
+aidaDB:foodservice a aidaschema:DBpediaCategory .
+
+aidaDB:footwear a aidaschema:DBpediaCategory .
+
+aidaDB:for-profit_education a aidaschema:DBpediaCategory .
+
+aidaDB:for-profit_school a aidaschema:DBpediaCategory .
+
+aidaDB:forest_product a aidaschema:DBpediaCategory .
+
+aidaDB:forestry a aidaschema:DBpediaCategory .
+
+aidaDB:forging a aidaschema:DBpediaCategory .
+
+aidaDB:fragrance a aidaschema:DBpediaCategory .
+
+aidaDB:fuel_cell a aidaschema:DBpediaCategory .
+
+aidaDB:fuel_oil a aidaschema:DBpediaCategory .
+
+aidaDB:furniture a aidaschema:DBpediaCategory .
+
+aidaDB:fusion_power a aidaschema:DBpediaCategory .
+
+aidaDB:gambling a aidaschema:DBpediaCategory .
+
+aidaDB:gambling_industry a aidaschema:DBpediaCategory .
+
+aidaDB:garden a aidaschema:DBpediaCategory .
+
+aidaDB:gas a aidaschema:DBpediaCategory .
+
+aidaDB:gas_utility a aidaschema:DBpediaCategory .
+
+aidaDB:genetics a aidaschema:DBpediaCategory .
+
+aidaDB:geographic_information_system a aidaschema:DBpediaCategory .
+
+aidaDB:geomatics a aidaschema:DBpediaCategory .
+
+aidaDB:geoscience_data a aidaschema:DBpediaCategory .
+
+aidaDB:glass a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/glass_&_ceramic_materials> a aidaschema:DBpediaCategory .
+
+aidaDB:glassmaking a aidaschema:DBpediaCategory .
+
+aidaDB:golf a aidaschema:DBpediaCategory .
+
+aidaDB:government_contractor a aidaschema:DBpediaCategory .
+
+aidaDB:graphic_arts a aidaschema:DBpediaCategory .
+
+aidaDB:greeting_card a aidaschema:DBpediaCategory .
+
+aidaDB:grid_computing a aidaschema:DBpediaCategory .
+
+aidaDB:grocery a aidaschema:DBpediaCategory .
+
+aidaDB:health a aidaschema:DBpediaCategory .
+
+aidaDB:health_care a aidaschema:DBpediaCategory .
+
+aidaDB:health_club a aidaschema:DBpediaCategory .
+
+aidaDB:health_informatics a aidaschema:DBpediaCategory .
+
+aidaDB:health_science a aidaschema:DBpediaCategory .
+
+aidaDB:healthcare a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/healthcare'_pharmaceuticals> a aidaschema:DBpediaCategory .
+
+aidaDB:healthcare_equipment_and_services a aidaschema:DBpediaCategory .
+
+aidaDB:healthcare_industry a aidaschema:DBpediaCategory .
+
+aidaDB:healthcare_it a aidaschema:DBpediaCategory .
+
+aidaDB:hearing_aid a aidaschema:DBpediaCategory .
+
+aidaDB:heating a aidaschema:DBpediaCategory .
+
+aidaDB:heavy_equipment a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/heavy_equipment_(construction)> a aidaschema:DBpediaCategory .
+
+aidaDB:heavy_industry a aidaschema:DBpediaCategory .
+
+aidaDB:high_tech a aidaschema:DBpediaCategory .
+
+aidaDB:high_technology a aidaschema:DBpediaCategory .
+
+aidaDB:holding_company a aidaschema:DBpediaCategory .
+
+aidaDB:home_appliance a aidaschema:DBpediaCategory .
+
+aidaDB:home_appliances a aidaschema:DBpediaCategory .
+
+aidaDB:horticulture a aidaschema:DBpediaCategory .
+
+aidaDB:hospitality a aidaschema:DBpediaCategory .
+
+aidaDB:hospitality_industry a aidaschema:DBpediaCategory .
+
+aidaDB:household_appliances a aidaschema:DBpediaCategory .
+
+aidaDB:household_goods a aidaschema:DBpediaCategory .
+
+aidaDB:human_resources a aidaschema:DBpediaCategory .
+
+aidaDB:hvac a aidaschema:DBpediaCategory .
+
+aidaDB:hydrocarbon_exploration a aidaschema:DBpediaCategory .
+
+aidaDB:hyperspectral_imaging a aidaschema:DBpediaCategory .
+
+aidaDB:identity_management a aidaschema:DBpediaCategory .
+
+aidaDB:imaging_and_it_company a aidaschema:DBpediaCategory .
+
+aidaDB:imaging_technology a aidaschema:DBpediaCategory .
+
+aidaDB:industrial_automation a aidaschema:DBpediaCategory .
+
+aidaDB:industrial_biotechnology a aidaschema:DBpediaCategory .
+
+aidaDB:industrial_forensics a aidaschema:DBpediaCategory .
+
+aidaDB:industrial_machinery a aidaschema:DBpediaCategory .
+
+aidaDB:industrial_process a aidaschema:DBpediaCategory .
+
+aidaDB:industrial_sensors a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/information_&_communication_technologies> a aidaschema:DBpediaCategory .
+
+aidaDB:information_and_analytics a aidaschema:DBpediaCategory .
+
+aidaDB:information_discovery a aidaschema:DBpediaCategory .
+
+aidaDB:information_management a aidaschema:DBpediaCategory .
+
+aidaDB:information_security a aidaschema:DBpediaCategory .
+
+aidaDB:information_technology a aidaschema:DBpediaCategory .
+
+aidaDB:information_technology_consulting a aidaschema:DBpediaCategory .
+
+aidaDB:infrastructure a aidaschema:DBpediaCategory .
+
+aidaDB:innovation_management a aidaschema:DBpediaCategory .
+
+aidaDB:input_device a aidaschema:DBpediaCategory .
+
+aidaDB:inspection a aidaschema:DBpediaCategory .
+
+aidaDB:instant_messaging a aidaschema:DBpediaCategory .
+
+aidaDB:instrumentation a aidaschema:DBpediaCategory .
+
+aidaDB:insurance a aidaschema:DBpediaCategory .
+
+aidaDB:integrated_circuit a aidaschema:DBpediaCategory .
+
+aidaDB:integrated_circuits a aidaschema:DBpediaCategory .
+
+aidaDB:intellectual_property a aidaschema:DBpediaCategory .
+
+aidaDB:interactive_entertainment a aidaschema:DBpediaCategory .
+
+aidaDB:interactive_media a aidaschema:DBpediaCategory .
+
+aidaDB:interdisciplinarity a aidaschema:DBpediaCategory .
+
+aidaDB:internet a aidaschema:DBpediaCategory .
+
+aidaDB:internet_of_things a aidaschema:DBpediaCategory .
+
+aidaDB:intralogistics a aidaschema:DBpediaCategory .
+
+aidaDB:investment_banking a aidaschema:DBpediaCategory .
+
+aidaDB:investment_company a aidaschema:DBpediaCategory .
+
+aidaDB:investment_management a aidaschema:DBpediaCategory .
+
+aidaDB:investments a aidaschema:DBpediaCategory .
+
+aidaDB:irrigation a aidaschema:DBpediaCategory .
+
+aidaDB:it_consulting a aidaschema:DBpediaCategory .
+
+aidaDB:it_service_management a aidaschema:DBpediaCategory .
+
+aidaDB:it_services a aidaschema:DBpediaCategory .
+
+aidaDB:knowledge_engineering a aidaschema:DBpediaCategory .
+
+aidaDB:laboratory a aidaschema:DBpediaCategory .
+
+aidaDB:laboratory_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:landscape_maintenance a aidaschema:DBpediaCategory .
+
+aidaDB:large_data_visualization a aidaschema:DBpediaCategory .
+
+aidaDB:laser a aidaschema:DBpediaCategory .
+
+aidaDB:laser_peening a aidaschema:DBpediaCategory .
+
+aidaDB:law_enforcement_agency a aidaschema:DBpediaCategory .
+
+aidaDB:led a aidaschema:DBpediaCategory .
+
+aidaDB:leisure_industry a aidaschema:DBpediaCategory .
+
+aidaDB:licensing a aidaschema:DBpediaCategory .
+
+aidaDB:lidar a aidaschema:DBpediaCategory .
+
+aidaDB:life_science a aidaschema:DBpediaCategory .
+
+aidaDB:life_sciences a aidaschema:DBpediaCategory .
+
+aidaDB:lighting a aidaschema:DBpediaCategory .
+
+aidaDB:linked_data a aidaschema:DBpediaCategory .
+
+aidaDB:list_of_auto_parts a aidaschema:DBpediaCategory .
+
+aidaDB:list_of_building_materials a aidaschema:DBpediaCategory .
+
+aidaDB:list_of_entertainment_industry_topics a aidaschema:DBpediaCategory .
+
+aidaDB:list_of_oil_exploration_and_production_companies a aidaschema:DBpediaCategory .
+
+aidaDB:list_of_oilfield_service_companies a aidaschema:DBpediaCategory .
+
+aidaDB:list_of_petroleum_companies a aidaschema:DBpediaCategory .
+
+aidaDB:litigation a aidaschema:DBpediaCategory .
+
+aidaDB:logistics a aidaschema:DBpediaCategory .
+
+aidaDB:loyalty_marketing a aidaschema:DBpediaCategory .
+
+aidaDB:lumber a aidaschema:DBpediaCategory .
+
+aidaDB:machine a aidaschema:DBpediaCategory .
+
+aidaDB:machine_vision a aidaschema:DBpediaCategory .
+
+aidaDB:machinery a aidaschema:DBpediaCategory .
+
+aidaDB:machining a aidaschema:DBpediaCategory .
+
+aidaDB:mail a aidaschema:DBpediaCategory .
+
+aidaDB:managed_health_care a aidaschema:DBpediaCategory .
+
+aidaDB:management a aidaschema:DBpediaCategory .
+
+aidaDB:management_consulting a aidaschema:DBpediaCategory .
+
+aidaDB:manufacturer a aidaschema:DBpediaCategory .
+
+aidaDB:manufacturing a aidaschema:DBpediaCategory .
+
+aidaDB:manufacturing_company a aidaschema:DBpediaCategory .
+
+aidaDB:marine_biotechnology a aidaschema:DBpediaCategory .
+
+aidaDB:marine_propulsion a aidaschema:DBpediaCategory .
+
+aidaDB:market_research a aidaschema:DBpediaCategory .
+
+aidaDB:mass_media a aidaschema:DBpediaCategory .
+
+aidaDB:materials_science a aidaschema:DBpediaCategory .
+
+aidaDB:materials_technology a aidaschema:DBpediaCategory .
+
+aidaDB:mathematical_computing_software a aidaschema:DBpediaCategory .
+
+aidaDB:mechanical_engineering a aidaschema:DBpediaCategory .
+
+aidaDB:medical a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/medical_appliances_&_equipment> a aidaschema:DBpediaCategory .
+
+aidaDB:medical_device a aidaschema:DBpediaCategory .
+
+aidaDB:medical_devices a aidaschema:DBpediaCategory .
+
+aidaDB:medical_diagnosis a aidaschema:DBpediaCategory .
+
+aidaDB:medical_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:medical_imaging a aidaschema:DBpediaCategory .
+
+aidaDB:medical_supply a aidaschema:DBpediaCategory .
+
+aidaDB:medical_technology a aidaschema:DBpediaCategory .
+
+aidaDB:medication a aidaschema:DBpediaCategory .
+
+aidaDB:membrane a aidaschema:DBpediaCategory .
+
+aidaDB:mems a aidaschema:DBpediaCategory .
+
+aidaDB:merchant_marine a aidaschema:DBpediaCategory .
+
+aidaDB:merchant_vessel a aidaschema:DBpediaCategory .
+
+aidaDB:metal a aidaschema:DBpediaCategory .
+
+aidaDB:metallurgy a aidaschema:DBpediaCategory .
+
+aidaDB:metals a aidaschema:DBpediaCategory .
+
+aidaDB:metalworking a aidaschema:DBpediaCategory .
+
+aidaDB:meteorology a aidaschema:DBpediaCategory .
+
+aidaDB:metrology a aidaschema:DBpediaCategory .
+
+aidaDB:microcontroller a aidaschema:DBpediaCategory .
+
+aidaDB:microelectonics_materials_and_components a aidaschema:DBpediaCategory .
+
+aidaDB:microelectromechanical_systems a aidaschema:DBpediaCategory .
+
+aidaDB:microelectronics a aidaschema:DBpediaCategory .
+
+aidaDB:military a aidaschema:DBpediaCategory .
+
+aidaDB:military_technology a aidaschema:DBpediaCategory .
+
+aidaDB:mining a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/mint_(coin)> a aidaschema:DBpediaCategory .
+
+aidaDB:mobile_devices a aidaschema:DBpediaCategory .
+
+aidaDB:mobile_game a aidaschema:DBpediaCategory .
+
+aidaDB:mobile_marketing a aidaschema:DBpediaCategory .
+
+aidaDB:mobile_telecommunications a aidaschema:DBpediaCategory .
+
+aidaDB:molecular_diagnostics a aidaschema:DBpediaCategory .
+
+aidaDB:motion_and_control_technologies a aidaschema:DBpediaCategory .
+
+aidaDB:motion_control a aidaschema:DBpediaCategory .
+
+aidaDB:motor_vehicle_distribution a aidaschema:DBpediaCategory .
+
+aidaDB:motor_vehicle_manufacturing a aidaschema:DBpediaCategory .
+
+aidaDB:multi-level_marketing a aidaschema:DBpediaCategory .
+
+aidaDB:multilevel_marketing a aidaschema:DBpediaCategory .
+
+aidaDB:music_industry a aidaschema:DBpediaCategory .
+
+aidaDB:nano_technologies a aidaschema:DBpediaCategory .
+
+aidaDB:nanotechnology a aidaschema:DBpediaCategory .
+
+aidaDB:national_security a aidaschema:DBpediaCategory .
+
+aidaDB:natural_environment a aidaschema:DBpediaCategory .
+
+aidaDB:natural_gas a aidaschema:DBpediaCategory .
+
+aidaDB:natural_gas_utility a aidaschema:DBpediaCategory .
+
+aidaDB:naval_architecture a aidaschema:DBpediaCategory .
+
+aidaDB:network_security a aidaschema:DBpediaCategory .
+
+aidaDB:networking_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:networking_hardware a aidaschema:DBpediaCategory .
+
+aidaDB:networking_hardware_and_software a aidaschema:DBpediaCategory .
+
+aidaDB:next_generation_communications a aidaschema:DBpediaCategory .
+
+aidaDB:noise_reduction a aidaschema:DBpediaCategory .
+
+aidaDB:non-destructive_testing a aidaschema:DBpediaCategory .
+
+aidaDB:non-ferrous_metal a aidaschema:DBpediaCategory .
+
+aidaDB:nuclear_fuel a aidaschema:DBpediaCategory .
+
+aidaDB:nuclear_power a aidaschema:DBpediaCategory .
+
+aidaDB:nuclear_reactor_technology a aidaschema:DBpediaCategory .
+
+aidaDB:offshore_drilling a aidaschema:DBpediaCategory .
+
+aidaDB:oil_and_gas a aidaschema:DBpediaCategory .
+
+aidaDB:oil_and_gas_industry a aidaschema:DBpediaCategory .
+
+aidaDB:oil_industry a aidaschema:DBpediaCategory .
+
+aidaDB:oil_plant a aidaschema:DBpediaCategory .
+
+aidaDB:oil_well a aidaschema:DBpediaCategory .
+
+aidaDB:oilfield a aidaschema:DBpediaCategory .
+
+aidaDB:oilfield_services a aidaschema:DBpediaCategory .
+
+aidaDB:omnichannel a aidaschema:DBpediaCategory .
+
+aidaDB:oncology a aidaschema:DBpediaCategory .
+
+aidaDB:online_retailing a aidaschema:DBpediaCategory .
+
+aidaDB:open_data a aidaschema:DBpediaCategory .
+
+aidaDB:open_innovation a aidaschema:DBpediaCategory .
+
+aidaDB:open_source a aidaschema:DBpediaCategory .
+
+aidaDB:operations_management a aidaschema:DBpediaCategory .
+
+aidaDB:optical a aidaschema:DBpediaCategory .
+
+aidaDB:optical_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:optical_imaging a aidaschema:DBpediaCategory .
+
+aidaDB:optical_microscope a aidaschema:DBpediaCategory .
+
+aidaDB:original_design_manufacturer a aidaschema:DBpediaCategory .
+
+aidaDB:outer_space a aidaschema:DBpediaCategory .
+
+aidaDB:outsourcing a aidaschema:DBpediaCategory .
+
+aidaDB:pachinko a aidaschema:DBpediaCategory .
+
+aidaDB:packaging a aidaschema:DBpediaCategory .
+
+aidaDB:packaging_and_labeling a aidaschema:DBpediaCategory .
+
+aidaDB:packaging_and_labelling a aidaschema:DBpediaCategory .
+
+aidaDB:paper a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/paper_&_paper_products> a aidaschema:DBpediaCategory .
+
+aidaDB:patent_monetization a aidaschema:DBpediaCategory .
+
+aidaDB:perfumery a aidaschema:DBpediaCategory .
+
+aidaDB:peripherals a aidaschema:DBpediaCategory .
+
+aidaDB:personal_care a aidaschema:DBpediaCategory .
+
+aidaDB:personal_computer_hardware a aidaschema:DBpediaCategory .
+
+aidaDB:personal_finance a aidaschema:DBpediaCategory .
+
+aidaDB:personalized_medicine a aidaschema:DBpediaCategory .
+
+aidaDB:pest_control a aidaschema:DBpediaCategory .
+
+aidaDB:petrochemicals a aidaschema:DBpediaCategory .
+
+aidaDB:petroleum a aidaschema:DBpediaCategory .
+
+aidaDB:petroleum_industry a aidaschema:DBpediaCategory .
+
+aidaDB:pharmaceutical a aidaschema:DBpediaCategory .
+
+aidaDB:pharmaceutical_company a aidaschema:DBpediaCategory .
+
+aidaDB:pharmaceutical_drug a aidaschema:DBpediaCategory .
+
+aidaDB:pharmaceutical_industry a aidaschema:DBpediaCategory .
+
+aidaDB:pharmaceuticals a aidaschema:DBpediaCategory .
+
+aidaDB:pharmaceutics a aidaschema:DBpediaCategory .
+
+aidaDB:pharmacology a aidaschema:DBpediaCategory .
+
+aidaDB:philanthropy a aidaschema:DBpediaCategory .
+
+aidaDB:photo a aidaschema:DBpediaCategory .
+
+aidaDB:photo_sharing a aidaschema:DBpediaCategory .
+
+aidaDB:photography a aidaschema:DBpediaCategory .
+
+aidaDB:photonics a aidaschema:DBpediaCategory .
+
+aidaDB:photovoltaics a aidaschema:DBpediaCategory .
+
+aidaDB:pipeline_transport a aidaschema:DBpediaCategory .
+
+aidaDB:planning a aidaschema:DBpediaCategory .
+
+aidaDB:plastics a aidaschema:DBpediaCategory .
+
+aidaDB:plastics_industry a aidaschema:DBpediaCategory .
+
+aidaDB:plumbing a aidaschema:DBpediaCategory .
+
+aidaDB:polymer a aidaschema:DBpediaCategory .
+
+aidaDB:polymers a aidaschema:DBpediaCategory .
+
+aidaDB:port_management a aidaschema:DBpediaCategory .
+
+aidaDB:power_electronics a aidaschema:DBpediaCategory .
+
+aidaDB:power_generation a aidaschema:DBpediaCategory .
+
+aidaDB:power_transmission a aidaschema:DBpediaCategory .
+
+aidaDB:powertrain a aidaschema:DBpediaCategory .
+
+aidaDB:precious_metal a aidaschema:DBpediaCategory .
+
+aidaDB:print_media a aidaschema:DBpediaCategory .
+
+aidaDB:printed_electronics a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/printer_(computing)> a aidaschema:DBpediaCategory .
+
+aidaDB:printing a aidaschema:DBpediaCategory .
+
+aidaDB:printing_press a aidaschema:DBpediaCategory .
+
+aidaDB:private_equity a aidaschema:DBpediaCategory .
+
+aidaDB:private_military_contractor a aidaschema:DBpediaCategory .
+
+aidaDB:private_railway a aidaschema:DBpediaCategory .
+
+aidaDB:probiotics a aidaschema:DBpediaCategory .
+
+aidaDB:process_engineering a aidaschema:DBpediaCategory .
+
+aidaDB:product_certification a aidaschema:DBpediaCategory .
+
+aidaDB:product_design a aidaschema:DBpediaCategory .
+
+aidaDB:product_development a aidaschema:DBpediaCategory .
+
+aidaDB:product_lifecycle_management a aidaschema:DBpediaCategory .
+
+aidaDB:professional_services a aidaschema:DBpediaCategory .
+
+aidaDB:project_management a aidaschema:DBpediaCategory .
+
+aidaDB:providing_engineering_services_to_global_automotive_and_transport_industries a aidaschema:DBpediaCategory .
+
+aidaDB:public_access a aidaschema:DBpediaCategory .
+
+aidaDB:public_health a aidaschema:DBpediaCategory .
+
+aidaDB:public_relations a aidaschema:DBpediaCategory .
+
+aidaDB:public_safety a aidaschema:DBpediaCategory .
+
+aidaDB:public_transport a aidaschema:DBpediaCategory .
+
+aidaDB:public_utility a aidaschema:DBpediaCategory .
+
+aidaDB:publishing a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/pulp_(paper)> a aidaschema:DBpediaCategory .
+
+aidaDB:pulp_and_paper a aidaschema:DBpediaCategory .
+
+aidaDB:pulp_and_paper_industry a aidaschema:DBpediaCategory .
+
+aidaDB:quality_software_process a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/r&d> a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/r_&_d> a aidaschema:DBpediaCategory .
+
+aidaDB:rail_transport a aidaschema:DBpediaCategory .
+
+aidaDB:rail_transportation a aidaschema:DBpediaCategory .
+
+aidaDB:railway a aidaschema:DBpediaCategory .
+
+aidaDB:railway_systems_engineering a aidaschema:DBpediaCategory .
+
+aidaDB:railway_transport a aidaschema:DBpediaCategory .
+
+aidaDB:real_estate a aidaschema:DBpediaCategory .
+
+aidaDB:real_estate_investment_trust a aidaschema:DBpediaCategory .
+
+aidaDB:rechargeable_batteries a aidaschema:DBpediaCategory .
+
+aidaDB:refractories a aidaschema:DBpediaCategory .
+
+aidaDB:regulatory_compliance a aidaschema:DBpediaCategory .
+
+aidaDB:renewable_energy a aidaschema:DBpediaCategory .
+
+aidaDB:research a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/research_&_development> a aidaschema:DBpediaCategory .
+
+aidaDB:research_and_development a aidaschema:DBpediaCategory .
+
+aidaDB:restaurant a aidaschema:DBpediaCategory .
+
+aidaDB:retail a aidaschema:DBpediaCategory .
+
+aidaDB:retailer a aidaschema:DBpediaCategory .
+
+aidaDB:rfid a aidaschema:DBpediaCategory .
+
+aidaDB:risk_assessment a aidaschema:DBpediaCategory .
+
+aidaDB:roadworks a aidaschema:DBpediaCategory .
+
+aidaDB:robot a aidaschema:DBpediaCategory .
+
+aidaDB:robotics a aidaschema:DBpediaCategory .
+
+aidaDB:rubber a aidaschema:DBpediaCategory .
+
+aidaDB:saas a aidaschema:DBpediaCategory .
+
+aidaDB:safety_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:satellite_communication a aidaschema:DBpediaCategory .
+
+aidaDB:satellite_television a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/scientific_&_technical_instruments> a aidaschema:DBpediaCategory .
+
+aidaDB:scientific_instrument a aidaschema:DBpediaCategory .
+
+aidaDB:security a aidaschema:DBpediaCategory .
+
+aidaDB:security_software a aidaschema:DBpediaCategory .
+
+aidaDB:self_care a aidaschema:DBpediaCategory .
+
+aidaDB:semantic_technology a aidaschema:DBpediaCategory .
+
+aidaDB:semantic_web a aidaschema:DBpediaCategory .
+
+aidaDB:semiconductor a aidaschema:DBpediaCategory .
+
+aidaDB:semiconductor_device a aidaschema:DBpediaCategory .
+
+aidaDB:semiconductor_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:semiconductor_industry a aidaschema:DBpediaCategory .
+
+aidaDB:semiconductor_intellectual_property_core a aidaschema:DBpediaCategory .
+
+aidaDB:semiconductor_test_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:semiconductors a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/semiconductors_&_related_devices> a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/service_(economics)> a aidaschema:DBpediaCategory .
+
+aidaDB:ship_decommissioning a aidaschema:DBpediaCategory .
+
+aidaDB:ship_transport a aidaschema:DBpediaCategory .
+
+aidaDB:shipbuilding a aidaschema:DBpediaCategory .
+
+aidaDB:shipping a aidaschema:DBpediaCategory .
+
+aidaDB:shiprepairing a aidaschema:DBpediaCategory .
+
+aidaDB:silicon a aidaschema:DBpediaCategory .
+
+aidaDB:slot_machine a aidaschema:DBpediaCategory .
+
+aidaDB:smart_card a aidaschema:DBpediaCategory .
+
+aidaDB:smartglasses a aidaschema:DBpediaCategory .
+
+aidaDB:snowsports a aidaschema:DBpediaCategory .
+
+aidaDB:social_network_service a aidaschema:DBpediaCategory .
+
+aidaDB:software a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/software_&_programming> a aidaschema:DBpediaCategory .
+
+aidaDB:software_as_a_service a aidaschema:DBpediaCategory .
+
+aidaDB:software_development a aidaschema:DBpediaCategory .
+
+aidaDB:software_industry a aidaschema:DBpediaCategory .
+
+aidaDB:sogo_shosha a aidaschema:DBpediaCategory .
+
+aidaDB:solar_energy a aidaschema:DBpediaCategory .
+
+aidaDB:solar_power a aidaschema:DBpediaCategory .
+
+aidaDB:solid-state_drives a aidaschema:DBpediaCategory .
+
+aidaDB:space a aidaschema:DBpediaCategory .
+
+aidaDB:spaceflight a aidaschema:DBpediaCategory .
+
+aidaDB:speciality_chemicals a aidaschema:DBpediaCategory .
+
+aidaDB:specialty_chemicals a aidaschema:DBpediaCategory .
+
+aidaDB:speech_analytics a aidaschema:DBpediaCategory .
+
+aidaDB:spirits a aidaschema:DBpediaCategory .
+
+aidaDB:sporting_goods a aidaschema:DBpediaCategory .
+
+aidaDB:sports_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:stainless_steel a aidaschema:DBpediaCategory .
+
+aidaDB:stationery a aidaschema:DBpediaCategory .
+
+aidaDB:steel a aidaschema:DBpediaCategory .
+
+aidaDB:steel_industry a aidaschema:DBpediaCategory .
+
+aidaDB:supply_chain_management a aidaschema:DBpediaCategory .
+
+aidaDB:support_services a aidaschema:DBpediaCategory .
+
+aidaDB:sustainable_energy a aidaschema:DBpediaCategory .
+
+aidaDB:system_on_a_chip a aidaschema:DBpediaCategory .
+
+aidaDB:systems_engineering a aidaschema:DBpediaCategory .
+
+aidaDB:tablet_computer a aidaschema:DBpediaCategory .
+
+aidaDB:technology a aidaschema:DBpediaCategory .
+
+aidaDB:telecommunication a aidaschema:DBpediaCategory .
+
+aidaDB:telecommunications a aidaschema:DBpediaCategory .
+
+aidaDB:telecommunications_equipment a aidaschema:DBpediaCategory .
+
+aidaDB:telecommunications_research a aidaschema:DBpediaCategory .
+
+aidaDB:telecommunications_software a aidaschema:DBpediaCategory .
+
+aidaDB:telecoms a aidaschema:DBpediaCategory .
+
+aidaDB:telematics a aidaschema:DBpediaCategory .
+
+aidaDB:television a aidaschema:DBpediaCategory .
+
+aidaDB:test_method a aidaschema:DBpediaCategory .
+
+aidaDB:text_mining a aidaschema:DBpediaCategory .
+
+aidaDB:textile a aidaschema:DBpediaCategory .
+
+aidaDB:textile_industry a aidaschema:DBpediaCategory .
+
+aidaDB:tft_lcd a aidaschema:DBpediaCategory .
+
+aidaDB:thermography a aidaschema:DBpediaCategory .
+
+aidaDB:to_support_and_develop_a_sustainable_food_chain a aidaschema:DBpediaCategory .
+
+aidaDB:tobacco a aidaschema:DBpediaCategory .
+
+aidaDB:tobacco_industry a aidaschema:DBpediaCategory .
+
+aidaDB:tourism a aidaschema:DBpediaCategory .
+
+aidaDB:toy a aidaschema:DBpediaCategory .
+
+aidaDB:toys a aidaschema:DBpediaCategory .
+
+aidaDB:trading a aidaschema:DBpediaCategory .
+
+aidaDB:trading_company a aidaschema:DBpediaCategory .
+
+aidaDB:transport a aidaschema:DBpediaCategory .
+
+aidaDB:transportation a aidaschema:DBpediaCategory .
+
+aidaDB:transportation_equipment_manufacturing a aidaschema:DBpediaCategory .
+
+aidaDB:travel_technology a aidaschema:DBpediaCategory .
+
+aidaDB:travel_website a aidaschema:DBpediaCategory .
+
+aidaDB:triplestore a aidaschema:DBpediaCategory .
+
+aidaDB:truck a aidaschema:DBpediaCategory .
+
+aidaDB:unmanned_aerial_vehicle a aidaschema:DBpediaCategory .
+
+aidaDB:utilities a aidaschema:DBpediaCategory .
+
+aidaDB:utility a aidaschema:DBpediaCategory .
+
+aidaDB:valves a aidaschema:DBpediaCategory .
+
+aidaDB:various a aidaschema:DBpediaCategory .
+
+aidaDB:ventilating a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/ventilation_(architecture)> a aidaschema:DBpediaCategory .
+
+aidaDB:veterinary_medicine a aidaschema:DBpediaCategory .
+
+aidaDB:video_analytics a aidaschema:DBpediaCategory .
+
+aidaDB:video_game a aidaschema:DBpediaCategory .
+
+aidaDB:video_game_industry a aidaschema:DBpediaCategory .
+
+aidaDB:video_games a aidaschema:DBpediaCategory .
+
+aidaDB:video_processing a aidaschema:DBpediaCategory .
+
+aidaDB:videography a aidaschema:DBpediaCategory .
+
+aidaDB:water_industry a aidaschema:DBpediaCategory .
+
+aidaDB:water_pipe a aidaschema:DBpediaCategory .
+
+aidaDB:water_treatment a aidaschema:DBpediaCategory .
+
+aidaDB:wave_power a aidaschema:DBpediaCategory .
+
+aidaDB:wavefront_sensor a aidaschema:DBpediaCategory .
+
+aidaDB:wearable_computers a aidaschema:DBpediaCategory .
+
+aidaDB:web_development a aidaschema:DBpediaCategory .
+
+aidaDB:web_search_engine a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/wellness_(alternative_medicine)> a aidaschema:DBpediaCategory .
+
+<http://aida.kmi.open.ac.uk/resource/DBpedia/wikt:corrugate> a aidaschema:DBpediaCategory .
+
+aidaDB:wind_energy a aidaschema:DBpediaCategory .
+
+aidaDB:window_covering a aidaschema:DBpediaCategory .
+
+aidaDB:wine a aidaschema:DBpediaCategory .
+
+aidaDB:wireless a aidaschema:DBpediaCategory .
+
+aida:aerospace a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:aeronautics,
+        aidaDB:aerospace,
+        aidaDB:aerospace_components,
+        aidaDB:aerospace_engineering,
+        aidaDB:aerospace_industry,
+        aidaDB:aerospace_manufacturer,
+        aidaDB:air_transport,
+        aidaDB:commercial_aerospace,
+        aidaDB:space,
+        aidaDB:spaceflight .
+
+aida:air_conditioning a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:air_conditioning,
+        aidaDB:central_heating,
+        aidaDB:heating,
+        aidaDB:hvac,
+        aidaDB:ventilating .
+
+aida:architecture a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:architecture,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/ventilation_(architecture)> .
+
+aida:automation a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:automation,
+        aidaDB:industrial_automation,
+        aidaDB:motion_control .
+
+aida:automotive a aidaschema:industrialSector ;
+    prov:wasDerivedFrom <http://aida.kmi.open.ac.uk/resource/DBpedia/auto_&_truck_parts>,
+        aidaDB:auto_parts,
+        aidaDB:automobile,
+        aidaDB:automotive,
+        aidaDB:automotive_industry,
+        aidaDB:automotive_parts,
+        aidaDB:automotive_safety,
+        aidaDB:commercial_vehicles_systems_and_components,
+        aidaDB:list_of_auto_parts,
+        aidaDB:motor_vehicle_distribution,
+        aidaDB:truck .
+
+aida:basic_materials a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:adhesives,
+        aidaDB:basic_materials,
+        aidaDB:cement,
+        aidaDB:ceramic,
+        aidaDB:ceramic_materials,
+        aidaDB:film,
+        aidaDB:forest_product,
+        aidaDB:glass,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/glass_&_ceramic_materials>,
+        aidaDB:lumber,
+        aidaDB:materials_science,
+        aidaDB:materials_technology,
+        aidaDB:paper,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/pulp_(paper)>,
+        aidaDB:pulp_and_paper,
+        aidaDB:refractories,
+        aidaDB:rubber,
+        aidaDB:silicon,
+        aidaDB:textile,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/wikt:corrugate> .
+
+aida:beverages a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:beverage_industry,
+        aidaDB:beverages,
+        aidaDB:brewing,
+        aidaDB:spirits,
+        aidaDB:water_industry,
+        aidaDB:wine .
+
+aida:brand_marketing a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:brand_marketing,
+        aidaDB:intellectual_property .
+
+<http://aida.kmi.open.ac.uk/resource/characterization_(materials_science)> a aidaschema:industrialSector ;
+    prov:wasDerivedFrom <http://aida.kmi.open.ac.uk/resource/DBpedia/characterization_(materials_science)> .
+
+aida:commodities a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:commodities,
+        aidaDB:commodity,
+        aidaDB:employee_benefits .
+
+aida:communications a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:communication,
+        aidaDB:communication_equipment,
+        aidaDB:communications,
+        aidaDB:communications_satellite,
+        aidaDB:computer_aided_engineering,
+        aidaDB:mass_media .
+
+aida:computing_and_it a aidaschema:industrialSector ;
+    prov:wasDerivedFrom <http://aida.kmi.open.ac.uk/resource/DBpedia/3d_printing>,
+        aidaDB:access_control,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/audio_compression_(data)>,
+        aidaDB:bioinformatics,
+        aidaDB:biometrics,
+        aidaDB:cloud_computing,
+        aidaDB:cognitive_computing,
+        aidaDB:computer,
+        aidaDB:computer_data_storage,
+        aidaDB:computer_hardware,
+        aidaDB:computer_network,
+        aidaDB:computer_peripheral,
+        aidaDB:computer_printer,
+        aidaDB:computer_security,
+        aidaDB:computer_software,
+        aidaDB:computer_storage_device,
+        aidaDB:computer_vision,
+        aidaDB:crowdsourcing,
+        aidaDB:cybersecurity,
+        aidaDB:data_publishing,
+        aidaDB:data_storage_device,
+        aidaDB:development_testing,
+        aidaDB:digital_distribution,
+        aidaDB:digital_imaging,
+        aidaDB:display_technology,
+        aidaDB:distributed_computing,
+        aidaDB:document_processing,
+        aidaDB:embedded_software,
+        aidaDB:enterprise_software,
+        aidaDB:grid_computing,
+        aidaDB:hyperspectral_imaging,
+        aidaDB:imaging_and_it_company,
+        aidaDB:imaging_technology,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/information_&_communication_technologies>,
+        aidaDB:information_and_analytics,
+        aidaDB:information_discovery,
+        aidaDB:information_security,
+        aidaDB:information_technology_consulting,
+        aidaDB:input_device,
+        aidaDB:internet,
+        aidaDB:internet_of_things,
+        aidaDB:it_service_management,
+        aidaDB:it_services,
+        aidaDB:knowledge_engineering,
+        aidaDB:large_data_visualization,
+        aidaDB:linked_data,
+        aidaDB:mathematical_computing_software,
+        aidaDB:network_security,
+        aidaDB:networking_equipment,
+        aidaDB:networking_hardware,
+        aidaDB:noise_reduction,
+        aidaDB:open_data,
+        aidaDB:open_source,
+        aidaDB:peripherals,
+        aidaDB:personal_computer_hardware,
+        aidaDB:public_access,
+        aidaDB:quality_software_process,
+        aidaDB:robotics,
+        aidaDB:saas,
+        aidaDB:security_software,
+        aidaDB:semantic_technology,
+        aidaDB:semantic_web,
+        aidaDB:smart_card,
+        aidaDB:smartglasses,
+        aidaDB:software,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/software_&_programming>,
+        aidaDB:software_as_a_service,
+        aidaDB:software_development,
+        aidaDB:software_industry,
+        aidaDB:tablet_computer,
+        aidaDB:text_mining,
+        aidaDB:triplestore,
+        aidaDB:video_game_industry,
+        aidaDB:video_games,
+        aidaDB:video_processing,
+        aidaDB:wearable_computers,
+        aidaDB:web_development,
+        aidaDB:web_search_engine .
+
+aida:construction a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:building,
+        aidaDB:building_material,
+        aidaDB:building_materials,
+        aidaDB:concrete_mixer,
+        aidaDB:construction,
+        aidaDB:construction_equipment,
+        aidaDB:construction_industry,
+        aidaDB:construction_materials,
+        aidaDB:fire_protection,
+        aidaDB:heavy_equipment,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/heavy_equipment_(construction)>,
+        aidaDB:list_of_building_materials,
+        aidaDB:plumbing,
+        aidaDB:real_estate,
+        aidaDB:real_estate_investment_trust .
+
+aida:consultant a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:business_service_provider,
+        aidaDB:consultant,
+        aidaDB:employment_agency,
+        aidaDB:it_consulting,
+        aidaDB:support_services .
+
+aida:electronics a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:audio_electronics,
+        aidaDB:cable,
+        aidaDB:consumer_electronics,
+        aidaDB:electrical,
+        aidaDB:electrical_component,
+        aidaDB:electrical_engineering,
+        aidaDB:electrical_equipment,
+        aidaDB:electronic_components,
+        aidaDB:electronic_design_automation,
+        aidaDB:electronic_engineering,
+        aidaDB:electronic_equipment,
+        aidaDB:electronic_products,
+        aidaDB:electronic_test_equipment,
+        aidaDB:electronic_testing,
+        aidaDB:electronics,
+        aidaDB:electronics_industry,
+        aidaDB:electronics_manufacturing,
+        aidaDB:high_tech,
+        aidaDB:industrial_sensors,
+        aidaDB:instrumentation,
+        aidaDB:integrated_circuit,
+        aidaDB:integrated_circuits,
+        aidaDB:laser,
+        aidaDB:led,
+        aidaDB:mems,
+        aidaDB:microcontroller,
+        aidaDB:microelectonics_materials_and_components,
+        aidaDB:microelectromechanical_systems,
+        aidaDB:microelectronics,
+        aidaDB:nano_technologies,
+        aidaDB:nanotechnology,
+        aidaDB:power_electronics,
+        aidaDB:printed_electronics,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/printer_(computing)>,
+        aidaDB:printing,
+        aidaDB:rechargeable_batteries,
+        aidaDB:rfid,
+        aidaDB:robot,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/scientific_&_technical_instruments>,
+        aidaDB:scientific_instrument,
+        aidaDB:solid-state_drives,
+        aidaDB:system_on_a_chip,
+        aidaDB:tft_lcd .
+
+aida:engines a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:engine_manufacturing,
+        aidaDB:engineering_and_construction,
+        aidaDB:engineering_and_consulting_services,
+        aidaDB:engines .
+
+aida:environmental a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:_a_healthy_natural_environment,
+        aidaDB:environmental_consultancy,
+        aidaDB:environmental_engineering,
+        aidaDB:forestry,
+        aidaDB:geoscience_data,
+        aidaDB:landscape_maintenance,
+        aidaDB:meteorology,
+        aidaDB:natural_environment .
+
+aida:gardening a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:garden,
+        aidaDB:irrigation .
+
+aida:home_appliances a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:furniture,
+        aidaDB:home_appliance,
+        aidaDB:home_appliances,
+        aidaDB:household_appliances,
+        aidaDB:household_goods,
+        aidaDB:window_covering .
+
+aida:information_technology a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:camera,
+        aidaDB:data_analytics,
+        aidaDB:data_protection,
+        aidaDB:digital_printing,
+        aidaDB:email_archiving,
+        aidaDB:geographic_information_system,
+        aidaDB:geomatics,
+        aidaDB:information_management,
+        aidaDB:information_technology,
+        aidaDB:instant_messaging,
+        aidaDB:interactive_media,
+        aidaDB:photo_sharing,
+        aidaDB:social_network_service,
+        aidaDB:speech_analytics,
+        aidaDB:video_analytics,
+        aidaDB:videography .
+
+aida:lighting a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:lighting .
+
+aida:logistics a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:corrugated_packaging,
+        aidaDB:courier,
+        aidaDB:express_mail,
+        aidaDB:fast_moving_consumer_goods,
+        aidaDB:final_good,
+        aidaDB:intralogistics,
+        aidaDB:logistics,
+        aidaDB:mail,
+        aidaDB:merchant_vessel,
+        aidaDB:packaging_and_labeling,
+        aidaDB:packaging_and_labelling,
+        aidaDB:shipping .
+
+aida:machinery a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:diversified_machinery,
+        aidaDB:flexography,
+        aidaDB:industrial_machinery,
+        aidaDB:machine,
+        aidaDB:machinery,
+        aidaDB:machining .
+
+aida:manufacturing a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:brake_manufacturing,
+        aidaDB:coating,
+        aidaDB:contract_manufacturer,
+        aidaDB:electronics_manufacturing_services,
+        aidaDB:fabless_manufacturing,
+        aidaDB:forging,
+        aidaDB:glassmaking,
+        aidaDB:heavy_industry,
+        aidaDB:industrial_process,
+        aidaDB:laser_peening,
+        aidaDB:manufacturer,
+        aidaDB:manufacturing,
+        aidaDB:manufacturing_company,
+        aidaDB:metallurgy,
+        aidaDB:motor_vehicle_manufacturing,
+        aidaDB:original_design_manufacturer,
+        aidaDB:textile_industry,
+        aidaDB:transportation_equipment_manufacturing .
+
+aida:metal a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:aluminium,
+        aidaDB:aluminium_oxide,
+        aidaDB:metal,
+        aidaDB:metals,
+        aidaDB:metalworking,
+        aidaDB:non-ferrous_metal,
+        aidaDB:precious_metal,
+        aidaDB:stainless_steel,
+        aidaDB:steel,
+        aidaDB:steel_industry .
+
+aida:nuclear_power a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:fusion_power,
+        aidaDB:nuclear_fuel,
+        aidaDB:nuclear_power,
+        aidaDB:nuclear_reactor_technology .
+
+aida:oil_and_gas_industry a aidaschema:industrialSector ;
+    prov:wasDerivedFrom <http://aida.kmi.open.ac.uk/resource/DBpedia/downstream_(petroleum_industry)>,
+        aidaDB:fuel_oil,
+        aidaDB:gas,
+        aidaDB:gas_utility,
+        aidaDB:hydrocarbon_exploration,
+        aidaDB:list_of_oil_exploration_and_production_companies,
+        aidaDB:list_of_oilfield_service_companies,
+        aidaDB:list_of_petroleum_companies,
+        aidaDB:natural_gas,
+        aidaDB:natural_gas_utility,
+        aidaDB:offshore_drilling,
+        aidaDB:oil_and_gas,
+        aidaDB:oil_and_gas_industry,
+        aidaDB:oil_industry,
+        aidaDB:oil_plant,
+        aidaDB:oil_well,
+        aidaDB:oilfield,
+        aidaDB:oilfield_services,
+        aidaDB:petroleum,
+        aidaDB:petroleum_industry .
+
+aida:optical a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:adaptive_optics,
+        aidaDB:lidar,
+        aidaDB:machine_vision,
+        aidaDB:optical,
+        aidaDB:photonics,
+        aidaDB:wavefront_sensor .
+
+aida:pharmaceutics a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:bioharmaceutical_company,
+        aidaDB:biopharmaceutical_industry,
+        aidaDB:biopharmaceuticals,
+        aidaDB:pharmaceutics,
+        aidaDB:probiotics,
+        aidaDB:veterinary_medicine .
+
+aida:photography a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:photo,
+        aidaDB:photography .
+
+aida:plastics a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:plastics,
+        aidaDB:plastics_industry,
+        aidaDB:polymers .
+
+aida:plumbing a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:filtration,
+        aidaDB:membrane,
+        aidaDB:valves,
+        aidaDB:water_pipe .
+
+<http://aida.kmi.open.ac.uk/resource/r&d> a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:actuarial_science,
+        aidaDB:health_science,
+        aidaDB:interdisciplinarity,
+        aidaDB:laboratory,
+        aidaDB:laboratory_equipment,
+        aidaDB:market_research,
+        aidaDB:open_innovation,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/r&d>,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/r_&_d>,
+        aidaDB:research,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/research_&_development>,
+        aidaDB:research_and_development .
+
+aida:semiconductor a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:fabless_semiconductor_company,
+        aidaDB:semiconductor,
+        aidaDB:semiconductor_device,
+        aidaDB:semiconductor_equipment,
+        aidaDB:semiconductor_industry,
+        aidaDB:semiconductor_intellectual_property_core,
+        aidaDB:semiconductor_test_equipment,
+        aidaDB:semiconductors,
+        <http://aida.kmi.open.ac.uk/resource/DBpedia/semiconductors_&_related_devices> .
+
+aida:sports a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:cycling,
+        aidaDB:golf,
+        aidaDB:snowsports,
+        aidaDB:sporting_goods,
+        aidaDB:sports_equipment .
+
+aida:telecommunications a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:cable_television,
+        aidaDB:digital_tv,
+        aidaDB:mobile_devices,
+        aidaDB:mobile_telecommunications,
+        aidaDB:networking_hardware_and_software,
+        aidaDB:next_generation_communications,
+        aidaDB:satellite_communication,
+        aidaDB:satellite_television,
+        aidaDB:telecommunication,
+        aidaDB:telecommunications,
+        aidaDB:telecommunications_equipment,
+        aidaDB:telecommunications_research,
+        aidaDB:telecommunications_software,
+        aidaDB:telecoms,
+        aidaDB:telematics,
+        aidaDB:television,
+        aidaDB:wireless .
+
+aida:tourism a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:tourism .
+
+aida:trading a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:sogo_shosha,
+        aidaDB:trading .
+
+aida:travel a aidaschema:industrialSector ;
+    prov:wasDerivedFrom aidaDB:travel_technology,
+        aidaDB:travel_website .
+

@@ -1,0 +1,86 @@
+@prefix : <http://building.org/def/base#> .
+@prefix @building: <http://building.org/def/base#> .
+@prefix bot: <http://other.bot/other#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix building: <http://www.owl-ontologies.com/building#> .
+@base <http://building.org/def/base#> .
+
+<http://building.org/def/base#> rdf:type owl:Ontology ;
+			dc:creator "Quyet D Nguyen" ;
+			owl:versioninfor "0.0.1" ;
+			dc:title "Knowledge Graph NTU FEEE Ontology" ;
+			mod:createdWith <https://chowlk.linkeddata.es/> .
+
+dc:creator a owl:AnnotationProperty .
+
+owl:versioninfor a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+#################################
+#    Object Properties
+#################################
+
+## building:hasSpace
+building:hasSpace rdf:type owl:ObjectProperty ;
+		rdfs:label "has space" .
+
+## building:hasStorey
+building:hasStorey rdf:type owl:ObjectProperty ;
+		rdfs:label "has storey" .
+
+## building:hasElement
+building:hasElement rdf:type owl:ObjectProperty ;
+		rdfs:domain building:Space ;
+		rdfs:range building:Element ;
+		rdfs:label "has element" .
+
+#################################
+#    Data Properties
+#################################
+
+## building:hasIFCIdentifier
+building:hasIFCIdentifier rdf:type owl:DatatypeProperty ;
+		rdfs:label "has i f c identifier" .
+
+#################################
+#    Classes
+#################################
+
+## building:Storey
+building:Storey rdf:type owl:Class ;
+	rdfs:label "Storey" ;
+	rdfs:subClassOf building:Storey .
+
+## building:Building
+building:Building rdf:type owl:Class ;
+	rdfs:label "Building" .
+
+## building:Space
+building:Space rdf:type owl:Class ;
+	rdfs:label "Space" .
+
+## building:Element
+building:Element rdf:type owl:Class ;
+	rdfs:label "Element" .
+
+## building:Storey
+building:Storey rdf:type owl:Class ;
+	rdfs:label "Storey" .
+
+#################################
+#    Instances
+#################################
+
+#################################
+#    General Axioms
+#################################
+

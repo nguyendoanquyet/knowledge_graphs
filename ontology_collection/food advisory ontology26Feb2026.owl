@@ -1,0 +1,30 @@
+@prefix focosa: <https://dbwis.gitlab.io/focosa/src/complete> .
+@prefix focosa-f: <https://dbwis.gitlab.io/focosa/src/modules/health-nutrition/food#> .
+@prefix focosa-h: <https://dbwis.gitlab.io/focosa/src/modules/health-nutrition/health#> .
+@prefix focosa-s: <https://dbwis.gitlab.io/focosa/src/modules/sustainability#> .
+@prefix focosa-sa: <https://dbwis.gitlab.io/focosa/src/modules/sensory-analysis#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foodon: <http://purl.obolibrary.org/obo/FOODON_> .
+@prefix snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/> .
+
+
+focosa:Ontology a owl:Ontology ;
+    <http://purl.org/dc/elements/1.1/creator> "Ada Bagozi, Devis Bianchini, Massimiliano Garda, Michele Melchiori, Stefano Picchi, Anisa Rula" ;
+    <http://purl.org/dc/elements/1.1/contributor> "" ;
+    owl:versionIRI <https://dbwis.gitlab.io/focosa/src/complete> ;
+    <http://purl.org/dc/elements/1.1/publisher> "UNIBS" ;
+    <http://purl.org/dc/elements/1.1/title> "FoCOSA ontology" ;
+    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+    <http://purl.org/vocab/vann/preferredNamespacePrefix> "focosa" ;
+    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://dbwis.gitlab.io/focosa/src/complete" ;
+
+    owl:versionInfo "1.0.0" ;
+    owl:imports 
+        <https://dbwis.gitlab.io/focosa/src/modules/health-nutrition.owl>  ,
+        <https://dbwis.gitlab.io/focosa/src/modules/sensory-analysis.owl>  ,
+        <https://dbwis.gitlab.io/focosa/src/modules/sustainability.owl> ,
+        <https://dbwis.gitlab.io/focosa/src/modules/consumer.owl> .
+        

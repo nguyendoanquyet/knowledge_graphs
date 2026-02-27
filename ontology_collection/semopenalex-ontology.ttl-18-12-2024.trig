@@ -1,0 +1,1763 @@
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dbpedia-owl: <https://dbpedia.org/ontology/> .
+@prefix soa: <https://semopenalex.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dbprop: <https://dbpedia.org/property/> .
+
+<file:///semopenalex-ontology.ttl-18-12-2024> {
+  soa:Author a owl:Class;
+    rdfs:label "Author"@en .
+  
+  dct:created a owl:DatatypeProperty;
+    rdfs:label "created" .
+  
+  dct:modified a owl:DatatypeProperty;
+    rdfs:label "modified" .
+  
+  <http://purl.org/spar/bido/h-index> a owl:DatatypeProperty;
+    rdfs:label "h-index"@en .
+  
+  foaf:name a owl:DatatypeProperty;
+    rdfs:label "name"@en .
+  
+  soa:2YrMeanCitedness a owl:DatatypeProperty;
+    rdfs:label "2YrMeanCitedness"@en, "2 year mean citedness"@ru, "2YrMeanCitedness" .
+  
+  soa:citedByCount a owl:DatatypeProperty;
+    rdfs:label "citedByCount" .
+  
+  soa:countsByYear a owl:ObjectProperty;
+    rdfs:label "counts by year"@en .
+  
+  soa:i10Index a owl:DatatypeProperty;
+    rdfs:label "i10Index"@en .
+  
+  soa:worksCount a owl:DatatypeProperty;
+    rdfs:label "worksCount" .
+  
+  <http://www.w3.org/ns/org#memberOf> a owl:ObjectProperty;
+    rdfs:label "member of"@en .
+  
+  soa:CountsByYear a owl:Class;
+    rdfs:label "CountsByYear"@en .
+  
+  soa:year a owl:DatatypeProperty;
+    rdfs:label "year"@en .
+  
+  skos:Concept a owl:Class;
+    rdfs:label "Concept"@en .
+  
+  soa:Field a owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "Field"@en .
+  
+  rdfs:seeAlso a owl:ObjectProperty;
+    rdfs:label "see also"@en .
+  
+  skos:broader a owl:ObjectProperty;
+    rdfs:label "broader" .
+  
+  skos:note a owl:DatatypeProperty;
+    rdfs:label "note" .
+  
+  skos:prefLabel a owl:DatatypeProperty;
+    rdfs:label "prefLabel" .
+  
+  skos:related a owl:ObjectProperty;
+    rdfs:label "related" .
+  
+  soa:alternativeName a owl:DatatypeProperty;
+    rdfs:label "alternative name"@en .
+  
+  dbpedia-owl:orcidId a owl:DatatypeProperty;
+    rdfs:label "orcid id"@en .
+  
+  dbprop:scopus a owl:DatatypeProperty;
+    rdfs:label "scopes"@en .
+  
+  soa:Concept a owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "Concept"@en .
+  
+  soa:level a owl:DatatypeProperty;
+    rdfs:label "level"@en .
+  
+  soa:magId a owl:DatatypeProperty;
+    rdfs:label "mag id"@en .
+  
+  foaf:depiction a owl:DatatypeProperty;
+    rdfs:label "depiction"@en .
+  
+  soa:imageThumbnail a owl:DatatypeProperty;
+    rdfs:label "image thumbnail"@en .
+  
+  soa:umlsCui a owl:DatatypeProperty;
+    rdfs:label "umls cui"@en .
+  
+  soa:umlsAui a owl:DatatypeProperty;
+    rdfs:label "umls aui"@en .
+  
+  dbprop:twitter a owl:DatatypeProperty;
+    rdfs:label "twitter"@en .
+  
+  soa:Funder a owl:Class;
+    rdfs:label "Funder"@en .
+  
+  <http://prismstandard.org/namespaces/basic/2.0/doi> a owl:DatatypeProperty;
+    rdfs:label "doi"@en .
+  
+  foaf:homepage a owl:DatatypeProperty;
+    rdfs:label "homepage"@en .
+  
+  dbprop:countryCode a owl:DatatypeProperty;
+    rdfs:label "country code", "country code"@en .
+  
+  soa:crossref a owl:DatatypeProperty;
+    rdfs:label "crossref"@en .
+  
+  soa:grantsCount a owl:DatatypeProperty;
+    rdfs:label "grantsCount"@en .
+  
+  soa:ror a owl:DatatypeProperty;
+    rdfs:label "ror"@en .
+  
+  dct:creator a owl:ObjectProperty;
+    rdfs:label "creator"@en .
+  
+  dct:license a owl:DatatypeProperty;
+    rdfs:label "license"@en .
+  
+  dct:title a owl:DatatypeProperty;
+    rdfs:label "title"@en .
+  
+  soa:Keyword a owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "Keyword"@en .
+  
+  soa:Topic a owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "Topic"@en .
+  
+  soa:hasKeyword a owl:ObjectProperty;
+    rdfs:label "hasKeyword" .
+  
+  soa:Domain a owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "Domain"@en .
+  
+  soa:Source a owl:Class;
+    rdfs:label "Source"@en .
+  
+  <http://prismstandard.org/namespaces/basic/2.0/issn> a owl:DatatypeProperty;
+    rdfs:label "issn"@en .
+  
+  fabio:hasIssnL a owl:DatatypeProperty;
+    rdfs:label "has issn"@en .
+  
+  <http://www.geonames.org/ontology#countryCode> a owl:DatatypeProperty;
+    rdfs:label "country code"@en .
+  
+  dbpedia-owl:alternativeName a owl:DatatypeProperty;
+    rdfs:label "alternative name"@en .
+  
+  soa:hasHostOrganization a owl:ObjectProperty;
+    rdfs:label "hasHostOrganization"@en .
+  
+  soa:isInDoaj a owl:DatatypeProperty;
+    rdfs:label "is in doaj"@en .
+  
+  soa:isOa a owl:DatatypeProperty;
+    rdfs:label "is oa"@en .
+  
+  soa:sourceType a owl:DatatypeProperty;
+    rdfs:label "sourceType"@en .
+  
+  soa:apcUsd a owl:DatatypeProperty;
+    rdfs:label "apcUsd"@en;
+    rdfs:comment "Source's article processing charge in US Dollars, if available from DOAJ"@en .
+  
+  soa:fatcatId a owl:DatatypeProperty;
+    rdfs:label "fatcatId"@en .
+  
+  soa:hasCurrency a owl:DatatypeProperty;
+    rdfs:label "has currency"@en .
+  
+  soa:Institution a owl:Class;
+    rdfs:label "Institution"@en .
+  
+  dbpedia-owl:location a owl:ObjectProperty;
+    rdfs:label "location"@en .
+  
+  soa:grid a owl:DatatypeProperty;
+    rdfs:label "grid"@en .
+  
+  soa:hasAssociatedInstitution a owl:ObjectProperty;
+    rdfs:label "has associated institution"@en .
+  
+  soa:rorType a owl:DatatypeProperty;
+    rdfs:label "ror type"@en .
+  
+  dbprop:acronym a owl:DatatypeProperty;
+    rdfs:label "acronym"@en .
+  
+  soa:hasChildInstitution a owl:ObjectProperty;
+    rdfs:label "hasChildInstitution" .
+  
+  soa:hasParentInstitution a owl:ObjectProperty;
+    rdfs:label "hasParentInstitution" .
+  
+  soa:abbreviatedName a owl:DatatypeProperty;
+    rdfs:label "abbreviatedName"@en, "abbreviated name"@ru .
+  
+  soa:Work a owl:Class;
+    rdfs:label "Work"@en .
+  
+  <http://prismstandard.org/namespaces/basic/2.0/publicationDate> a owl:DatatypeProperty;
+    rdfs:label "publication date"@en .
+  
+  fabio:hasPublicationYear a owl:DatatypeProperty;
+    rdfs:label "has publication year"@en .
+  
+  soa:countriesDistinctCount a owl:DatatypeProperty;
+    rdfs:label "countries distinct count"@en .
+  
+  soa:crossrefType a owl:DatatypeProperty;
+    rdfs:label "crossers type"@en .
+  
+  soa:hasAuthorship a owl:ObjectProperty;
+    rdfs:label "has authorship"@en .
+  
+  soa:hasConcept a owl:ObjectProperty;
+    rdfs:label "has concept"@en, "has concept" .
+  
+  soa:hasLocation a owl:ObjectProperty;
+    rdfs:label "has location"@en .
+  
+  soa:hasOpenAccess a owl:ObjectProperty;
+    rdfs:label "has open access"@en .
+  
+  soa:hasPrimaryLocation a owl:ObjectProperty;
+    rdfs:label "has primary location"@en .
+  
+  soa:hasPrimaryTopic a owl:ObjectProperty;
+    rdfs:label "hasPrimaryTopic" .
+  
+  soa:hasRelatedWork a owl:ObjectProperty;
+    rdfs:label "has related work"@en .
+  
+  soa:hasTopic a owl:ObjectProperty;
+    rdfs:label "hasTopic" .
+  
+  soa:institutionsDistinctCount a owl:DatatypeProperty;
+    rdfs:label "institutions distinct count"@en .
+  
+  soa:isParatext a owl:DatatypeProperty;
+    rdfs:label "is paratext"@en .
+  
+  soa:isRetracted a owl:DatatypeProperty;
+    rdfs:label "is retracted"@en .
+  
+  soa:metadataLanguage a owl:DatatypeProperty;
+    rdfs:label "metadata language"@en .
+  
+  dct:abstract a owl:DatatypeProperty;
+    rdfs:label "abstract"@en .
+  
+  soa:hasSustainableDevelopmentGoal a owl:ObjectProperty;
+    rdfs:label "hasSustainableDevelopmentGoal" .
+  
+  <http://prismstandard.org/namespaces/basic/2.0/endingPage> a owl:DatatypeProperty;
+    rdfs:label "ending page"@en .
+  
+  <http://prismstandard.org/namespaces/basic/2.0/startingPage> a owl:DatatypeProperty;
+    rdfs:label "starting page"@en .
+  
+  soa:hasVolume a owl:DatatypeProperty;
+    rdfs:label "has volume"@en .
+  
+  <http://purl.org/spar/cito/cites> a owl:ObjectProperty;
+    rdfs:label "cites"@en .
+  
+  soa:hasIssue a owl:DatatypeProperty;
+    rdfs:label "has issue"@en .
+  
+  soa:indexedIn a owl:DatatypeProperty;
+    rdfs:label "indexed in"@en .
+  
+  fabio:hasPubMedCentralId a owl:DatatypeProperty;
+    rdfs:label "has pubmed central id"@en .
+  
+  soa:hasBestOaLocation a owl:ObjectProperty;
+    rdfs:label "hasBestOaLocation"@en .
+  
+  fabio:hasPubMedId a owl:DatatypeProperty;
+    rdfs:label "has pubmed id"@en .
+  
+  soa:ArticleProcessingCharge a owl:Class;
+    rdfs:label "ArticleProcessingCharge"@en .
+  
+  soa:hasPrice a owl:DatatypeProperty;
+    rdfs:label "has price"@en .
+  
+  soa:hasMesh a owl:ObjectProperty;
+    rdfs:label "hasMesh" .
+  
+  soa:hasFunder a owl:ObjectProperty;
+    rdfs:label "has funder"@en .
+  
+  soa:hasProvenance a owl:DatatypeProperty;
+    rdfs:label "has provenance"@en .
+  
+  soa:hasValue a owl:DatatypeProperty;
+    rdfs:label "has value"@en .
+  
+  soa:Authorship a owl:Class;
+    rdfs:label "Authorship"@en .
+  
+  soa:hasAuthor a owl:ObjectProperty;
+    rdfs:label "has author"@en .
+  
+  soa:isCorresponding a owl:DatatypeProperty;
+    rdfs:label "is corresponding"@en .
+  
+  soa:position a owl:DatatypeProperty;
+    rdfs:label "position"@en .
+  
+  soa:hasOrganization a owl:ObjectProperty;
+    rdfs:label "has organizsation"@en .
+  
+  soa:rawAffiliation a owl:DatatypeProperty;
+    rdfs:label "raw affiliation"@en .
+  
+  soa:Location a owl:Class;
+    rdfs:label "Location"@en .
+  
+  fabio:hasURL a owl:DatatypeProperty;
+    rdfs:label "has url"@en .
+  
+  soa:hasSource a owl:ObjectProperty;
+    rdfs:label "has source"@en .
+  
+  soa:hasVersion a owl:DatatypeProperty;
+    rdfs:label "has version"@en .
+  
+  soa:pdfUrl a owl:DatatypeProperty;
+    rdfs:label "pdfUrl"@en .
+  
+  soa:OpenAccess a owl:Class;
+    rdfs:label "OpenAccess"@en .
+  
+  soa:anyRepositoryHasFulltext a owl:DatatypeProperty;
+    rdfs:label "any repository has fulltext"@en .
+  
+  soa:oaStatus a owl:DatatypeProperty;
+    rdfs:label "oa status"@en .
+  
+  soa:oaUrl a owl:DatatypeProperty;
+    rdfs:label "oa url"@en .
+  
+  soa:Geo a owl:Class;
+    rdfs:label "Geo"@en .
+  
+  dbprop:city a owl:DatatypeProperty;
+    rdfs:label "city"@en .
+  
+  dbprop:country a owl:DatatypeProperty;
+    rdfs:label "country"@en .
+  
+  dbprop:region a owl:DatatypeProperty;
+    rdfs:label "region"@en .
+  
+  soa:Subfield a owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "Subfield"@en .
+  
+  soa:Publisher a owl:Class;
+    rdfs:label "Publisher"@en .
+  
+  soa:hasParentPublisher a owl:ObjectProperty;
+    rdfs:label "hasParentPublisher"@en .
+  
+  <http://metadata.un.org/sdg/ontology#Goal> a owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "SustainableDevelopmentGoal"@en .
+  
+  <http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor> a owl:Class;
+    rdfs:subClassOf skos:Concept;
+    rdfs:label "TopicalDescriptor"@en .
+  
+  soa:score a owl:DatatypeProperty;
+    rdfs:label "score"@en .
+  
+  soa:hasAffiliation a owl:ObjectProperty;
+    rdfs:label "hasAffiliation" .
+  
+  <https://semopenalex.org/ontology/> a owl:Ontology;
+    dct:created "2022-05-12T00:00:00Z"^^xsd:dateTime;
+    dct:modified "2024-12-18T00:00:00Z"^^xsd:dateTime;
+    dct:description "The SemOpenAlex Ontology is an OWL ontology, representing scientific works such as publications, as well as authors, institutions, publishers, funders, sources, concepts and relations between them, i.e. citations, affiliations, funding details, authorship, publication locations and their sources."@en;
+    dct:creator <https://orcid.org/0000-0001-5458-8645>, <https://orcid.org/0000-0002-5080-3587>,
+      <https://orcid.org/0000-0002-7561-7000>, <https://orcid.org/0000-0002-9098-5389>,
+      <https://orcid.org/0009-0009-4338-0983>;
+    dct:issued "2022-05-12T00:00:00Z"^^xsd:dateTime;
+    dct:license <http://creativecommons.org/publicdomain/zero/1.0/>;
+    dct:title "SemOpenAlex Ontology"@en;
+    rdfs:label "SemOpenAlex Ontology"@en;
+    dct:publisher <http://dbpedia.org/resource/Karlsruhe_Institute_of_Technology>, <http://www.wikidata.org/entity/Q22132500>,
+      <https://www.wikidata.org/wiki/Q158158>;
+    <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+    dct:contributor "dl@metaphacts.com";
+    owl:versionInfo "4.0.0" .
+  
+  <https://orcid.org/0000-0001-5458-8645> a foaf:Person;
+    foaf:homepage <https://www.aifb.kit.edu/web/Michael_Färber>;
+    rdfs:label "Michael Färber";
+    foaf:mbox <mailto:michael.faerber@tu-dresden.de> .
+  
+  <https://orcid.org/0000-0002-5080-3587> a foaf:Person;
+    rdfs:label "Johan Krause";
+    foaf:mbox <mailto:johan.krause@student.kit.edu> .
+  
+  <https://orcid.org/0000-0002-7561-7000> a foaf:Person;
+    rdfs:label "Peter Haase";
+    foaf:mbox <mailto:ph@metaphacts.com> .
+  
+  <https://orcid.org/0000-0002-9098-5389> a foaf:Person;
+    rdfs:label "David Lamprecht";
+    foaf:mbox <mailto:dl@metaphacts.com> .
+  
+  <https://orcid.org/0009-0009-4338-0983> a foaf:Person;
+    rdfs:label "Linn Aung";
+    foaf:mbox <mailto:la@metaphacts.com> .
+  
+  dct:publisher a owl:DatatypeProperty;
+    rdfs:label "publisher"@en .
+  
+  soa:hasConceptScore a owl:ObjectProperty;
+    rdfs:label "has concept score"@en .
+  
+  skos:ConceptShape a sh:NodeShape;
+    sh:property [ a sh:PropertyShape;
+        sh:path skos:broader;
+        sh:class skos:Concept
+      ], [ a sh:PropertyShape;
+        sh:path rdfs:seeAlso;
+        sh:class fabio:WikipediaEntry
+      ], [ a sh:PropertyShape;
+        sh:path skos:prefLabel;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path skos:note;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path skos:related;
+        sh:class skos:Concept
+      ];
+    sh:targetClass skos:Concept .
+  
+  soa:AuthorShape a sh:NodeShape;
+    sh:property [ a sh:PropertyShape;
+        sh:path soa:2YrMeanCitedness;
+        sh:datatype xsd:float
+      ], [ a sh:PropertyShape;
+        sh:path <http://purl.org/spar/bido/h-index>;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path dct:created;
+        sh:datatype xsd:date
+      ], [ a sh:PropertyShape;
+        sh:path soa:worksCount;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path soa:alternativeName;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path dbprop:twitter;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path foaf:name;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:i10Index;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path dbprop:scopus;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:citedByCount;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path dbpedia-owl:orcidId;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:countsByYear;
+        sh:class soa:CountsByYear
+      ], [ a sh:PropertyShape;
+        sh:path soa:magId;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path dct:modified;
+        sh:datatype xsd:date
+      ], [ a sh:PropertyShape;
+        sh:path <http://www.w3.org/ns/org#memberOf>;
+        sh:class soa:Institution
+      ], [
+        sh:path soa:hasAffiliation;
+        sh:class soa:Institution
+      ];
+    sh:targetClass soa:Author .
+  
+  soa:AuthorshipShape a sh:NodeShape;
+    sh:property [ a sh:PropertyShape;
+        sh:path soa:hasOrganization;
+        sh:class soa:Institution
+      ], [ a sh:PropertyShape;
+        sh:path soa:isCorresponding;
+        sh:datatype xsd:boolean
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasAuthor;
+        sh:class soa:Author
+      ], [ a sh:PropertyShape;
+        sh:path soa:position;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path soa:rawAffiliation;
+        sh:datatype xsd:string
+      ];
+    sh:targetClass soa:Authorship .
+  
+  soa:ConceptShape a sh:NodeShape;
+    sh:property [ a sh:PropertyShape;
+        sh:path soa:countsByYear;
+        sh:class soa:CountsByYear
+      ], [ a sh:PropertyShape;
+        sh:path foaf:depiction;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:magId;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path soa:umlsCui;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:worksCount;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path soa:level;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path soa:umlsAui;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:citedByCount;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path dct:created;
+        sh:datatype xsd:date
+      ], [ a sh:PropertyShape;
+        sh:path soa:imageThumbnail;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path dct:modified;
+        sh:datatype xsd:date
+      ];
+    sh:targetClass soa:Concept .
+  
+  soa:CountsByYearShape a sh:NodeShape;
+    sh:property [
+        sh:path soa:citedByCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:worksCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:year;
+        sh:datatype xsd:integer
+      ];
+    sh:targetClass soa:CountsByYear .
+  
+  soa:FunderShape a sh:NodeShape;
+    sh:property [
+        sh:path soa:alternativeName;
+        sh:datatype xsd:string
+      ], [
+        sh:path dct:created;
+        sh:datatype xsd:date
+      ], [
+        sh:path soa:ror;
+        sh:datatype xsd:anyURI
+      ], [
+        sh:path dbprop:countryCode;
+        sh:datatype xsd:string
+      ], [
+        sh:path soa:worksCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path foaf:name;
+        sh:datatype xsd:string
+      ], [
+        sh:path soa:citedByCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path dct:description;
+        sh:datatype xsd:string
+      ], [
+        sh:path soa:2YrMeanCitedness;
+        sh:datatype xsd:float
+      ], [
+        sh:path <http://prismstandard.org/namespaces/basic/2.0/doi>;
+        sh:datatype xsd:anyURI
+      ], [
+        sh:path soa:crossref;
+        sh:datatype xsd:string
+      ], [
+        sh:path <http://purl.org/spar/bido/h-index>;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:i10Index;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:countsByYear;
+        sh:class soa:CountsByYear
+      ], [
+        sh:path soa:grantsCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path dct:modified;
+        sh:datatype xsd:date
+      ], [
+        sh:path foaf:homepage;
+        sh:datatype xsd:anyURI
+      ];
+    sh:targetClass soa:Funder .
+  
+  soa:GeoShape a sh:NodeShape;
+    sh:property [ a sh:PropertyShape;
+        sh:path dbprop:city;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path dbprop:region;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path wgs:long;
+        sh:datatype xsd:float
+      ], [ a sh:PropertyShape;
+        sh:path dbprop:countryCode;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path dbprop:country;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path wgs:lat;
+        sh:datatype xsd:float
+      ];
+    sh:targetClass soa:Geo .
+  
+  soa:InstitutionShape a sh:NodeShape;
+    sh:property [ a sh:PropertyShape;
+        sh:path dct:modified;
+        sh:datatype xsd:date
+      ], [ a sh:PropertyShape;
+        sh:path soa:magId;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path dbpedia-owl:alternativeName;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path foaf:homepage;
+        sh:datatype xsd:anyURI
+      ], [ a sh:PropertyShape;
+        sh:path foaf:name;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path dbprop:countryCode;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasAssociatedInstitution;
+        sh:class soa:Institution
+      ], [ a sh:PropertyShape;
+        sh:path dbpedia-owl:location;
+        sh:class soa:Geo
+      ], [ a sh:PropertyShape;
+        sh:path soa:rorType;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path rdfs:seeAlso;
+        sh:class fabio:WikipediaEntry
+      ], [ a sh:PropertyShape;
+        sh:path foaf:depiction;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:ror;
+        sh:datatype xsd:anyURI
+      ], [ a sh:PropertyShape;
+        sh:path dct:created;
+        sh:datatype xsd:date
+      ], [ a sh:PropertyShape;
+        sh:path soa:worksCount;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path soa:imageThumbnail;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:citedByCount;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path dbprop:acronym;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:grid;
+        sh:datatype xsd:string
+      ];
+    sh:targetClass soa:Institution .
+  
+  soa:OpenAccessShape a sh:NodeShape;
+    sh:property [ a sh:PropertyShape;
+        sh:path soa:oaStatus;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:isOa;
+        sh:datatype xsd:boolean
+      ], [ a sh:PropertyShape;
+        sh:path soa:oaUrl;
+        sh:datatype xsd:string
+      ];
+    sh:targetClass soa:OpenAccess .
+  
+  soa:PublisherShape a sh:NodeShape;
+    sh:property [
+        sh:path soa:ror;
+        sh:datatype xsd:string
+      ], [
+        sh:path soa:i10Index;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:countsByYear;
+        sh:class soa:CountsByYear
+      ], [
+        sh:path dct:created;
+        sh:datatype xsd:date
+      ], [
+        sh:path foaf:name;
+        sh:datatype xsd:string
+      ], [
+        sh:path soa:2YrMeanCitedness;
+        sh:datatype xsd:float
+      ], [
+        sh:path soa:hasParentPublisher;
+        sh:class soa:Publisher
+      ], [
+        sh:path <http://purl.org/spar/bido/h-index>;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:citedByCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path dbpedia-owl:alternativeName;
+        sh:datatype xsd:string
+      ], [
+        sh:path dct:modified;
+        sh:datatype xsd:date
+      ], [
+        sh:path soa:worksCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:level;
+        sh:datatype xsd:integer
+      ], [
+        sh:path <http://www.geonames.org/ontology#countryCode>;
+        sh:datatype xsd:string
+      ];
+    sh:targetClass soa:Publisher .
+  
+  soa:WorkShape a sh:NodeShape;
+    sh:property [ a sh:PropertyShape;
+        sh:path soa:hasBestOaLocation;
+        sh:class soa:Location
+      ], [ a sh:PropertyShape;
+        sh:path <http://prismstandard.org/namespaces/basic/2.0/startingPage>;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path <http://prismstandard.org/namespaces/basic/2.0/publicationDate>;
+        sh:datatype xsd:date
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasVolume;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:crossrefType;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasFunder;
+        sh:class soa:Funder
+      ], [ a sh:PropertyShape;
+        sh:path soa:citedByCount;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path soa:countsByYear;
+        sh:class soa:CountsByYear
+      ], [ a sh:PropertyShape;
+        sh:path soa:isRetracted;
+        sh:datatype xsd:boolean
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasLocation;
+        sh:class soa:Location
+      ], [ a sh:PropertyShape;
+        sh:path dct:title;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasIssue;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path dct:abstract;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:magId;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path fabio:hasPubMedId;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path dct:creator;
+        sh:class soa:Author
+      ], [ a sh:PropertyShape;
+        sh:path <http://purl.org/spar/cito/cites>;
+        sh:class soa:Work
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasRelatedWork;
+        sh:class soa:Work
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasAuthorship;
+        sh:class soa:Authorship
+      ], [ a sh:PropertyShape;
+        sh:path fabio:hasPublicationYear;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path dct:created;
+        sh:datatype xsd:date
+      ], [ a sh:PropertyShape;
+        sh:path fabio:hasPubMedCentralId;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasOpenAccess;
+        sh:class soa:OpenAccess
+      ], [ a sh:PropertyShape;
+        sh:path <http://prismstandard.org/namespaces/basic/2.0/doi>;
+        sh:datatype xsd:anyURI
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasPrimaryLocation;
+        sh:class soa:Location
+      ], [ a sh:PropertyShape;
+        sh:path <http://prismstandard.org/namespaces/basic/2.0/endingPage>;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:workType;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path dct:modified;
+        sh:datatype xsd:date
+      ], [ a sh:PropertyShape;
+        sh:path soa:isParatext;
+        sh:datatype xsd:boolean
+      ], [ a sh:PropertyShape;
+        sh:path dbprop:countryCode;
+        sh:datatype xsd:string
+      ], [
+        sh:path soa:hasMesh;
+        sh:class <http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor>
+      ], [
+        sh:path soa:hasApcList;
+        sh:class soa:ArticleProcessingCharge
+      ], [
+        sh:path soa:hasPrimaryTopic;
+        sh:class soa:Topic
+      ], [
+        sh:path soa:metadataLanguage;
+        sh:datatype xsd:string
+      ], [
+        sh:path soa:indexedIn;
+        sh:datatype xsd:string
+      ], [
+        sh:path soa:hasKeyword;
+        sh:class soa:Keyword
+      ], [
+        sh:path soa:countriesDistinctCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:hasSustainableDevelopmentGoal;
+        sh:class <http://metadata.un.org/sdg/ontology#Goal>
+      ], [
+        sh:path soa:hasTopic;
+        sh:class soa:Topic
+      ], [
+        sh:path soa:institutionsDistinctCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:hasConcept;
+        sh:class soa:Concept
+      ];
+    sh:targetClass soa:Work .
+  
+  soa:hasApcList a owl:ObjectProperty;
+    rdfs:label "hasAPCList" .
+  
+  soa:FieldShape a sh:NodeShape;
+    sh:property [
+        sh:path skos:note;
+        sh:datatype xsd:string
+      ], [
+        sh:path skos:prefLabel;
+        sh:datatype xsd:string
+      ], [
+        sh:path dct:created;
+        sh:datatype xsd:date
+      ], [
+        sh:path soa:worksCount;
+        sh:datatype xsd:string
+      ], [
+        sh:path soa:citedByCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path skos:related;
+        sh:class soa:Field
+      ], [
+        sh:path dct:modified;
+        sh:datatype xsd:date
+      ], [
+        sh:path skos:altLabel;
+        sh:datatype xsd:string
+      ], [
+        sh:path skos:broader;
+        sh:class soa:Domain
+      ];
+    sh:targetClass soa:Field .
+  
+  soa:SubfieldShape a sh:NodeShape;
+    sh:property [
+        sh:path skos:prefLabel;
+        sh:datatype xsd:string
+      ], [
+        sh:path skos:broader;
+        sh:class soa:Field
+      ], [
+        sh:path skos:note;
+        sh:datatype xsd:string
+      ], [
+        sh:path dct:created;
+        sh:datatype xsd:date
+      ], [
+        sh:path dct:modified;
+        sh:datatype xsd:date
+      ], [
+        sh:path skos:related;
+        sh:class soa:Subfield
+      ], [
+        sh:path soa:worksCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:citedByCount;
+        sh:datatype xsd:integer
+      ];
+    sh:targetClass soa:Subfield .
+  
+  soa:TopicShape a sh:NodeShape;
+    sh:property [
+        sh:path skos:note;
+        sh:datatype xsd:string
+      ], [
+        sh:path dct:created;
+        sh:datatype xsd:date
+      ], [
+        sh:path soa:citedByCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path dct:modified;
+        sh:datatype xsd:date
+      ], [
+        sh:path soa:worksCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path skos:broader;
+        sh:class soa:Subfield
+      ], [
+        sh:path skos:prefLabel;
+        sh:datatype xsd:string
+      ], [
+        sh:path soa:hasKeyword;
+        sh:class soa:Keyword
+      ], [
+        sh:path skos:related;
+        sh:class soa:Topic
+      ];
+    sh:targetClass soa:Topic .
+  
+  soa:KeywordShape a sh:NodeShape;
+    sh:property [
+        sh:path skos:prefLabel;
+        sh:datatype xsd:string
+      ];
+    sh:targetClass soa:Keyword .
+  
+  <http://www.geonames.org/ontology#geonamesID> a owl:DatatypeProperty;
+    rdfs:label "genames id"@en .
+  
+  <http://www.geonames.org/ontology#lat> a owl:DatatypeProperty;
+    rdfs:label "lat"@en .
+  
+  <http://www.geonames.org/ontology#long> a owl:DatatypeProperty;
+    rdfs:label "long"@en .
+  
+  soa:hasApc a owl:ObjectProperty;
+    rdfs:label "hasAPC" .
+  
+  soa:hasValueUsd a owl:DatatypeProperty;
+    rdfs:label "has value usd"@en .
+  
+  soa:ArticleProcessingChargeShape a sh:NodeShape;
+    sh:property [
+        sh:path soa:hasPriceUsd;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:hasProvenance;
+        sh:datatype xsd:string
+      ], [
+        sh:path soa:hasCurrency;
+        sh:datatype xsd:string
+      ], [
+        sh:path soa:hasPrice;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:hasValueUsd;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:hasValue;
+        sh:datatype xsd:integer
+      ];
+    sh:targetClass soa:ArticleProcessingCharge .
+  
+  soa:hasPriceUsd a owl:DatatypeProperty;
+    rdfs:label "has price usd"@en .
+  
+  soa:DomainShape a sh:NodeShape;
+    sh:property [
+        sh:path soa:worksCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path soa:citedByCount;
+        sh:datatype xsd:integer
+      ], [
+        sh:path skos:prefLabel;
+        sh:datatype xsd:string
+      ], [
+        sh:path skos:altLabel;
+        sh:datatype xsd:string
+      ], [
+        sh:path skos:note;
+        sh:datatype xsd:string
+      ], [
+        sh:path skos:related;
+        sh:class soa:Domain
+      ], [
+        sh:path dct:created;
+        sh:datatype xsd:date
+      ], [
+        sh:path dct:modified;
+        sh:datatype xsd:date
+      ];
+    sh:targetClass soa:Domain .
+  
+  soa:SustainableDevelopmentGoalShape a sh:NodeShape;
+    sh:property [
+        sh:path skos:prefLabel;
+        sh:datatype xsd:string
+      ];
+    sh:targetClass <http://metadata.un.org/sdg/ontology#Goal> .
+  
+  soa:TopicalDescriptorShape a sh:NodeShape;
+    sh:property [
+        sh:path skos:prefLabel;
+        sh:datatype xsd:string
+      ];
+    sh:targetClass <http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor> .
+  
+  soa:LocationShape a sh:NodeShape;
+    sh:property [ a sh:PropertyShape;
+        sh:path soa:hasSource;
+        sh:class soa:Source
+      ], [ a sh:PropertyShape;
+        sh:path fabio:hasURL;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasVersion;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:isOa;
+        sh:datatype xsd:boolean
+      ], [ a sh:PropertyShape;
+        sh:path dct:license;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:pdfUrl;
+        sh:datatype xsd:string
+      ];
+    sh:targetClass soa:Location .
+  
+  soa:SourceShape a sh:NodeShape;
+    sh:property [ a sh:PropertyShape;
+        sh:path soa:2YrMeanCitedness;
+        sh:datatype xsd:float
+      ], [ a sh:PropertyShape;
+        sh:path soa:isInDoaj;
+        sh:datatype xsd:boolean
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasHostOrganization;
+        sh:class soa:Institution
+      ], [ a sh:PropertyShape;
+        sh:path soa:hasHostOrganization;
+        sh:class soa:Publisher
+      ], [ a sh:PropertyShape;
+        sh:path soa:citedByCount;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path soa:i10Index;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path soa:countsByYear;
+        sh:class soa:CountsByYear
+      ], [ a sh:PropertyShape;
+        sh:path soa:sourceType;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:abbreviatedName;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path <http://purl.org/spar/bido/h-index>;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path <http://prismstandard.org/namespaces/basic/2.0/issn>;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path dbpedia-owl:alternativeName;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path foaf:name;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:isOa;
+        sh:datatype xsd:boolean
+      ], [ a sh:PropertyShape;
+        sh:path dct:publisher;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path <http://www.geonames.org/ontology#countryCode>;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:fatcatId;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path soa:apcUsd;
+        sh:datatype xsd:integer
+      ], [ a sh:PropertyShape;
+        sh:path fabio:hasIssnL;
+        sh:datatype xsd:string
+      ], [ a sh:PropertyShape;
+        sh:path foaf:homepage;
+        sh:datatype xsd:anyURI
+      ];
+    sh:targetClass soa:Source .
+}
+
+<https://semopenalex.org/ontodiaDiagramContainer/default_diagram/context> {
+  <https://semopenalex.org/ontodiaDiagramContainer/default_diagram> a <http://www.w3.org/ns/ldp#Resource>,
+      <http://ontodia.org/schema/v1#Diagram>, <http://www.w3.org/ns/prov#Entity>;
+    rdfs:label "Default Diagram";
+    <http://ontodia.org/schema/v1#layoutData> [ a <http://ontodia.org/schema/v1#Layout>;
+        <http://ontodia.org/schema/v1#hasElement> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>,
+          <http://ontodia.org/data/e_be0acdce1b38f3571fb6269798ce3eaa>, <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>,
+          <http://ontodia.org/data/e_a1056517611b06bf13c12c3e4d0a8147>, <http://ontodia.org/data/e_5ffb96df951a72a5e82c780dbfa0f047>,
+          <http://ontodia.org/data/e_19a12bcfff091064f79ba2c4c5f26b09>, <http://ontodia.org/data/e_26589aaa9fd59d7d63ff8cb17d8e51ce>,
+          <http://ontodia.org/data/e_4d733d3a0a90c0591e80bf3e5e70afe3>, <http://ontodia.org/data/e_5e96f7b434e35d293fee1f24dd6a40bc>,
+          <http://ontodia.org/data/e_f8dda696a857e965266bd7ae3ad25c30>, <http://ontodia.org/data/e_f07fba97dac8ec55012c0718f9d4dc6a>,
+          <http://ontodia.org/data/e_d9a5a012730dfa3425c6852cec274819>, <http://ontodia.org/data/e_99403d32cd3e730236873d0ae4b12edf>,
+          <http://ontodia.org/data/e_216fd464e933eabd20c9363fd41597d7>, <http://ontodia.org/data/e_5a344fe419c071381cc7cb177d26feff>,
+          <http://ontodia.org/data/e_cef1ee9536e55930a9762d838a9a5866>, <http://ontodia.org/data/e_f5d06d9b424fa1915fbe6473d2aa8fdf>,
+          <http://ontodia.org/data/e_72d62a6177cfc33ab508b04ff772723e>, <http://ontodia.org/data/e_d8a895d930bdb7444aaed75d8ba04fb9>,
+          <http://ontodia.org/data/e_de0105ab003e093254d6d3cf6242c922>, <http://ontodia.org/data/e_d204b785ebf0e978806c6404d89d51d5>;
+        <http://ontodia.org/schema/v1#hasLink> <http://ontodia.org/data/l_6788cd2997798e66c6c6b3d7fbea8348>,
+          <http://ontodia.org/data/l_b4870cb3541a7283297a84a393c46b00>, <http://ontodia.org/data/l_1c1107bb1718907836482020e2d1ec51>,
+          <http://ontodia.org/data/l_7d0b7c8ac7a8bce1ff042d93a60c1a11>, <http://ontodia.org/data/l_2d4775acbfe6ec1ee765553bf88c56e4>,
+          <http://ontodia.org/data/l_e4fbabb5c2c572608112c31e24ad15b1>, <http://ontodia.org/data/l_a153f4f846865a1421ca5ebfcfdd9439>,
+          <http://ontodia.org/data/l_8b984eb6c0dc0151110e55ae7f9fb395>, <http://ontodia.org/data/l_aa5509bcfe72ce077bf3623b90241abe>,
+          <http://ontodia.org/data/l_e077ed313ad60c49d3c0b77abdbd1092>, <http://ontodia.org/data/l_ed77d5c45964c7174d5adf8c6fe1c71c>,
+          <http://ontodia.org/data/l_892ea29dcb7a4efa0e52d8f5c7db773c>, <http://ontodia.org/data/l_45a6ff119f385327e467f993909f699b>,
+          <http://ontodia.org/data/l_db227673f2736689de9eb1c7b0953f8f>, <http://ontodia.org/data/l_5fb3acb7e6cd32c0daae3d75bec3253e>,
+          <http://ontodia.org/data/l_f79de166c5b1038c9715a802f45a4cee>, <http://ontodia.org/data/l_5e3c55ab50a75ce129e47b474c9a9214>,
+          <http://ontodia.org/data/l_206a0e009adb8617c795c7491d36aed5>, <http://ontodia.org/data/l_2ea3d0179d3f5ba07954e2397e702d03>,
+          <http://ontodia.org/data/l_f0578c771a12eecd3f72a3cb1af56914>, <http://ontodia.org/data/l_6767f4bc1cbfbde5576600232a89907d>,
+          <http://ontodia.org/data/l_1415b7efa45348212f436ff8d2dc8e7e>, <http://ontodia.org/data/l_cbd4baaf5bc1db4b4133cb700ee62641>,
+          <http://ontodia.org/data/l_b880d17c817530325d65db080b82ca0c>, <http://ontodia.org/data/l_2bb32edf1edcccfe8338a260fb59b03d>,
+          <http://ontodia.org/data/l_65a69fd7e1fff058a02092014cf286a8>, <http://ontodia.org/data/l_a6ae93f962870a824499007524e53d51>,
+          <http://ontodia.org/data/l_dfc3578b0419d26d719843afc8c163c8>, <http://ontodia.org/data/l_9fbe0d5a45b4f68371b9b67f6f40d0f6>,
+          <http://ontodia.org/data/l_3f4d1c036997469fda89e41dc2c38ba9>, <http://ontodia.org/data/l_db2acc676f15fb658134c51d5ed1a68c>,
+          <http://ontodia.org/data/l_4e7b20b48fb48696dbd4b41de0ca5daa>, <http://ontodia.org/data/l_d34304941f020cfb58b54e9c39b12708>,
+          <http://ontodia.org/data/l_1212e87321e608fc4dee3596aefce54f>, <http://ontodia.org/data/l_f7ace57bce6e243727c53e5da69a044e>,
+          <http://ontodia.org/data/l_6e9a4a12f354d85bb5179596710e665e>, <http://ontodia.org/data/l_65b56d432873aa52249541f5dd20598e>,
+          <http://ontodia.org/data/l_fae68d87ef01e08db722c6ee55923fe0>, <http://ontodia.org/data/l_c0d8bdee50a2e74a97e3ec43b26fa1c6>,
+          <http://ontodia.org/data/l_3c40d2fa1ea139458fb3cb6862b5f703>, <http://ontodia.org/data/l_cf4e43de1d32eae73e60ea7bb5aab197>,
+          <http://ontodia.org/data/l_6b094fa868dbed34c13ccd90efa1f6df>, <http://ontodia.org/data/l_745be0295b5c6e751c5432ac8e903cd1>,
+          <http://ontodia.org/data/l_30d463600b0a19602b78060a0725b39c>, <http://ontodia.org/data/l_f6470dd8730c1be6690f7dd84727d612>,
+          <http://ontodia.org/data/l_62b0373d123601a09b974650d8e575cf>, <http://ontodia.org/data/l_13a0b5ddadb7bf6d11124e161b7de4c9>,
+          <http://ontodia.org/data/l_08d1c0a149503fe3d10de428372005a7>, <http://ontodia.org/data/l_7407f79109d90b5f8b89e957532d6516>,
+          <http://ontodia.org/data/l_1376fe406d6daaee7064846f6ddf1ebe>
+      ];
+    <http://ontodia.org/schema/v1#linkTypeOptions> [ a <http://ontodia.org/schema/v1#LinkTypeOptions>;
+        <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation-owl>;
+        <http://ontodia.org/schema/v1#showLabel> true;
+        <http://ontodia.org/schema/v1#visible> false
+      ];
+    <http://www.metaphacts.com/ontologies/platform#diagramForOntology> <https://semopenalex.org/ontology/>;
+    <http://www.metaphacts.com/ontologies/platform#diagramKind> <http://www.metaphacts.com/ontologies/platform#OntologyDiagram>;
+    <http://www.metaphacts.com/ontologies/platform#isDefaultDiagram> "true";
+    <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.metaphacts.com/resource/user/dl%40metaphacts.com>;
+    <http://www.w3.org/ns/prov#generatedAtTime> "2024-12-18T13:29:01.480Z"^^xsd:dateTime .
+  
+  <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 9.800000035053572E2;
+        <http://ontodia.org/schema/v1#yCoordValue> 0
+      ];
+    <http://ontodia.org/schema/v1#resource> skos:Concept;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_be0acdce1b38f3571fb6269798ce3eaa> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 1367;
+        <http://ontodia.org/schema/v1#yCoordValue> 2221
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:OpenAccess;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 946;
+        <http://ontodia.org/schema/v1#yCoordValue> 1849
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Work;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_a1056517611b06bf13c12c3e4d0a8147> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 227;
+        <http://ontodia.org/schema/v1#yCoordValue> 1652
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Authorship;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_5ffb96df951a72a5e82c780dbfa0f047> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> -1.5377057356608498E2;
+        <http://ontodia.org/schema/v1#yCoordValue> 1.5190810473815459E3
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Author;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_19a12bcfff091064f79ba2c4c5f26b09> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 580;
+        <http://ontodia.org/schema/v1#yCoordValue> 1706
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:CountsByYear;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_26589aaa9fd59d7d63ff8cb17d8e51ce> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 524;
+        <http://ontodia.org/schema/v1#yCoordValue> 2372
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Source;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_4d733d3a0a90c0591e80bf3e5e70afe3> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 187;
+        <http://ontodia.org/schema/v1#yCoordValue> 2067
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Funder;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_5e96f7b434e35d293fee1f24dd6a40bc> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> -340;
+        <http://ontodia.org/schema/v1#yCoordValue> 2167
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Institution;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_f8dda696a857e965266bd7ae3ad25c30> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 1.26743391521197E3;
+        <http://ontodia.org/schema/v1#yCoordValue> 2.787472568578554E3
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Location;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_f07fba97dac8ec55012c0718f9d4dc6a> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 480;
+        <http://ontodia.org/schema/v1#yCoordValue> 1220
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:ArticleProcessingCharge;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_d9a5a012730dfa3425c6852cec274819> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 127;
+        <http://ontodia.org/schema/v1#yCoordValue> 2866
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Publisher;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_99403d32cd3e730236873d0ae4b12edf> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> -340;
+        <http://ontodia.org/schema/v1#yCoordValue> 2801
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Geo;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_216fd464e933eabd20c9363fd41597d7> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 1753;
+        <http://ontodia.org/schema/v1#yCoordValue> 717
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Concept;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_5a344fe419c071381cc7cb177d26feff> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 1480;
+        <http://ontodia.org/schema/v1#yCoordValue> 717
+      ];
+    <http://ontodia.org/schema/v1#resource> <http://metadata.un.org/sdg/ontology#Goal>;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_cef1ee9536e55930a9762d838a9a5866> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 1257;
+        <http://ontodia.org/schema/v1#yCoordValue> 679
+      ];
+    <http://ontodia.org/schema/v1#resource> <http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor>;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_f5d06d9b424fa1915fbe6473d2aa8fdf> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 1019;
+        <http://ontodia.org/schema/v1#yCoordValue> 652
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Keyword;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_72d62a6177cfc33ab508b04ff772723e> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> -272;
+        <http://ontodia.org/schema/v1#yCoordValue> 715
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Domain;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_d8a895d930bdb7444aaed75d8ba04fb9> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 76;
+        <http://ontodia.org/schema/v1#yCoordValue> 734
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Field;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_de0105ab003e093254d6d3cf6242c922> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 398;
+        <http://ontodia.org/schema/v1#yCoordValue> 738
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Subfield;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/e_d204b785ebf0e978806c6404d89d51d5> a <http://ontodia.org/schema/v1#Element>;
+    <http://ontodia.org/schema/v1#isExpanded> true;
+    <http://ontodia.org/schema/v1#position> [
+        <http://ontodia.org/schema/v1#xCoordValue> 710;
+        <http://ontodia.org/schema/v1#yCoordValue> 717
+      ];
+    <http://ontodia.org/schema/v1#resource> soa:Topic;
+    <http://ontodia.org/schema/v1#elementState> [] .
+  
+  <http://ontodia.org/data/l_6788cd2997798e66c6c6b3d7fbea8348> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#property> rdfs:subClassOf;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_d8a895d930bdb7444aaed75d8ba04fb9>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_b4870cb3541a7283297a84a393c46b00> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#property> rdfs:subClassOf;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_de0105ab003e093254d6d3cf6242c922>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_1c1107bb1718907836482020e2d1ec51> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#property> rdfs:subClassOf;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_f5d06d9b424fa1915fbe6473d2aa8fdf>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_7d0b7c8ac7a8bce1ff042d93a60c1a11> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#property> rdfs:subClassOf;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_d204b785ebf0e978806c6404d89d51d5>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_2d4775acbfe6ec1ee765553bf88c56e4> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#property> rdfs:subClassOf;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_72d62a6177cfc33ab508b04ff772723e>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_e4fbabb5c2c572608112c31e24ad15b1> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#property> rdfs:subClassOf;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_5a344fe419c071381cc7cb177d26feff>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_a153f4f846865a1421ca5ebfcfdd9439> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#property> rdfs:subClassOf;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_cef1ee9536e55930a9762d838a9a5866>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_8b984eb6c0dc0151110e55ae7f9fb395> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#property> rdfs:subClassOf;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_216fd464e933eabd20c9363fd41597d7>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_aa5509bcfe72ce077bf3623b90241abe> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:2fcfa7a12ca853a90bf6025484953d>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_d204b785ebf0e978806c6404d89d51d5>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_e077ed313ad60c49d3c0b77abdbd1092> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:949737f5d2ba7b3af61257480b87b>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_d204b785ebf0e978806c6404d89d51d5>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_ed77d5c45964c7174d5adf8c6fe1c71c> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:26702907b14f8ac4f505f883287f8c>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_f07fba97dac8ec55012c0718f9d4dc6a>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_892ea29dcb7a4efa0e52d8f5c7db773c> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:b5c00f96f5bf2d5cee38f1afc50f5>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_216fd464e933eabd20c9363fd41597d7>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_45a6ff119f385327e467f993909f699b> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:1568d2383565b246f68fad06c9ab14>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_cef1ee9536e55930a9762d838a9a5866>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_db227673f2736689de9eb1c7b0953f8f> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:7a39000c3a76fcf4ed49fc820c963b0>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_4d733d3a0a90c0591e80bf3e5e70afe3>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_19a12bcfff091064f79ba2c4c5f26b09>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_5fb3acb7e6cd32c0daae3d75bec3253e> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:7971ae30b2a2ee8e5a1664447caac>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_5a344fe419c071381cc7cb177d26feff>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_f79de166c5b1038c9715a802f45a4cee> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:bc20a19b3254d190a5d452e8b17d>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_d204b785ebf0e978806c6404d89d51d5>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_f5d06d9b424fa1915fbe6473d2aa8fdf>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_5e3c55ab50a75ce129e47b474c9a9214> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:c8dbcf930ba29e526cf569b04c07d>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_de0105ab003e093254d6d3cf6242c922>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_de0105ab003e093254d6d3cf6242c922>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_206a0e009adb8617c795c7491d36aed5> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:5e80d8f792bd931ca5f50fd55136b>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_5ffb96df951a72a5e82c780dbfa0f047>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_5e96f7b434e35d293fee1f24dd6a40bc>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_2ea3d0179d3f5ba07954e2397e702d03> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:4c6bdc424f7e57427915351609e20166>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_d204b785ebf0e978806c6404d89d51d5>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_de0105ab003e093254d6d3cf6242c922>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_f0578c771a12eecd3f72a3cb1af56914> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:42f76dd397ed497903492b2c7b68b7>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_de0105ab003e093254d6d3cf6242c922>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_d8a895d930bdb7444aaed75d8ba04fb9>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_6767f4bc1cbfbde5576600232a89907d> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:7efc94565d4f518dd2b4d2ae57a1>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_72d62a6177cfc33ab508b04ff772723e>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_72d62a6177cfc33ab508b04ff772723e>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_1415b7efa45348212f436ff8d2dc8e7e> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:0a5a76e849bb7441dd02f80505c3364>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_d9a5a012730dfa3425c6852cec274819>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_19a12bcfff091064f79ba2c4c5f26b09>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_cbd4baaf5bc1db4b4133cb700ee62641> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:c20962f608323b767573fa7c04b3>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_d204b785ebf0e978806c6404d89d51d5>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_d204b785ebf0e978806c6404d89d51d5>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_b880d17c817530325d65db080b82ca0c> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:33044c507ec8f54b664240a59b0ac>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_d9a5a012730dfa3425c6852cec274819>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_d9a5a012730dfa3425c6852cec274819>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_2bb32edf1edcccfe8338a260fb59b03d> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:93e6879712e1ed17383b2da1ce285>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_d8a895d930bdb7444aaed75d8ba04fb9>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_72d62a6177cfc33ab508b04ff772723e>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_65a69fd7e1fff058a02092014cf286a8> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:5ad7c057d982118ba65dd24b3c831>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_d8a895d930bdb7444aaed75d8ba04fb9>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_d8a895d930bdb7444aaed75d8ba04fb9>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_a6ae93f962870a824499007524e53d51> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:53b32270852adf3bf1fdef591609e3>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_f5d06d9b424fa1915fbe6473d2aa8fdf>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_dfc3578b0419d26d719843afc8c163c8> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:541398c762de9ac4b58b424228e15e4>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_9fbe0d5a45b4f68371b9b67f6f40d0f6> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:0f4dd948d6b3fc8a651d6051483100>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_bb8530ea6062da6efcdb956274b0295a>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_3f4d1c036997469fda89e41dc2c38ba9> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:fb569103e00eb306d7ac84870ecca8>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_a1056517611b06bf13c12c3e4d0a8147>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_5e96f7b434e35d293fee1f24dd6a40bc>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_db2acc676f15fb658134c51d5ed1a68c> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:366d2704edc0906aa6b7c08b07a60>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_5ffb96df951a72a5e82c780dbfa0f047>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_5e96f7b434e35d293fee1f24dd6a40bc>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_4e7b20b48fb48696dbd4b41de0ca5daa> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:45f995658680d63c85738e2a3de4e>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_a1056517611b06bf13c12c3e4d0a8147>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_5ffb96df951a72a5e82c780dbfa0f047>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_d34304941f020cfb58b54e9c39b12708> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:f365f3a5a97aaaa7443d20a1a803fa>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_f8dda696a857e965266bd7ae3ad25c30>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_1212e87321e608fc4dee3596aefce54f> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:0f31a84a9c83e2a40e679a47b3e97a>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_f8dda696a857e965266bd7ae3ad25c30>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_f7ace57bce6e243727c53e5da69a044e> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:773e365a08614fa6c7c42a6349654a>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_f8dda696a857e965266bd7ae3ad25c30>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_6e9a4a12f354d85bb5179596710e665e> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:e54cd9e02a7617ea1c4cee3bddb34e>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_5ffb96df951a72a5e82c780dbfa0f047>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_19a12bcfff091064f79ba2c4c5f26b09>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_65b56d432873aa52249541f5dd20598e> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:63cfbaac3a8cfa151500ea40ae75a>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_f8dda696a857e965266bd7ae3ad25c30>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_26589aaa9fd59d7d63ff8cb17d8e51ce>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_fae68d87ef01e08db722c6ee55923fe0> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:a60d8bacd09b1a7a9c690a469ce06a>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_a1056517611b06bf13c12c3e4d0a8147>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_c0d8bdee50a2e74a97e3ec43b26fa1c6> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:5b5f4ce0c6d036ece7951eb7204be>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_19a12bcfff091064f79ba2c4c5f26b09>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_3c40d2fa1ea139458fb3cb6862b5f703> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:667de4f80db4a0d80525c4830f1828>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_cf4e43de1d32eae73e60ea7bb5aab197> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:2c5eac4499a22c42a79194bf4cf14>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_6b094fa868dbed34c13ccd90efa1f6df> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:3a523ce4d739d8eb153c1e4ddc24de>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_4d733d3a0a90c0591e80bf3e5e70afe3>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_745be0295b5c6e751c5432ac8e903cd1> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:7f82bd320f638172389af5022d5c3c2>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_5ffb96df951a72a5e82c780dbfa0f047>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_30d463600b0a19602b78060a0725b39c> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:018dd9272fe9e284eed0ac08f27a>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_216fd464e933eabd20c9363fd41597d7>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_19a12bcfff091064f79ba2c4c5f26b09>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_f6470dd8730c1be6690f7dd84727d612> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:8d6c39e4ae04cfe611fb4ee899e44e>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_93a415fa32ea3ab71cd0b43d0ecbc639>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_be0acdce1b38f3571fb6269798ce3eaa>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_62b0373d123601a09b974650d8e575cf> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:b566b76be5a8463f9135b62c0604a6>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_26589aaa9fd59d7d63ff8cb17d8e51ce>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_19a12bcfff091064f79ba2c4c5f26b09>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_13a0b5ddadb7bf6d11124e161b7de4c9> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:11a3cd72f3976f252b129a0d8b9aba>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_5e96f7b434e35d293fee1f24dd6a40bc>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_99403d32cd3e730236873d0ae4b12edf>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_08d1c0a149503fe3d10de428372005a7> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:f4c5240223b1280b03600063bbee0>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_26589aaa9fd59d7d63ff8cb17d8e51ce>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_d9a5a012730dfa3425c6852cec274819>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_7407f79109d90b5f8b89e957532d6516> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:23c3ee46d6f66b62c9561ee2f52a47e>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_5e96f7b434e35d293fee1f24dd6a40bc>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_5e96f7b434e35d293fee1f24dd6a40bc>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  <http://ontodia.org/data/l_1376fe406d6daaee7064846f6ddf1ebe> a <http://ontodia.org/schema/v1#Link>;
+    <http://ontodia.org/schema/v1#resource> <http://ontodia.org/schema/v1#blank:rdf:4316f2f017460e06a31b303ab6bb40>;
+    <http://ontodia.org/schema/v1#property> <http://www.metaphacts.com/metaschema#relation>;
+    <http://ontodia.org/schema/v1#source> <http://ontodia.org/data/e_26589aaa9fd59d7d63ff8cb17d8e51ce>;
+    <http://ontodia.org/schema/v1#target> <http://ontodia.org/data/e_5e96f7b434e35d293fee1f24dd6a40bc>;
+    <http://ontodia.org/schema/v1#vertex> rdf:nil .
+  
+  [] <http://www.w3.org/ns/ldp#contains> <https://semopenalex.org/ontodiaDiagramContainer/default_diagram> .
+}

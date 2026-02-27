@@ -1,0 +1,1173 @@
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dbpedia-owl: <https://dbpedia.org/ontology/> .
+@prefix soa: <https://semopenalex.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dbprop: <https://dbpedia.org/property/> .
+
+soa:Author a owl:Class;
+  rdfs:label "Author"@en .
+
+dct:created a owl:DatatypeProperty;
+  rdfs:label "created" .
+
+dct:modified a owl:DatatypeProperty;
+  rdfs:label "modified" .
+
+<http://purl.org/spar/bido/h-index> a owl:DatatypeProperty;
+  rdfs:label "h-index"@en .
+
+foaf:name a owl:DatatypeProperty;
+  rdfs:label "name"@en .
+
+soa:2YrMeanCitedness a owl:DatatypeProperty;
+  rdfs:label "2YrMeanCitedness"@en, "2 year mean citedness"@ru, "2YrMeanCitedness" .
+
+soa:citedByCount a owl:DatatypeProperty;
+  rdfs:label "citedByCount" .
+
+soa:countsByYear a owl:ObjectProperty;
+  rdfs:label "counts by year"@en .
+
+soa:i10Index a owl:DatatypeProperty;
+  rdfs:label "i10Index"@en .
+
+soa:worksCount a owl:DatatypeProperty;
+  rdfs:label "worksCount" .
+
+<http://www.w3.org/ns/org#memberOf> a owl:ObjectProperty;
+  rdfs:label "member of"@en .
+
+soa:CountsByYear a owl:Class;
+  rdfs:label "CountsByYear"@en .
+
+soa:year a owl:DatatypeProperty;
+  rdfs:label "year"@en .
+
+skos:Concept a owl:Class;
+  rdfs:label "Concept"@en .
+
+soa:Field a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Field"@en .
+
+rdfs:seeAlso a owl:ObjectProperty;
+  rdfs:label "see also"@en .
+
+skos:broader a owl:ObjectProperty;
+  rdfs:label "broader" .
+
+skos:note a owl:DatatypeProperty;
+  rdfs:label "note" .
+
+skos:prefLabel a owl:DatatypeProperty;
+  rdfs:label "prefLabel" .
+
+skos:related a owl:ObjectProperty;
+  rdfs:label "related" .
+
+soa:alternativeName a owl:DatatypeProperty;
+  rdfs:label "alternative name"@en .
+
+dbpedia-owl:orcidId a owl:DatatypeProperty;
+  rdfs:label "orcid id"@en .
+
+dbprop:scopus a owl:DatatypeProperty;
+  rdfs:label "scopes"@en .
+
+soa:Concept a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Concept"@en .
+
+soa:level a owl:DatatypeProperty;
+  rdfs:label "level"@en .
+
+soa:magId a owl:DatatypeProperty;
+  rdfs:label "mag id"@en .
+
+foaf:depiction a owl:DatatypeProperty;
+  rdfs:label "depiction"@en .
+
+soa:imageThumbnail a owl:DatatypeProperty;
+  rdfs:label "image thumbnail"@en .
+
+soa:umlsCui a owl:DatatypeProperty;
+  rdfs:label "umls cui"@en .
+
+soa:umlsAui a owl:DatatypeProperty;
+  rdfs:label "umls aui"@en .
+
+dbprop:twitter a owl:DatatypeProperty;
+  rdfs:label "twitter"@en .
+
+soa:Funder a owl:Class;
+  rdfs:label "Funder"@en .
+
+<http://prismstandard.org/namespaces/basic/2.0/doi> a owl:DatatypeProperty;
+  rdfs:label "doi"@en .
+
+foaf:homepage a owl:DatatypeProperty;
+  rdfs:label "homepage"@en .
+
+dbprop:countryCode a owl:DatatypeProperty;
+  rdfs:label "country code", "country code"@en .
+
+soa:crossref a owl:DatatypeProperty;
+  rdfs:label "crossref"@en .
+
+soa:grantsCount a owl:DatatypeProperty;
+  rdfs:label "grantsCount"@en .
+
+soa:ror a owl:DatatypeProperty;
+  rdfs:label "ror"@en .
+
+dct:creator a owl:ObjectProperty;
+  rdfs:label "creator"@en .
+
+dct:license a owl:DatatypeProperty;
+  rdfs:label "license"@en .
+
+dct:title a owl:DatatypeProperty;
+  rdfs:label "title"@en .
+
+soa:Keyword a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Keyword"@en .
+
+soa:Topic a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Topic"@en .
+
+soa:hasKeyword a owl:ObjectProperty;
+  rdfs:label "hasKeyword" .
+
+soa:Domain a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Domain"@en .
+
+soa:Source a owl:Class;
+  rdfs:label "Source"@en .
+
+<http://prismstandard.org/namespaces/basic/2.0/issn> a owl:DatatypeProperty;
+  rdfs:label "issn"@en .
+
+fabio:hasIssnL a owl:DatatypeProperty;
+  rdfs:label "has issn"@en .
+
+<http://www.geonames.org/ontology#countryCode> a owl:DatatypeProperty;
+  rdfs:label "country code"@en .
+
+dbpedia-owl:alternativeName a owl:DatatypeProperty;
+  rdfs:label "alternative name"@en .
+
+soa:hasHostOrganization a owl:ObjectProperty;
+  rdfs:label "hasHostOrganization"@en .
+
+soa:isInDoaj a owl:DatatypeProperty;
+  rdfs:label "is in doaj"@en .
+
+soa:isOa a owl:DatatypeProperty;
+  rdfs:label "is oa"@en .
+
+soa:sourceType a owl:DatatypeProperty;
+  rdfs:label "sourceType"@en .
+
+soa:apcUsd a owl:DatatypeProperty;
+  rdfs:label "apcUsd"@en;
+  rdfs:comment "Source's article processing charge in US Dollars, if available from DOAJ"@en .
+
+soa:fatcatId a owl:DatatypeProperty;
+  rdfs:label "fatcatId"@en .
+
+soa:hasCurrency a owl:DatatypeProperty;
+  rdfs:label "has currency"@en .
+
+soa:Institution a owl:Class;
+  rdfs:label "Institution"@en .
+
+dbpedia-owl:location a owl:ObjectProperty;
+  rdfs:label "location"@en .
+
+soa:grid a owl:DatatypeProperty;
+  rdfs:label "grid"@en .
+
+soa:hasAssociatedInstitution a owl:ObjectProperty;
+  rdfs:label "has associated institution"@en .
+
+soa:rorType a owl:DatatypeProperty;
+  rdfs:label "ror type"@en .
+
+dbprop:acronym a owl:DatatypeProperty;
+  rdfs:label "acronym"@en .
+
+soa:hasChildInstitution a owl:ObjectProperty;
+  rdfs:label "hasChildInstitution" .
+
+soa:hasParentInstitution a owl:ObjectProperty;
+  rdfs:label "hasParentInstitution" .
+
+soa:abbreviatedName a owl:DatatypeProperty;
+  rdfs:label "abbreviatedName"@en, "abbreviated name"@ru .
+
+soa:Work a owl:Class;
+  rdfs:label "Work"@en .
+
+<http://prismstandard.org/namespaces/basic/2.0/publicationDate> a owl:DatatypeProperty;
+  rdfs:label "publication date"@en .
+
+fabio:hasPublicationYear a owl:DatatypeProperty;
+  rdfs:label "has publication year"@en .
+
+soa:countriesDistinctCount a owl:DatatypeProperty;
+  rdfs:label "countries distinct count"@en .
+
+soa:crossrefType a owl:DatatypeProperty;
+  rdfs:label "crossers type"@en .
+
+soa:hasAuthorship a owl:ObjectProperty;
+  rdfs:label "has authorship"@en .
+
+soa:hasConcept a owl:ObjectProperty;
+  rdfs:label "has concept"@en, "has concept" .
+
+soa:hasLocation a owl:ObjectProperty;
+  rdfs:label "has location"@en .
+
+soa:hasOpenAccess a owl:ObjectProperty;
+  rdfs:label "has open access"@en .
+
+soa:hasPrimaryLocation a owl:ObjectProperty;
+  rdfs:label "has primary location"@en .
+
+soa:hasPrimaryTopic a owl:ObjectProperty;
+  rdfs:label "hasPrimaryTopic" .
+
+soa:hasRelatedWork a owl:ObjectProperty;
+  rdfs:label "has related work"@en .
+
+soa:hasTopic a owl:ObjectProperty;
+  rdfs:label "hasTopic" .
+
+soa:institutionsDistinctCount a owl:DatatypeProperty;
+  rdfs:label "institutions distinct count"@en .
+
+soa:isParatext a owl:DatatypeProperty;
+  rdfs:label "is paratext"@en .
+
+soa:isRetracted a owl:DatatypeProperty;
+  rdfs:label "is retracted"@en .
+
+soa:metadataLanguage a owl:DatatypeProperty;
+  rdfs:label "metadata language"@en .
+
+dct:abstract a owl:DatatypeProperty;
+  rdfs:label "abstract"@en .
+
+soa:hasSustainableDevelopmentGoal a owl:ObjectProperty;
+  rdfs:label "hasSustainableDevelopmentGoal" .
+
+<http://prismstandard.org/namespaces/basic/2.0/endingPage> a owl:DatatypeProperty;
+  rdfs:label "ending page"@en .
+
+<http://prismstandard.org/namespaces/basic/2.0/startingPage> a owl:DatatypeProperty;
+  rdfs:label "starting page"@en .
+
+soa:hasVolume a owl:DatatypeProperty;
+  rdfs:label "has volume"@en .
+
+<http://purl.org/spar/cito/cites> a owl:ObjectProperty;
+  rdfs:label "cites"@en .
+
+soa:hasIssue a owl:DatatypeProperty;
+  rdfs:label "has issue"@en .
+
+soa:indexedIn a owl:DatatypeProperty;
+  rdfs:label "indexed in"@en .
+
+fabio:hasPubMedCentralId a owl:DatatypeProperty;
+  rdfs:label "has pubmed central id"@en .
+
+soa:hasBestOaLocation a owl:ObjectProperty;
+  rdfs:label "hasBestOaLocation"@en .
+
+fabio:hasPubMedId a owl:DatatypeProperty;
+  rdfs:label "has pubmed id"@en .
+
+soa:ArticleProcessingCharge a owl:Class;
+  rdfs:label "ArticleProcessingCharge"@en .
+
+soa:hasPrice a owl:DatatypeProperty;
+  rdfs:label "has price"@en .
+
+soa:hasMesh a owl:ObjectProperty;
+  rdfs:label "hasMesh" .
+
+soa:hasFunder a owl:ObjectProperty;
+  rdfs:label "has funder"@en .
+
+soa:hasProvenance a owl:DatatypeProperty;
+  rdfs:label "has provenance"@en .
+
+soa:hasValue a owl:DatatypeProperty;
+  rdfs:label "has value"@en .
+
+soa:Authorship a owl:Class;
+  rdfs:label "Authorship"@en .
+
+soa:hasAuthor a owl:ObjectProperty;
+  rdfs:label "has author"@en .
+
+soa:isCorresponding a owl:DatatypeProperty;
+  rdfs:label "is corresponding"@en .
+
+soa:position a owl:DatatypeProperty;
+  rdfs:label "position"@en .
+
+soa:hasOrganization a owl:ObjectProperty;
+  rdfs:label "has organizsation"@en .
+
+soa:rawAffiliation a owl:DatatypeProperty;
+  rdfs:label "raw affiliation"@en .
+
+soa:Location a owl:Class;
+  rdfs:label "Location"@en .
+
+fabio:hasURL a owl:DatatypeProperty;
+  rdfs:label "has url"@en .
+
+soa:hasSource a owl:ObjectProperty;
+  rdfs:label "has source"@en .
+
+soa:hasVersion a owl:DatatypeProperty;
+  rdfs:label "has version"@en .
+
+soa:pdfUrl a owl:DatatypeProperty;
+  rdfs:label "pdfUrl"@en .
+
+soa:OpenAccess a owl:Class;
+  rdfs:label "OpenAccess"@en .
+
+soa:anyRepositoryHasFulltext a owl:DatatypeProperty;
+  rdfs:label "any repository has fulltext"@en .
+
+soa:oaStatus a owl:DatatypeProperty;
+  rdfs:label "oa status"@en .
+
+soa:oaUrl a owl:DatatypeProperty;
+  rdfs:label "oa url"@en .
+
+soa:Geo a owl:Class;
+  rdfs:label "Geo"@en .
+
+dbprop:city a owl:DatatypeProperty;
+  rdfs:label "city"@en .
+
+dbprop:country a owl:DatatypeProperty;
+  rdfs:label "country"@en .
+
+dbprop:region a owl:DatatypeProperty;
+  rdfs:label "region"@en .
+
+soa:Subfield a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Subfield"@en .
+
+soa:Publisher a owl:Class;
+  rdfs:label "Publisher"@en .
+
+soa:hasParentPublisher a owl:ObjectProperty;
+  rdfs:label "hasParentPublisher"@en .
+
+<http://metadata.un.org/sdg/ontology#Goal> a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "SustainableDevelopmentGoal"@en .
+
+<http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor> a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "TopicalDescriptor"@en .
+
+soa:score a owl:DatatypeProperty;
+  rdfs:label "score"@en .
+
+soa:hasAffiliation a owl:ObjectProperty;
+  rdfs:label "hasAffiliation" .
+
+<https://semopenalex.org/ontology/> a owl:Ontology;
+  dct:created "2022-05-12T00:00:00Z"^^xsd:dateTime;
+  dct:modified "2024-12-18T00:00:00Z"^^xsd:dateTime;
+  dct:description "The SemOpenAlex Ontology is an OWL ontology, representing scientific works such as publications, as well as authors, institutions, publishers, funders, sources, concepts and relations between them, i.e. citations, affiliations, funding details, authorship, publication locations and their sources."@en;
+  dct:creator <https://orcid.org/0000-0001-5458-8645>, <https://orcid.org/0000-0002-5080-3587>,
+    <https://orcid.org/0000-0002-7561-7000>, <https://orcid.org/0000-0002-9098-5389>,
+    <https://orcid.org/0009-0009-4338-0983>;
+  dct:issued "2022-05-12T00:00:00Z"^^xsd:dateTime;
+  dct:license <http://creativecommons.org/publicdomain/zero/1.0/>;
+  dct:title "SemOpenAlex Ontology"@en;
+  rdfs:label "SemOpenAlex Ontology"@en;
+  dct:publisher <http://dbpedia.org/resource/Karlsruhe_Institute_of_Technology>, <http://www.wikidata.org/entity/Q22132500>,
+    <https://www.wikidata.org/wiki/Q158158>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+  dct:contributor "dl@metaphacts.com";
+  owl:versionInfo "4.0.0" .
+
+<https://orcid.org/0000-0001-5458-8645> a foaf:Person;
+  foaf:homepage <https://www.aifb.kit.edu/web/Michael_Färber>;
+  rdfs:label "Michael Färber";
+  foaf:mbox <mailto:michael.faerber@tu-dresden.de> .
+
+<https://orcid.org/0000-0002-5080-3587> a foaf:Person;
+  rdfs:label "Johan Krause";
+  foaf:mbox <mailto:johan.krause@student.kit.edu> .
+
+<https://orcid.org/0000-0002-7561-7000> a foaf:Person;
+  rdfs:label "Peter Haase";
+  foaf:mbox <mailto:ph@metaphacts.com> .
+
+<https://orcid.org/0000-0002-9098-5389> a foaf:Person;
+  rdfs:label "David Lamprecht";
+  foaf:mbox <mailto:dl@metaphacts.com> .
+
+<https://orcid.org/0009-0009-4338-0983> a foaf:Person;
+  rdfs:label "Linn Aung";
+  foaf:mbox <mailto:la@metaphacts.com> .
+
+dct:publisher a owl:DatatypeProperty;
+  rdfs:label "publisher"@en .
+
+soa:hasConceptScore a owl:ObjectProperty;
+  rdfs:label "has concept score"@en .
+
+skos:ConceptShape a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path skos:broader;
+      sh:class skos:Concept
+    ], [ a sh:PropertyShape;
+      sh:path rdfs:seeAlso;
+      sh:class fabio:WikipediaEntry
+    ], [ a sh:PropertyShape;
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path skos:note;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path skos:related;
+      sh:class skos:Concept
+    ];
+  sh:targetClass skos:Concept .
+
+soa:AuthorShape a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path soa:2YrMeanCitedness;
+      sh:datatype xsd:float
+    ], [ a sh:PropertyShape;
+      sh:path <http://purl.org/spar/bido/h-index>;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path dct:created;
+      sh:datatype xsd:date
+    ], [ a sh:PropertyShape;
+      sh:path soa:worksCount;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path soa:alternativeName;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path dbprop:twitter;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path foaf:name;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:i10Index;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path dbprop:scopus;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:citedByCount;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path dbpedia-owl:orcidId;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:countsByYear;
+      sh:class soa:CountsByYear
+    ], [ a sh:PropertyShape;
+      sh:path soa:magId;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path dct:modified;
+      sh:datatype xsd:date
+    ], [ a sh:PropertyShape;
+      sh:path <http://www.w3.org/ns/org#memberOf>;
+      sh:class soa:Institution
+    ], [
+      sh:path soa:hasAffiliation;
+      sh:class soa:Institution
+    ];
+  sh:targetClass soa:Author .
+
+soa:AuthorshipShape a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path soa:hasOrganization;
+      sh:class soa:Institution
+    ], [ a sh:PropertyShape;
+      sh:path soa:isCorresponding;
+      sh:datatype xsd:boolean
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasAuthor;
+      sh:class soa:Author
+    ], [ a sh:PropertyShape;
+      sh:path soa:position;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path soa:rawAffiliation;
+      sh:datatype xsd:string
+    ];
+  sh:targetClass soa:Authorship .
+
+soa:ConceptShape a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path soa:countsByYear;
+      sh:class soa:CountsByYear
+    ], [ a sh:PropertyShape;
+      sh:path foaf:depiction;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:magId;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path soa:umlsCui;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:worksCount;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path soa:level;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path soa:umlsAui;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:citedByCount;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path dct:created;
+      sh:datatype xsd:date
+    ], [ a sh:PropertyShape;
+      sh:path soa:imageThumbnail;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path dct:modified;
+      sh:datatype xsd:date
+    ];
+  sh:targetClass soa:Concept .
+
+soa:CountsByYearShape a sh:NodeShape;
+  sh:property [
+      sh:path soa:citedByCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:worksCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:year;
+      sh:datatype xsd:integer
+    ];
+  sh:targetClass soa:CountsByYear .
+
+soa:FunderShape a sh:NodeShape;
+  sh:property [
+      sh:path soa:alternativeName;
+      sh:datatype xsd:string
+    ], [
+      sh:path dct:created;
+      sh:datatype xsd:date
+    ], [
+      sh:path soa:ror;
+      sh:datatype xsd:anyURI
+    ], [
+      sh:path dbprop:countryCode;
+      sh:datatype xsd:string
+    ], [
+      sh:path soa:worksCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path foaf:name;
+      sh:datatype xsd:string
+    ], [
+      sh:path soa:citedByCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path dct:description;
+      sh:datatype xsd:string
+    ], [
+      sh:path soa:2YrMeanCitedness;
+      sh:datatype xsd:float
+    ], [
+      sh:path <http://prismstandard.org/namespaces/basic/2.0/doi>;
+      sh:datatype xsd:anyURI
+    ], [
+      sh:path soa:crossref;
+      sh:datatype xsd:string
+    ], [
+      sh:path <http://purl.org/spar/bido/h-index>;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:i10Index;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:countsByYear;
+      sh:class soa:CountsByYear
+    ], [
+      sh:path soa:grantsCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path dct:modified;
+      sh:datatype xsd:date
+    ], [
+      sh:path foaf:homepage;
+      sh:datatype xsd:anyURI
+    ];
+  sh:targetClass soa:Funder .
+
+soa:GeoShape a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path dbprop:city;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path dbprop:region;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path wgs:long;
+      sh:datatype xsd:float
+    ], [ a sh:PropertyShape;
+      sh:path dbprop:countryCode;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path dbprop:country;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path wgs:lat;
+      sh:datatype xsd:float
+    ];
+  sh:targetClass soa:Geo .
+
+soa:InstitutionShape a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path dct:modified;
+      sh:datatype xsd:date
+    ], [ a sh:PropertyShape;
+      sh:path soa:magId;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path dbpedia-owl:alternativeName;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path foaf:homepage;
+      sh:datatype xsd:anyURI
+    ], [ a sh:PropertyShape;
+      sh:path foaf:name;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path dbprop:countryCode;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasAssociatedInstitution;
+      sh:class soa:Institution
+    ], [ a sh:PropertyShape;
+      sh:path dbpedia-owl:location;
+      sh:class soa:Geo
+    ], [ a sh:PropertyShape;
+      sh:path soa:rorType;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path rdfs:seeAlso;
+      sh:class fabio:WikipediaEntry
+    ], [ a sh:PropertyShape;
+      sh:path foaf:depiction;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:ror;
+      sh:datatype xsd:anyURI
+    ], [ a sh:PropertyShape;
+      sh:path dct:created;
+      sh:datatype xsd:date
+    ], [ a sh:PropertyShape;
+      sh:path soa:worksCount;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path soa:imageThumbnail;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:citedByCount;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path dbprop:acronym;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:grid;
+      sh:datatype xsd:string
+    ];
+  sh:targetClass soa:Institution .
+
+soa:OpenAccessShape a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path soa:oaStatus;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:isOa;
+      sh:datatype xsd:boolean
+    ], [ a sh:PropertyShape;
+      sh:path soa:oaUrl;
+      sh:datatype xsd:string
+    ];
+  sh:targetClass soa:OpenAccess .
+
+soa:PublisherShape a sh:NodeShape;
+  sh:property [
+      sh:path soa:ror;
+      sh:datatype xsd:string
+    ], [
+      sh:path soa:i10Index;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:countsByYear;
+      sh:class soa:CountsByYear
+    ], [
+      sh:path dct:created;
+      sh:datatype xsd:date
+    ], [
+      sh:path foaf:name;
+      sh:datatype xsd:string
+    ], [
+      sh:path soa:2YrMeanCitedness;
+      sh:datatype xsd:float
+    ], [
+      sh:path soa:hasParentPublisher;
+      sh:class soa:Publisher
+    ], [
+      sh:path <http://purl.org/spar/bido/h-index>;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:citedByCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path dbpedia-owl:alternativeName;
+      sh:datatype xsd:string
+    ], [
+      sh:path dct:modified;
+      sh:datatype xsd:date
+    ], [
+      sh:path soa:worksCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:level;
+      sh:datatype xsd:integer
+    ], [
+      sh:path <http://www.geonames.org/ontology#countryCode>;
+      sh:datatype xsd:string
+    ];
+  sh:targetClass soa:Publisher .
+
+soa:WorkShape a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path soa:hasBestOaLocation;
+      sh:class soa:Location
+    ], [ a sh:PropertyShape;
+      sh:path <http://prismstandard.org/namespaces/basic/2.0/startingPage>;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path <http://prismstandard.org/namespaces/basic/2.0/publicationDate>;
+      sh:datatype xsd:date
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasVolume;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:crossrefType;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasFunder;
+      sh:class soa:Funder
+    ], [ a sh:PropertyShape;
+      sh:path soa:citedByCount;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path soa:countsByYear;
+      sh:class soa:CountsByYear
+    ], [ a sh:PropertyShape;
+      sh:path soa:isRetracted;
+      sh:datatype xsd:boolean
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasLocation;
+      sh:class soa:Location
+    ], [ a sh:PropertyShape;
+      sh:path dct:title;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasIssue;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path dct:abstract;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:magId;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path fabio:hasPubMedId;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path dct:creator;
+      sh:class soa:Author
+    ], [ a sh:PropertyShape;
+      sh:path <http://purl.org/spar/cito/cites>;
+      sh:class soa:Work
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasRelatedWork;
+      sh:class soa:Work
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasAuthorship;
+      sh:class soa:Authorship
+    ], [ a sh:PropertyShape;
+      sh:path fabio:hasPublicationYear;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path dct:created;
+      sh:datatype xsd:date
+    ], [ a sh:PropertyShape;
+      sh:path fabio:hasPubMedCentralId;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasOpenAccess;
+      sh:class soa:OpenAccess
+    ], [ a sh:PropertyShape;
+      sh:path <http://prismstandard.org/namespaces/basic/2.0/doi>;
+      sh:datatype xsd:anyURI
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasPrimaryLocation;
+      sh:class soa:Location
+    ], [ a sh:PropertyShape;
+      sh:path <http://prismstandard.org/namespaces/basic/2.0/endingPage>;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:workType;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path dct:modified;
+      sh:datatype xsd:date
+    ], [ a sh:PropertyShape;
+      sh:path soa:isParatext;
+      sh:datatype xsd:boolean
+    ], [ a sh:PropertyShape;
+      sh:path dbprop:countryCode;
+      sh:datatype xsd:string
+    ], [
+      sh:path soa:hasMesh;
+      sh:class <http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor>
+    ], [
+      sh:path soa:hasApcList;
+      sh:class soa:ArticleProcessingCharge
+    ], [
+      sh:path soa:hasPrimaryTopic;
+      sh:class soa:Topic
+    ], [
+      sh:path soa:metadataLanguage;
+      sh:datatype xsd:string
+    ], [
+      sh:path soa:indexedIn;
+      sh:datatype xsd:string
+    ], [
+      sh:path soa:hasKeyword;
+      sh:class soa:Keyword
+    ], [
+      sh:path soa:countriesDistinctCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:hasSustainableDevelopmentGoal;
+      sh:class <http://metadata.un.org/sdg/ontology#Goal>
+    ], [
+      sh:path soa:hasTopic;
+      sh:class soa:Topic
+    ], [
+      sh:path soa:institutionsDistinctCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:hasConcept;
+      sh:class soa:Concept
+    ];
+  sh:targetClass soa:Work .
+
+soa:hasApcList a owl:ObjectProperty;
+  rdfs:label "hasAPCList" .
+
+soa:FieldShape a sh:NodeShape;
+  sh:property [
+      sh:path skos:note;
+      sh:datatype xsd:string
+    ], [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path dct:created;
+      sh:datatype xsd:date
+    ], [
+      sh:path soa:worksCount;
+      sh:datatype xsd:string
+    ], [
+      sh:path soa:citedByCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path skos:related;
+      sh:class soa:Field
+    ], [
+      sh:path dct:modified;
+      sh:datatype xsd:date
+    ], [
+      sh:path skos:altLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path skos:broader;
+      sh:class soa:Domain
+    ];
+  sh:targetClass soa:Field .
+
+soa:SubfieldShape a sh:NodeShape;
+  sh:property [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path skos:broader;
+      sh:class soa:Field
+    ], [
+      sh:path skos:note;
+      sh:datatype xsd:string
+    ], [
+      sh:path dct:created;
+      sh:datatype xsd:date
+    ], [
+      sh:path dct:modified;
+      sh:datatype xsd:date
+    ], [
+      sh:path skos:related;
+      sh:class soa:Subfield
+    ], [
+      sh:path soa:worksCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:citedByCount;
+      sh:datatype xsd:integer
+    ];
+  sh:targetClass soa:Subfield .
+
+soa:TopicShape a sh:NodeShape;
+  sh:property [
+      sh:path skos:note;
+      sh:datatype xsd:string
+    ], [
+      sh:path dct:created;
+      sh:datatype xsd:date
+    ], [
+      sh:path soa:citedByCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path dct:modified;
+      sh:datatype xsd:date
+    ], [
+      sh:path soa:worksCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path skos:broader;
+      sh:class soa:Subfield
+    ], [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path soa:hasKeyword;
+      sh:class soa:Keyword
+    ], [
+      sh:path skos:related;
+      sh:class soa:Topic
+    ];
+  sh:targetClass soa:Topic .
+
+soa:KeywordShape a sh:NodeShape;
+  sh:property [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ];
+  sh:targetClass soa:Keyword .
+
+<http://www.geonames.org/ontology#geonamesID> a owl:DatatypeProperty;
+  rdfs:label "genames id"@en .
+
+<http://www.geonames.org/ontology#lat> a owl:DatatypeProperty;
+  rdfs:label "lat"@en .
+
+<http://www.geonames.org/ontology#long> a owl:DatatypeProperty;
+  rdfs:label "long"@en .
+
+soa:hasApc a owl:ObjectProperty;
+  rdfs:label "hasAPC" .
+
+soa:hasValueUsd a owl:DatatypeProperty;
+  rdfs:label "has value usd"@en .
+
+soa:ArticleProcessingChargeShape a sh:NodeShape;
+  sh:property [
+      sh:path soa:hasPriceUsd;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:hasProvenance;
+      sh:datatype xsd:string
+    ], [
+      sh:path soa:hasCurrency;
+      sh:datatype xsd:string
+    ], [
+      sh:path soa:hasPrice;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:hasValueUsd;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:hasValue;
+      sh:datatype xsd:integer
+    ];
+  sh:targetClass soa:ArticleProcessingCharge .
+
+soa:hasPriceUsd a owl:DatatypeProperty;
+  rdfs:label "has price usd"@en .
+
+soa:DomainShape a sh:NodeShape;
+  sh:property [
+      sh:path soa:worksCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path soa:citedByCount;
+      sh:datatype xsd:integer
+    ], [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path skos:altLabel;
+      sh:datatype xsd:string
+    ], [
+      sh:path skos:note;
+      sh:datatype xsd:string
+    ], [
+      sh:path skos:related;
+      sh:class soa:Domain
+    ], [
+      sh:path dct:created;
+      sh:datatype xsd:date
+    ], [
+      sh:path dct:modified;
+      sh:datatype xsd:date
+    ];
+  sh:targetClass soa:Domain .
+
+soa:SustainableDevelopmentGoalShape a sh:NodeShape;
+  sh:property [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ];
+  sh:targetClass <http://metadata.un.org/sdg/ontology#Goal> .
+
+soa:TopicalDescriptorShape a sh:NodeShape;
+  sh:property [
+      sh:path skos:prefLabel;
+      sh:datatype xsd:string
+    ];
+  sh:targetClass <http://id.nlm.nih.gov/mesh/vocab#TopicalDescriptor> .
+
+soa:LocationShape a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path soa:hasSource;
+      sh:class soa:Source
+    ], [ a sh:PropertyShape;
+      sh:path fabio:hasURL;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasVersion;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:isOa;
+      sh:datatype xsd:boolean
+    ], [ a sh:PropertyShape;
+      sh:path dct:license;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:pdfUrl;
+      sh:datatype xsd:string
+    ];
+  sh:targetClass soa:Location .
+
+soa:SourceShape a sh:NodeShape;
+  sh:property [ a sh:PropertyShape;
+      sh:path soa:2YrMeanCitedness;
+      sh:datatype xsd:float
+    ], [ a sh:PropertyShape;
+      sh:path soa:isInDoaj;
+      sh:datatype xsd:boolean
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasHostOrganization;
+      sh:class soa:Institution
+    ], [ a sh:PropertyShape;
+      sh:path soa:hasHostOrganization;
+      sh:class soa:Publisher
+    ], [ a sh:PropertyShape;
+      sh:path soa:citedByCount;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path soa:i10Index;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path soa:countsByYear;
+      sh:class soa:CountsByYear
+    ], [ a sh:PropertyShape;
+      sh:path soa:sourceType;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:abbreviatedName;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path <http://purl.org/spar/bido/h-index>;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path <http://prismstandard.org/namespaces/basic/2.0/issn>;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path dbpedia-owl:alternativeName;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path foaf:name;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:isOa;
+      sh:datatype xsd:boolean
+    ], [ a sh:PropertyShape;
+      sh:path dct:publisher;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path <http://www.geonames.org/ontology#countryCode>;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:fatcatId;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path soa:apcUsd;
+      sh:datatype xsd:integer
+    ], [ a sh:PropertyShape;
+      sh:path fabio:hasIssnL;
+      sh:datatype xsd:string
+    ], [ a sh:PropertyShape;
+      sh:path foaf:homepage;
+      sh:datatype xsd:anyURI
+    ];
+  sh:targetClass soa:Source .
