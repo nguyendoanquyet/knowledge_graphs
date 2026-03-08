@@ -1,0 +1,50 @@
+@prefix VLegalKMaps: <https://aseados.ucd.ie/vlegal/resource/> .
+@prefix VLegalO: <https://aseados.ucd.ie/vlegal/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VLegalKMaps:CucTaichinhdoanhnghiep a VLegalO:Organization ;
+    rdfs:label "Cục Tài chính doanh nghiệp," .
+
+VLegalKMaps:DCR0665_c0_s0_p0_a1 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:CCL5657 ;
+    VLegalO:rawText """Điều 1. Sửa đổi khoản 2 Điều 4 Điều lệ tổ chức và hoạt động của Công ty trách nhiệm hữu hạn một thành viên Mua bán nợ Việt Nam ban hành kèm theo Thông tư số 42/2021/TT-BTC như sau:
+“2) Công ty trách nhiệm hữu hạn một thành viên Mua bán nợ Việt Nam có tư cách pháp nhân, dấu riêng và được mở tài khoản tiền Đồng Việt Nam và ngoại tệ tại Kho bạc Nhà nước, các ngân hàng thương mại trong nước và nước ngoài theo các quy định của pháp luật có liên quan.”""" .
+
+VLegalKMaps:DCR0665_c0_s0_sp0_a2_cl1 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR0665_c0_s0_p0_a2 ;
+    VLegalO:rawText "1. Thông tư này có hiệu lực thi hành kể từ ngày 20 tháng 2 năm 2022." .
+
+VLegalKMaps:DCR0665_c0_s0_sp0_a2_cl2 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR0665_c0_s0_p0_a2 ;
+    VLegalO:rawText "2. Cục trưởng Cục Tài chính doanh nghiệp, Thủ trưởng các đơn vị có liên quan, Hội đồng thành viên, Tổng Giám đốc Công ty trách nhiệm hữu hạn một thành viên Mua bán nợ Việt Nam chịu trách nhiệm thi hành Thông tư này./." .
+
+VLegalKMaps:KhobacNhanuoc a VLegalO:Location ;
+    rdfs:label "Kho bạc Nhà nước," .
+
+VLegalKMaps:VietNam a VLegalO:Location ;
+    rdfs:label "Việt Nam" .
+
+VLegalKMaps:CCL5657 a VLegalO:Circular,
+        VLegalO:Document ;
+    rdfs:label "Thông tư 123/2021/TT-BTC sửa đổi Khoản 2 Điều 4 Điều lệ tổ chức và hoạt động của Công ty trách nhiệm hữu hạn một thành viên Mua bán nợ Việt Nam kèm theo Thông tư 42/2021/TT-BTC do Bộ trưởng Bộ Tài chính ban hành" ;
+    VLegalO:docCode "123/2021/TT-BTC" ;
+    VLegalO:effectiveDate "2022-01-01"^^xsd:date ;
+    VLegalO:hasArticle VLegalKMaps:DCR0665_c0_s0_p0_a1,
+        VLegalKMaps:DCR0665_c0_s0_p0_a2 ;
+    VLegalO:issuedDate "2021-12-30"^^xsd:date ;
+    VLegalO:pursuantsOn VLegalKMaps:DCR0640,
+        VLegalKMaps:DCR0665,
+        VLegalKMaps:DCR0880,
+        VLegalKMaps:DCR1123 ;
+    VLegalO:relatedLocation VLegalKMaps:KhobacNhanuoc,
+        VLegalKMaps:VietNam ;
+    VLegalO:relatedOrganization VLegalKMaps:CCL07091 ;
+    VLegalO:relatedTo VLegalKMaps:CCL07091 .
+
+VLegalKMaps:DCR0665_c0_s0_p0_a2 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:CCL5657 ;
+    VLegalO:hasClause VLegalKMaps:DCR0665_c0_s0_sp0_a2_cl1,
+        VLegalKMaps:DCR0665_c0_s0_sp0_a2_cl2 ;
+    VLegalO:rawText "Điều 2. Hiệu lực và trách nhiệm thi hành" .
+

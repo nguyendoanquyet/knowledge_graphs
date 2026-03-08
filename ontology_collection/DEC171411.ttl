@@ -1,0 +1,443 @@
+@prefix VLegalKMaps: <https://aseados.ucd.ie/vlegal/resource/> .
+@prefix VLegalO: <https://aseados.ucd.ie/vlegal/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VLegalKMaps:BenhvienBenhnhietdoiTW a VLegalO:Organization ;
+    rdfs:label "Bệnh viện Bệnh nhiệt đới TW" .
+
+VLegalKMaps:BenhvienChoRay a VLegalO:Organization ;
+    rdfs:label "Bệnh viện Chợ Rẫy" .
+
+VLegalKMaps:BenhvienPhoiTW a VLegalO:Organization ;
+    rdfs:label "Bệnh viện Phổi TW" .
+
+VLegalKMaps:BenhvienPhoiTrunguong a VLegalO:Organization ;
+    rdfs:label "Bệnh viện Phổi Trung ương" .
+
+VLegalKMaps:CucQuanlyKCB a VLegalO:Organization ;
+    rdfs:label "Cục Quản lý KCB" .
+
+VLegalKMaps:CucQuanlyKham a VLegalO:Organization ;
+    rdfs:label "Cục Quản lý Khám," .
+
+<https://aseados.ucd.ie/vlegal/resource/CucQuanlyKham,chuabenh> a VLegalO:Organization ;
+    rdfs:label "Cục Quản lý Khám, chữa bệnh" .
+
+VLegalKMaps:CucQuanlyKhamchua a VLegalO:Organization ;
+    rdfs:label "Cục Quản lý Khám, chữa" .
+
+VLegalKMaps:DaihocYDuoc a VLegalO:Organization ;
+    rdfs:label "Đại học Y Dược" .
+
+VLegalKMaps:HoiHoisuccapcuuVietNam a VLegalO:Organization ;
+    rdfs:label "Hội Hồi sức cấp cứu Việt Nam" .
+
+VLegalKMaps:HoitruyennhiemVietNam a VLegalO:Organization ;
+    rdfs:label "Hội truyền nhiễm Việt Nam," .
+
+VLegalKMaps:TrungtamQuocgia a VLegalO:Organization ;
+    rdfs:label "Trung tâm Quốc gia" .
+
+VLegalKMaps:VienDaotaovaNghiencuuSuckhoeTreem a VLegalO:Organization ;
+    rdfs:label "Viện Đào tạo và Nghiên cứu Sức khỏe Trẻ em," .
+
+VLegalKMaps:VienSuckhoeTamthan a VLegalO:Organization ;
+    rdfs:label "Viện Sức khỏe Tâm thần," .
+
+VLegalKMaps:VienTimMach a VLegalO:Organization ;
+    rdfs:label "Viện Tim Mạch," .
+
+VLegalKMaps:VienTimmach a VLegalO:Organization ;
+    rdfs:label "Viện Tim mạch," .
+
+VLegalKMaps:13PGSTSPhungNguyenTheNguyen a VLegalO:Person ;
+    rdfs:label "13. PGS.TS. Phùng Nguyễn Thế Nguyên," ;
+    ns1:name "13. PGS.TS. Phùng Nguyễn Thế Nguyên," .
+
+VLegalKMaps:16TSBSPhanTuQui a VLegalO:Person ;
+    rdfs:label "16. TS.BS. Phan Tứ Quí," ;
+    ns1:name "16. TS.BS. Phan Tứ Quí," .
+
+VLegalKMaps:19PGSTSTaAnhTuan a VLegalO:Person ;
+    rdfs:label "19. PGS.TS. Tạ Anh Tuấn," ;
+    ns1:name "19. PGS.TS. Tạ Anh Tuấn," .
+
+VLegalKMaps:20PGSTSNguyenHoangAnh a VLegalO:Person ;
+    rdfs:label "20. PGS.TS. Nguyễn Hoàng Anh," ;
+    ns1:name "20. PGS.TS. Nguyễn Hoàng Anh," .
+
+VLegalKMaps:21TSBSPhanHuuPhuc a VLegalO:Person ;
+    rdfs:label "21. TS.BS. Phan Hữu Phúc," ;
+    ns1:name "21. TS.BS. Phan Hữu Phúc," .
+
+VLegalKMaps:24ThSCaoDucPhuong a VLegalO:Person ;
+    rdfs:label "24. ThS. Cao Đức Phương," ;
+    ns1:name "24. ThS. Cao Đức Phương," .
+
+VLegalKMaps:25TSBSDuongBichThuy a VLegalO:Person ;
+    rdfs:label "25. TS.BS. Dương Bích Thủy," ;
+    ns1:name "25. TS.BS. Dương Bích Thủy," .
+
+VLegalKMaps:2DSDoThiNgat a VLegalO:Person ;
+    rdfs:label "2. DS. Đỗ Thị Ngát," ;
+    ns1:name "2. DS. Đỗ Thị Ngát," .
+
+VLegalKMaps:6PGSTSNguyenVietNhung a VLegalO:Person ;
+    rdfs:label "6. PGS.TS. Nguyễn Viết Nhung," ;
+    ns1:name "6. PGS.TS. Nguyễn Viết Nhung," .
+
+VLegalKMaps:8TSBSVuDinhPhu a VLegalO:Person ;
+    rdfs:label "8. TS.BS. Vũ Đình Phú," ;
+    ns1:name "8. TS.BS. Vũ Đình Phú," .
+
+VLegalKMaps:BachVan a VLegalO:Person ;
+    rdfs:label "Bạch Văn" ;
+    ns1:name "Bạch Văn" .
+
+VLegalKMaps:BenhvienBachMai a VLegalO:Location,
+        VLegalO:Organization ;
+    rdfs:label "Bệnh viện Bạch Mai" .
+
+VLegalKMaps:BenhvienBenhNhietdoi a VLegalO:Location ;
+    rdfs:label "Bệnh viện Bệnh Nhiệt đới," .
+
+VLegalKMaps:BenhvienBenhvienNhietdoiTPHCM a VLegalO:Location ;
+    rdfs:label "Bệnh viện Bệnh viện Nhiệt đới TPHCM" .
+
+VLegalKMaps:BenhvienNhiTW a VLegalO:Location ;
+    rdfs:label "Bệnh viện Nhi TW" .
+
+VLegalKMaps:BenhvienNhidong1 a VLegalO:Location ;
+    rdfs:label "Bệnh viện Nhi đồng 1," .
+
+VLegalKMaps:BenhvienNhidong2 a VLegalO:Location ;
+    rdfs:label "Bệnh viện Nhi đồng 2," .
+
+VLegalKMaps:BenhvienNhidongthanhpho a VLegalO:Location ;
+    rdfs:label "Bệnh viện Nhi đồng thành phố," .
+
+VLegalKMaps:DCR1136_c0_s0_p0_a1 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DEC171411 ;
+    VLegalO:rawText "Điều 1. Ban hành kèm theo Quyết định này Hướng dẫn chẩn đoán và điều trị sau nhiễm COVID-19 ở trẻ em." .
+
+VLegalKMaps:DCR1136_c0_s0_p0_a2 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DEC171411 ;
+    VLegalO:rawText "Điều 2. Hướng dẫn chẩn đoán và điều trị sau nhiễm COVID-19 ở trẻ em áp dụng tại các cơ sở khám bệnh, chữa bệnh Nhà nước và tư nhân trên cả nước." .
+
+VLegalKMaps:DCR1136_c0_s0_p0_a3 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DEC171411 ;
+    VLegalO:rawText "Điều 3. Quyết định này có hiệu lực kể từ ngày ký, ban hành." .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl1 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "1. GS.TS. Nguyễn Gia Bình, Chủ tịch Hội Hồi sức cấp cứu Việt Nam" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl10 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "10. BSCKII. Nguyễn Thanh Trường, Phó Giám đốc Bệnh viện Bệnh Nhiệt đới, TP.HCM" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl11 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "11. BSCKII. Nguyễn Minh Tiến, Phó Giám đốc Bệnh viện Nhi đồng thành phố, TP.HCM" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl12 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "12. TTND. BS. Bạch Văn Cam, Cố vấn chuyên môn Bệnh viện Nhi đồng 1, TP.HCM" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl13 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "13. PGS.TS. Phùng Nguyễn Thế Nguyên, Chủ nhiệm bộ môn Nhi, Đại học Y Dược TP. Hồ Chí Minh, Trưởng khoa COVID-19 Bệnh viện Nhi đồng 1, TP.HCM" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl14 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "14. BSCKII. Dư Tuấn Quy, Trưởng khoa nhiễm Bệnh viện Nhi đồng 1, TP.HCM" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl15 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "15. BSCK2. Đỗ Châu Việt, Trưởng khoa Nhiễm Bệnh viện Nhi đồng 2, TP.HCM" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl16 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "16. TS.BS. Phan Tứ Quí, Trưởng khoa Hồi sức Nhi Bệnh viện Bệnh Nhiệt đới, TP.HCM" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl17 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "17. PGS.TS. Nguyễn Văn Tuấn, Viện trưởng Viện Sức khỏe Tâm thần, Bệnh viện Bạch Mai" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl18 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "18. BSCKII. Nguyễn Hồng Hà, Phó Chủ tịch Hội truyền nhiễm Việt Nam, nguyên Phó Giám đốc Bệnh viện Bệnh nhiệt đới TW" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl19 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "19. PGS.TS. Tạ Anh Tuấn, Trưởng khoa Điều trị tích cực Nội khoa, Bệnh viện Nhi TW" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl2 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "2. PGS.TS. Lương Ngọc Khuê, Cục trưởng Cục Quản lý Khám, chữa bệnh" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl20 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "20. PGS.TS. Nguyễn Hoàng Anh, Giám đốc Trung tâm Quốc gia về Thông tin thuốc và Theo dõi phản ứng có hại của thuốc, Phó trưởng khoa Dược, Bệnh viện Bạch Mai" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl21 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "21. TS.BS. Phan Hữu Phúc, Viện trưởng Viện Đào tạo và Nghiên cứu Sức khỏe Trẻ em, Bệnh viện Nhi TW" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl22 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "22. ThS.BS. Nguyễn Thị Thanh Ngọc, Phụ trách phòng Nghiệp vụ - Thanh tra - Bảo vệ sức khỏe cán bộ, Cục Quản lý Khám, chữa bệnh" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl23 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "23. ThS.BS. Trương Lê Vân Ngọc, Phó trưởng phòng Nghiệp vụ - Thanh tra - Bảo vệ sức khỏe cán bộ, Cục Quản lý Khám, chữa bệnh" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl24 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "24. ThS. Cao Đức Phương, Chuyên viên chính phòng Nghiệp vụ - Thanh tra và Bảo vệ sức khỏe cán bộ, Cục Quản lý KCB" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl25 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "25. TS.BS. Dương Bích Thủy, Phó trưởng khoa cấp cứu - HSTC -Chống độc Bệnh viện Bệnh viện Nhiệt đới TPHCM" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl26 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "26. ThS.BS. Vũ Văn Thành, Trưởng khoa Bệnh phổi mạn tính, Bệnh viện Phổi Trung ương" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl27 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "27. ThS.BS. Nguyễn Tuấn Hải, Trưởng phòng C6, Viện Tim mạch, Bệnh viện Bạch Mai" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl28 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "28. ThS.BS. Nguyễn Thị Phương Anh, Trưởng khoa thăm dò và phục hồi chức năng, Bệnh viện Phổi Trung ương" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl29 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "29. TS.BS. Nguyễn Phương Mai, Chuyên viên, phòng Nghiệp vụ - Thanh tra - Bảo vệ sức khỏe cán bộ, Cục Quản lý Khám, chữa bệnh" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl3 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "3. TS.BS. Nguyễn Trọng Khoa, Phó Cục trưởng, Cục Quản lý Khám, chữa bệnh" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl30 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText """30. DS. Đỗ Thị Ngát, Chuyên viên, phòng Nghiệp vụ - Thanh tra và Bảo vệ sức khỏe cán bộ, Cục Quản lý Khám, chữa bệnh
+Thư ký biên soạn""" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl31 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "1. TS.BS. Nguyễn Phương Mai, Chuyên viên phòng Nghiệp vụ - Thanh tra - Bảo vệ sức khỏe cán bộ, Cục Quản lý Khám, chữa bệnh" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl32 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "2. DS. Đỗ Thị Ngát, Chuyên viên, phòng Nghiệp vụ - Thanh tra - Bảo vệ sức khỏe cán bộ, Cục Quản lý Khám, chữa bệnh" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl4 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "4. TS. BS. Vương Ánh Dương, Phó Cục trưởng, Cục Quản lý Khám, chữa bệnh" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl5 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "5. PGS.TS. Phạm Thị Ngọc Thảo, Phó Giám đốc Bệnh viện Chợ Rẫy" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl6 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "6. PGS.TS. Nguyễn Viết Nhung, Giám đốc Bệnh viện Phổi TW" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl7 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "7. BSCKII. Nguyễn Trung Cấp, Phó Giám đốc Bệnh viện Bệnh nhiệt đới TW" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl8 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "8. TS.BS. Vũ Đình Phú, Trưởng khoa Hồi sức tích cực Bệnh viện Bệnh nhiệt đới TW" .
+
+VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl9 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:rawText "9. PGS.TS. Phạm Mạnh Hùng, Viện trưởng Viện Tim Mạch, Bệnh viện Bạch Mai" .
+
+VLegalKMaps:DoChauViet a VLegalO:Person ;
+    rdfs:label "Đỗ Châu Việt," ;
+    ns1:name "Đỗ Châu Việt," .
+
+VLegalKMaps:DuTuan a VLegalO:Person ;
+    rdfs:label "Dư Tuấn" ;
+    ns1:name "Dư Tuấn" .
+
+VLegalKMaps:NguyenGiaBinh a VLegalO:Person ;
+    rdfs:label "Nguyễn Gia Bình," ;
+    ns1:name "Nguyễn Gia Bình," .
+
+VLegalKMaps:NguyenHongHa a VLegalO:Person ;
+    rdfs:label "Nguyễn Hồng Hà," ;
+    ns1:name "Nguyễn Hồng Hà," .
+
+VLegalKMaps:NguyenMinhTien a VLegalO:Person ;
+    rdfs:label "Nguyễn Minh Tiến," ;
+    ns1:name "Nguyễn Minh Tiến," .
+
+VLegalKMaps:NguyenThanhTruong a VLegalO:Person ;
+    rdfs:label "Nguyễn Thanh Trường," ;
+    ns1:name "Nguyễn Thanh Trường," .
+
+VLegalKMaps:NguyenThiPhuongAnh a VLegalO:Person ;
+    rdfs:label "Nguyễn Thị Phương Anh," ;
+    ns1:name "Nguyễn Thị Phương Anh," .
+
+VLegalKMaps:NguyenThiThanhNgoc a VLegalO:Person ;
+    rdfs:label "Nguyễn Thị Thanh Ngọc," ;
+    ns1:name "Nguyễn Thị Thanh Ngọc," .
+
+VLegalKMaps:NguyenTrungCap a VLegalO:Person ;
+    rdfs:label "Nguyễn Trung Cấp," ;
+    ns1:name "Nguyễn Trung Cấp," .
+
+VLegalKMaps:NguyenTuanHai a VLegalO:Person ;
+    rdfs:label "Nguyễn Tuấn Hải," ;
+    ns1:name "Nguyễn Tuấn Hải," .
+
+VLegalKMaps:PGSTSLuongNgocKhue a VLegalO:Person ;
+    rdfs:label "PGS.TS. Lương Ngọc Khuê," ;
+    ns1:name "PGS.TS. Lương Ngọc Khuê," .
+
+VLegalKMaps:PGSTSNguyenVanTuan a VLegalO:Person ;
+    rdfs:label "PGS.TS. Nguyễn Văn Tuấn," ;
+    ns1:name "PGS.TS. Nguyễn Văn Tuấn," .
+
+VLegalKMaps:PGSTSPhamManhHung a VLegalO:Person ;
+    rdfs:label "PGS.TS. Phạm Mạnh Hùng," ;
+    ns1:name "PGS.TS. Phạm Mạnh Hùng," .
+
+VLegalKMaps:PGSTSPhamThiNgocThao a VLegalO:Person ;
+    rdfs:label "PGS.TS. Phạm Thị Ngọc Thảo," ;
+    ns1:name "PGS.TS. Phạm Thị Ngọc Thảo," .
+
+VLegalKMaps:TPHoChiMinh a VLegalO:Location ;
+    rdfs:label "TP. Hồ Chí Minh," .
+
+VLegalKMaps:TSBSNguyenPhuongMai a VLegalO:Person ;
+    rdfs:label "TS.BS. Nguyễn Phương Mai," ;
+    ns1:name "TS.BS. Nguyễn Phương Mai," .
+
+VLegalKMaps:TSBSNguyenTrongKhoa a VLegalO:Person ;
+    rdfs:label "TS.BS. Nguyễn Trọng Khoa," ;
+    ns1:name "TS.BS. Nguyễn Trọng Khoa," .
+
+VLegalKMaps:ThiNgat a VLegalO:Person ;
+    rdfs:label "Thị Ngát," ;
+    ns1:name "Thị Ngát," .
+
+VLegalKMaps:TruongLeVanNgoc a VLegalO:Person ;
+    rdfs:label "Trương Lê Vân Ngọc," ;
+    ns1:name "Trương Lê Vân Ngọc," .
+
+VLegalKMaps:VuVanThanh a VLegalO:Person ;
+    rdfs:label "Vũ Văn Thành," ;
+    ns1:name "Vũ Văn Thành," .
+
+VLegalKMaps:VuongAnhDuong a VLegalO:Person ;
+    rdfs:label "Vương Ánh Dương," ;
+    ns1:name "Vương Ánh Dương," .
+
+VLegalKMaps:DEC171411 a VLegalO:Decision,
+        VLegalO:Document ;
+    rdfs:label "Quyết định 1856/QĐ-BYT năm 2022 về Hướng dẫn chẩn đoán và điều trị sau nhiễm COVID-19 ở trẻ em do Bộ trưởng Bộ Y tế ban hành" ;
+    VLegalO:docCode "1856/QĐ-BYT" ;
+    VLegalO:hasArticle VLegalKMaps:DCR1136_c0_s0_p0_a1,
+        VLegalKMaps:DCR1136_c0_s0_p0_a2,
+        VLegalKMaps:DCR1136_c0_s0_p0_a3,
+        VLegalKMaps:DCR1136_c0_s0_p0_a4 ;
+    VLegalO:issuedDate "2022-01-01"^^xsd:date ;
+    VLegalO:pursuantsOn VLegalKMaps:DCR1136 ;
+    VLegalO:relatedLocation VLegalKMaps:BenhvienBachMai,
+        VLegalKMaps:BenhvienBenhNhietdoi,
+        VLegalKMaps:BenhvienBenhvienNhietdoiTPHCM,
+        VLegalKMaps:BenhvienNhiTW,
+        VLegalKMaps:BenhvienNhidong1,
+        VLegalKMaps:BenhvienNhidong2,
+        VLegalKMaps:BenhvienNhidongthanhpho,
+        VLegalKMaps:TPHoChiMinh ;
+    VLegalO:relatedOrganization VLegalKMaps:DOC36092 ;
+    VLegalO:relatedPerson VLegalKMaps:13PGSTSPhungNguyenTheNguyen,
+        VLegalKMaps:16TSBSPhanTuQui,
+        VLegalKMaps:19PGSTSTaAnhTuan,
+        VLegalKMaps:20PGSTSNguyenHoangAnh,
+        VLegalKMaps:21TSBSPhanHuuPhuc,
+        VLegalKMaps:24ThSCaoDucPhuong,
+        VLegalKMaps:25TSBSDuongBichThuy,
+        VLegalKMaps:2DSDoThiNgat,
+        VLegalKMaps:6PGSTSNguyenVietNhung,
+        VLegalKMaps:8TSBSVuDinhPhu,
+        VLegalKMaps:BachVan,
+        VLegalKMaps:DoChauViet,
+        VLegalKMaps:DuTuan,
+        VLegalKMaps:NguyenGiaBinh,
+        VLegalKMaps:NguyenHongHa,
+        VLegalKMaps:NguyenMinhTien,
+        VLegalKMaps:NguyenThanhTruong,
+        VLegalKMaps:NguyenThiPhuongAnh,
+        VLegalKMaps:NguyenThiThanhNgoc,
+        VLegalKMaps:NguyenTrungCap,
+        VLegalKMaps:NguyenTuanHai,
+        VLegalKMaps:PGSTSLuongNgocKhue,
+        VLegalKMaps:PGSTSNguyenVanTuan,
+        VLegalKMaps:PGSTSPhamManhHung,
+        VLegalKMaps:PGSTSPhamThiNgocThao,
+        VLegalKMaps:TSBSNguyenPhuongMai,
+        VLegalKMaps:TSBSNguyenTrongKhoa,
+        VLegalKMaps:ThiNgat,
+        VLegalKMaps:TruongLeVanNgoc,
+        VLegalKMaps:VuVanThanh,
+        VLegalKMaps:VuongAnhDuong ;
+    VLegalO:relatedTo VLegalKMaps:DEC171411,
+        VLegalKMaps:DOC36092 .
+
+VLegalKMaps:DCR1136_c0_s0_p0_a4 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DEC171411 ;
+    VLegalO:hasClause VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl1,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl10,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl11,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl12,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl13,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl14,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl15,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl16,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl17,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl18,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl19,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl2,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl20,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl21,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl22,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl23,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl24,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl25,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl26,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl27,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl28,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl29,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl3,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl30,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl31,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl32,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl4,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl5,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl6,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl7,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl8,
+        VLegalKMaps:DCR1136_c0_s0_sp0_a4_cl9 ;
+    VLegalO:rawText """Điều 4. Các ông, bà: Cục trưởng Cục Quản lý Khám, chữa bệnh, Chánh Văn phòng Bộ, Chánh Thanh tra Bộ; các Vụ trưởng, Cục trưởng của Bộ Y tế; Giám đốc các cơ sở khám, chữa bệnh trực thuộc Bộ Y tế; Giám đốc Sở Y tế các tỉnh, thành phố trực thuộc Trung ương; Thủ trưởng y tế các Bộ, ngành; Thủ trưởng các đơn vị có liên quan chịu trách nhiệm thi hành Quyết định này./.
+HƯỚNG DẪN
+CHẨN ĐOÁN VÀ ĐIỀU TRỊ SAU NHIỄM COVID-19 Ở TRẺ EM
+(Ban hành kèm theo Quyết định số 1856/QĐ-BYT ngày 05 tháng 7 năm 2022)
+DANH SÁCH BAN BIÊN SOẠN VÀ NGHIỆM THU TÀI LIỆU “HƯỚNG DẪN CHẨN ĐOÁN VÀ ĐIỀU TRỊ SAU NHIỄM COVID-19 Ở TRẺ EM”
+Chỉ đạo biên soạn
+PGS.TS. Nguyễn Trường Sơn, Thứ trưởng Bộ Y tế
+Chủ biên
+GS.TS. Nguyễn Gia Bình, Chủ tịch Hội Hồi sức cấp cứu Việt Nam
+PGS.TS, Lương Ngọc Khuê, Cục trưởng Cục Quản lý Khám, chữa bệnh, Bộ Y tế
+Tham gia biên soạn và thẩm định""" .
+

@@ -1,0 +1,118 @@
+@prefix VLegalKMaps: <https://aseados.ucd.ie/vlegal/resource/> .
+@prefix VLegalO: <https://aseados.ucd.ie/vlegal/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VLegalKMaps:CCL8781_c0_s0_p0_a1 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DOC05549 ;
+    VLegalO:rawText "Điều 1. Ban hành kèm theo Quyết định này là Phụ lục Bảng giá xây dựng mới nhà ở, công trình và vật kiến trúc khác trên địa bàn tỉnh An Giang." .
+
+VLegalKMaps:CCL8781_c0_s0_p0_a3 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DOC05549 ;
+    VLegalO:rawText "Điều 3. Khi giá cả thị trường biến động từ 10% trở lên so với bảng giá quy định tại Phụ lục của Quyết định này, giao Sở Xây dựng có trách nhiệm chủ trì, phối hợp Sở Tài chính trình Ủy ban nhân dân tỉnh điều chỉnh cho phù hợp." .
+
+VLegalKMaps:CCL8781_c0_s0_sp0_a2_cl1 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL8781_c0_s0_p0_a2 ;
+    VLegalO:rawText "1. Tính giá trị tài sản là nhà ở, công trình và vật kiến trúc khác xây dựng thuộc sở hữu Nhà nước." .
+
+VLegalKMaps:CCL8781_c0_s0_sp0_a2_cl2 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL8781_c0_s0_p0_a2 ;
+    VLegalO:rawText "2. Xác định giá trị của nhà ở, công trình và vật kiến trúc khác để bồi thường, hỗ trợ và tái định cư khi Nhà nước thu hồi đất để sử dụng vào mục đích quốc phòng, an ninh, lợi ích quốc gia, lợi ích công cộng, mục đích phát triển kinh tế." .
+
+VLegalKMaps:CCL8781_c0_s0_sp0_a2_cl3 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL8781_c0_s0_p0_a2 ;
+    VLegalO:rawText "3. Định giá tài sản cố định trong các lĩnh vực: tố tụng hình sự, tố tụng dân sự và thi hành án dân sự." .
+
+VLegalKMaps:CCL8781_c0_s0_sp0_a2_cl4 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL8781_c0_s0_p0_a2 ;
+    VLegalO:rawText "4. Làm căn cứ để tính các loại thuế, phí và lệ phí về nhà ở, công trình xây dựng và vật kiến trúc theo quy định của pháp luật." .
+
+VLegalKMaps:CCL8781_c0_s0_sp0_a4_cl5 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL8781_c0_s0_p0_a4 ;
+    VLegalO:rawText """1. Về phương án bồi thường:
+Các phương án bồi thường đã được cấp thẩm quyền phê duyệt trước ngày Quyết định này có hiệu lực thi hành thì thực hiện theo phương án bồi thường đã được duyệt.""" .
+
+VLegalKMaps:CCL8781_c0_s0_sp0_a4_cl6 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL8781_c0_s0_p0_a4 ;
+    VLegalO:rawText """2. Đối với các hồ sơ xin cấp giấy chứng nhận quyền sở hữu nhà ở, sở hữu công trình xây dựng:
+Các tổ chức cá nhân đã nộp hồ sơ đến cơ quan có thẩm quyền (căn cứ vào giấy nhận hồ sơ), mà ngày nhận hồ sơ trước ngày Quyết định này có hiệu lực thi hành thì việc xác định giá trị về nhà ở và công trình xây dựng để tính các nghĩa vụ thuế và phí, lệ phí có liên quan được áp dụng theo bảng giá ban hành của Quyết định số 19/2016/QĐ-UBND ngày 25 tháng 4 năm 2016 của Ủy ban nhân dân tỉnh An Giang về việc ban hành giá xây dựng đối với nhà ở; công trình xây dựng, vật kiến trúc trên địa bàn tỉnh An Giang và Quyết định số 30/2017/QĐ-UBND ngày 16 tháng 6 năm 2017 của Ủy ban nhân dân tỉnh An Giang về việc sửa đổi, bổ sung một số điều của Quyết định số 19/2016/QĐ-UBND.""" .
+
+VLegalKMaps:CCL8781_c1 a VLegalO:Chapter ;
+    rdfs:label "I. GIÁ CÁC LOẠI NHÀ Ở: ĐVT: 1.000 đồng/m2 Lưu ý : . Đơn vị tính đối với phần xây dựng mới nhà ở nêu trên: đối với nhà 01 tầng là 1m2 xây dựng; nhà 02 tầng trở lên là 01m2 sử dụng và đã bao gồm các bộ phận cấu tạo của căn nhà như: vách ngăn, sê nô, ô văng, dal bếp… và đơn giá này chưa bao gồm các chi phí chuẩn bị xây dựng thuê tư vấn thiết kế, thủ tục xây dựng, lắp đặt điện - nước sinh hoạt… . Trong thực tế trường hợp vật liệu hoàn chỉnh của công trình không đúng theo kết cấu, chủng loại quy định tại với cột (3) nêu trên thì ngoài việc áp dụng đơn giá tại cột 2, Hội đồng bồi thường lập dự toán điều chỉnh tăng (hoặc giảm) cho phần thay đổi vật liệu hoàn thiện đó và trình cấp thẩm quyền xem xét, quyết định. . Việc xác định cấp công trình căn cứ: + Theo độ bền vững, bậc chịu lửa được quy định tại Bảng 2 mục 2.2.1.14 QCVN 03:2012/BXD; + Theo quy mô kết cấu được quy định tại mục 2.1.1 bảng 2 Phụ lục 2 ban hành kèm theo Thông tư 03/2016/TT-BXD ngày 10/3/2016 của Bộ Xây dựng." ;
+    VLegalO:chapterOf VLegalKMaps:DOC05549 ;
+    VLegalO:rawText "I. GIÁ CÁC LOẠI NHÀ Ở: ĐVT: 1.000 đồng/m2 Lưu ý : . Đơn vị tính đối với phần xây dựng mới nhà ở nêu trên: đối với nhà 01 tầng là 1m2 xây dựng; nhà 02 tầng trở lên là 01m2 sử dụng và đã bao gồm các bộ phận cấu tạo của căn nhà như: vách ngăn, sê nô, ô văng, dal bếp… và đơn giá này chưa bao gồm các chi phí chuẩn bị xây dựng thuê tư vấn thiết kế, thủ tục xây dựng, lắp đặt điện - nước sinh hoạt… . Trong thực tế trường hợp vật liệu hoàn chỉnh của công trình không đúng theo kết cấu, chủng loại quy định tại với cột (3) nêu trên thì ngoài việc áp dụng đơn giá tại cột 2, Hội đồng bồi thường lập dự toán điều chỉnh tăng (hoặc giảm) cho phần thay đổi vật liệu hoàn thiện đó và trình cấp thẩm quyền xem xét, quyết định. . Việc xác định cấp công trình căn cứ: + Theo độ bền vững, bậc chịu lửa được quy định tại Bảng 2 mục 2.2.1.14 QCVN 03:2012/BXD; + Theo quy mô kết cấu được quy định tại mục 2.1.1 bảng 2 Phụ lục 2 ban hành kèm theo Thông tư 03/2016/TT-BXD ngày 10/3/2016 của Bộ Xây dựng." .
+
+VLegalKMaps:CCL8781_c2 a VLegalO:Chapter ;
+    rdfs:label "II. GIÁ CÁC LOẠI NHÀ KHO, NHÀ XƯỞNG, NHÀ CHUYÊN DÙNG KHÁC: ĐVT: 1.000 đồng/m2 Lưu ý: Đối với các loại nhà sử dụng cho mục đích khác có tính chất tương tự với cấp nhà ở và đơn giá xây dựng quy định tại phần I Phụ lục này thì Hội đồng bồi thường vận dụng đơn giá nêu trên để xác định hoặc lập dự toán chi phí xây dựng mới gửi cơ quan quản lý xây dựng cấp huyện thẩm định”." ;
+    VLegalO:chapterOf VLegalKMaps:DOC05549 ;
+    VLegalO:rawText "II. GIÁ CÁC LOẠI NHÀ KHO, NHÀ XƯỞNG, NHÀ CHUYÊN DÙNG KHÁC: ĐVT: 1.000 đồng/m2 Lưu ý: Đối với các loại nhà sử dụng cho mục đích khác có tính chất tương tự với cấp nhà ở và đơn giá xây dựng quy định tại phần I Phụ lục này thì Hội đồng bồi thường vận dụng đơn giá nêu trên để xác định hoặc lập dự toán chi phí xây dựng mới gửi cơ quan quản lý xây dựng cấp huyện thẩm định”." .
+
+VLegalKMaps:CCL8781_c3 a VLegalO:Chapter ;
+    rdfs:label "III. GIÁ CÁC LOẠI VẬT KIẾN TRÚC:" ;
+    VLegalO:chapterOf VLegalKMaps:DOC05549 ;
+    VLegalO:rawText "III. GIÁ CÁC LOẠI VẬT KIẾN TRÚC:" .
+
+VLegalKMaps:CCL8781_c4 a VLegalO:Chapter ;
+    rdfs:label "IV. NHỮNG QUY ĐỊNH KHÁC KHI ÁP DỤNG BẢNG GIÁ XÂY DỰNG MỚI NHÀ Ở RIÊNG LẺ VÀ CÔNG TRÌNH:" ;
+    VLegalO:chapterOf VLegalKMaps:DOC05549 ;
+    VLegalO:rawText "IV. NHỮNG QUY ĐỊNH KHÁC KHI ÁP DỤNG BẢNG GIÁ XÂY DỰNG MỚI NHÀ Ở RIÊNG LẺ VÀ CÔNG TRÌNH:" .
+
+VLegalKMaps:CCL8781_c5 a VLegalO:Chapter ;
+    rdfs:label "V. PHƯƠNG PHÁP XÁC ĐỊNH DIỆN TÍCH SỬ DỤNG NHÀ Ở, CÔNG TRÌNH XÂY DỰNG:" ;
+    VLegalO:chapterOf VLegalKMaps:DOC05549 ;
+    VLegalO:rawText "V. PHƯƠNG PHÁP XÁC ĐỊNH DIỆN TÍCH SỬ DỤNG NHÀ Ở, CÔNG TRÌNH XÂY DỰNG:" .
+
+VLegalKMaps:DaiLoan a VLegalO:Location ;
+    rdfs:label "Đài Loan" .
+
+VLegalKMaps:PHULUCBANGGIAXAYDUNGMOINHAOCONGTRINHVAVATKIENTRUCKHACTRENDIABANTINHANGIANGKem a VLegalO:Person ;
+    rdfs:label "PHỤ LỤC BẢNG GIÁ XÂY DỰNG MỚI NHÀ Ở, CÔNG TRÌNH VÀ VẬT KIẾN TRÚC KHÁC TRÊN ĐỊA BÀN TỈNH AN GIANG (Kèm" ;
+    ns1:name "PHỤ LỤC BẢNG GIÁ XÂY DỰNG MỚI NHÀ Ở, CÔNG TRÌNH VÀ VẬT KIẾN TRÚC KHÁC TRÊN ĐỊA BÀN TỈNH AN GIANG (Kèm" .
+
+VLegalKMaps:tinhAnGiang a VLegalO:Location ;
+    rdfs:label "tỉnh An Giang",
+        "tỉnh An Giang." .
+
+VLegalKMaps:CCL8781_c0_s0_p0_a4 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DOC05549 ;
+    VLegalO:hasClause VLegalKMaps:CCL8781_c0_s0_sp0_a4_cl5,
+        VLegalKMaps:CCL8781_c0_s0_sp0_a4_cl6 ;
+    VLegalO:rawText "Điều 4. Xử lý chuyển tiếp" .
+
+VLegalKMaps:CCL8781_c0_s0_p0_a2 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DOC05549 ;
+    VLegalO:hasClause VLegalKMaps:CCL8781_c0_s0_sp0_a2_cl1,
+        VLegalKMaps:CCL8781_c0_s0_sp0_a2_cl2,
+        VLegalKMaps:CCL8781_c0_s0_sp0_a2_cl3,
+        VLegalKMaps:CCL8781_c0_s0_sp0_a2_cl4 ;
+    VLegalO:rawText """Điều 2. Phạm vi điều chỉnh
+Bảng giá quy định tại Điều 1 áp dụng cho việc xác định giá trị xây dựng mới các loại nhà ở, công trình và vật kiến trúc khác trong các trường hợp sau:""" .
+
+VLegalKMaps:DOC05549 a VLegalO:Document ;
+    rdfs:label "Quyết định 10/2018/QĐ-UBND về Bảng giá xây dựng mới nhà ở, công trình và vật kiến trúc khác trên địa bàn tỉnh An Giang" ;
+    VLegalO:docCode "10/2018/QĐ-UBND" ;
+    VLegalO:hasArticle VLegalKMaps:CCL8781_c0_s0_p0_a1,
+        VLegalKMaps:CCL8781_c0_s0_p0_a2,
+        VLegalKMaps:CCL8781_c0_s0_p0_a3,
+        VLegalKMaps:CCL8781_c0_s0_p0_a4 ;
+    VLegalO:hasChapter VLegalKMaps:CCL8781_c1,
+        VLegalKMaps:CCL8781_c2,
+        VLegalKMaps:CCL8781_c3,
+        VLegalKMaps:CCL8781_c4,
+        VLegalKMaps:CCL8781_c5 ;
+    VLegalO:issuedDate "2018-01-01"^^xsd:date ;
+    VLegalO:pursuantsOn VLegalKMaps:CCL8781,
+        VLegalKMaps:DCR01445,
+        VLegalKMaps:DCR01621,
+        VLegalKMaps:DCR01622 ;
+    VLegalO:relatedLocation VLegalKMaps:DaiLoan,
+        VLegalKMaps:tinhAnGiang ;
+    VLegalO:relatedPerson VLegalKMaps:PHULUCBANGGIAXAYDUNGMOINHAOCONGTRINHVAVATKIENTRUCKHACTRENDIABANTINHANGIANGKem ;
+    VLegalO:relatedTo VLegalKMaps:CCL9323,
+        VLegalKMaps:DEC233154,
+        VLegalKMaps:DEC247221,
+        VLegalKMaps:DOC05549 ;
+    VLegalO:replaces VLegalKMaps:DEC233154,
+        VLegalKMaps:DEC247221 .
+

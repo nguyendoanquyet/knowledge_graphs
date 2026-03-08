@@ -1,0 +1,148 @@
+@prefix VLegalKMaps: <https://aseados.ucd.ie/vlegal/resource/> .
+@prefix VLegalO: <https://aseados.ucd.ie/vlegal/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VLegalKMaps:BoNoivu a VLegalO:Organization ;
+    rdfs:label "Bộ Nội vụ" .
+
+VLegalKMaps:BoYte a VLegalO:Organization ;
+    rdfs:label "Bộ Y tế" .
+
+VLegalKMaps:TimesNewRoman a VLegalO:Organization ;
+    rdfs:label "Times New Roman," .
+
+VLegalKMaps:5Phuong a VLegalO:Person ;
+    rdfs:label "5. Phương" ;
+    ns1:name "5. Phương" .
+
+VLegalKMaps:CCL06592_c0_s0_p0_a1 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DEC171412 ;
+    VLegalO:rawText "Điều 1. Ban hành kèm theo Quyết định này Chương trình bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp dân số." .
+
+VLegalKMaps:CCL06592_c0_s0_p0_a2 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DEC171412 ;
+    VLegalO:rawText "Điều 2. Quyết định này có hiệu lực từ ngày ký, ban hành." .
+
+VLegalKMaps:CCL06592_c1 a VLegalO:Chapter ;
+    rdfs:label "CHƯƠNG TRÌNH BỒI DƯỠNG THEO TIÊU CHUẨN CHỨC DANH NGHỀ NGHIỆP DÂN SỐ (Ban hành kèm theo Quyết định số 1845/QĐ-BYT ngày 05/7/2022 của Bộ trưởng Bộ y tế)" ;
+    VLegalO:chapterOf VLegalKMaps:DEC171412 ;
+    VLegalO:rawText "CHƯƠNG TRÌNH BỒI DƯỠNG THEO TIÊU CHUẨN CHỨC DANH NGHỀ NGHIỆP DÂN SỐ (Ban hành kèm theo Quyết định số 1845/QĐ-BYT ngày 05/7/2022 của Bộ trưởng Bộ y tế)" .
+
+VLegalKMaps:CCL06592_c12 a VLegalO:Chapter ;
+    rdfs:label "X. ĐÁNH GIÁ KẾT QUẢ HỌC TẬP . Đánh giá ý thức học tập của học viên theo quy chế học tập của cơ sở đào tạo, bồi dưỡng; . Học viên phải tham gia tối thiểu 80% số buổi học. . Đánh giá thông qua bài kiểm tra (01 bài) và bài tiểu luận cuối khóa (01 bài): Học viên phải làm đầy đủ bài kiểm tra, bài tiểu luận cuối khóa; Mỗi bài phải đạt từ 5 điểm trở lên thì được cấp chứng chỉ. . Thang điểm đánh giá: Thang điểm 10. [1] Chương trình này được biên soạn và biên tập dựa trên nội dung Chương trình Bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp dân số viên hạng II, hạng III, hạng IV theo các quyết định số 4932/QĐ-BYT, 4940/QĐ-BYT, 4931/QĐ-BYT ngày 10/8/2018 của Bộ trưởng Bộ Y tế về việc ban hành chương trình bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp dân số viên hạng II, hạng III, hạng IV của các tác giả thuộc Ban soạn thảo Chương trình tại Quyết định số 6634/QĐ-BYT ngày 07/11/2016 của Bộ Y tế về việc thành lập Ban soạn thảo. Tổ thư ký xây dựng Chương trình bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp dân số." ;
+    VLegalO:chapterOf VLegalKMaps:DEC171412 ;
+    VLegalO:rawText "X. ĐÁNH GIÁ KẾT QUẢ HỌC TẬP . Đánh giá ý thức học tập của học viên theo quy chế học tập của cơ sở đào tạo, bồi dưỡng; . Học viên phải tham gia tối thiểu 80% số buổi học. . Đánh giá thông qua bài kiểm tra (01 bài) và bài tiểu luận cuối khóa (01 bài): Học viên phải làm đầy đủ bài kiểm tra, bài tiểu luận cuối khóa; Mỗi bài phải đạt từ 5 điểm trở lên thì được cấp chứng chỉ. . Thang điểm đánh giá: Thang điểm 10. [1] Chương trình này được biên soạn và biên tập dựa trên nội dung Chương trình Bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp dân số viên hạng II, hạng III, hạng IV theo các quyết định số 4932/QĐ-BYT, 4940/QĐ-BYT, 4931/QĐ-BYT ngày 10/8/2018 của Bộ trưởng Bộ Y tế về việc ban hành chương trình bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp dân số viên hạng II, hạng III, hạng IV của các tác giả thuộc Ban soạn thảo Chương trình tại Quyết định số 6634/QĐ-BYT ngày 07/11/2016 của Bộ Y tế về việc thành lập Ban soạn thảo. Tổ thư ký xây dựng Chương trình bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp dân số." .
+
+VLegalKMaps:CCL06592_c2 a VLegalO:Chapter ;
+    rdfs:label "I. ĐỐI TƯỢNG BỒI DƯỠNG Viên chức y tế và các cá nhân có nhu cầu bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp dân số." ;
+    VLegalO:chapterOf VLegalKMaps:DEC171412 ;
+    VLegalO:rawText "I. ĐỐI TƯỢNG BỒI DƯỠNG Viên chức y tế và các cá nhân có nhu cầu bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp dân số." .
+
+VLegalKMaps:CCL06592_c3 a VLegalO:Chapter ;
+    rdfs:label "II. MỤC TIÊU, YÊU CẦU CỦA CHƯƠNG TRÌNH" ;
+    VLegalO:chapterOf VLegalKMaps:DEC171412 ;
+    VLegalO:rawText "II. MỤC TIÊU, YÊU CẦU CỦA CHƯƠNG TRÌNH" .
+
+VLegalKMaps:CCL06592_c4 a VLegalO:Chapter ;
+    rdfs:label "III. CĂN CỨ PHÁP LÝ . Nghị định số 101/2017/NĐ-CP ngày 1/9/2017 của Chính phủ về đào tạo, bồi dưỡng cán bộ công chức, viên chức. . Nghị định số 89/2021/NĐ-CP ngày 18/10/2021 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định 101/2017/NĐ-CP ngày 1/9/2017 của Chính phủ về đào tạo, bồi dưỡng cán bộ, công chức, viên chức. . Thông tư số 01/2018/TT-BNV ngày 08/01/2018 của Bộ Nội vụ hướng dẫn một số điều của Nghị định số 101/2017/NĐ-CP về đào tạo, bồi dưỡng cán bộ, công chức, viên chức và các quy định hiện hành. . Thông tư liên tịch số 08/2016/TTLT-BYT-BNV ngày 15/4/2016 của Bộ Y tế - Bộ Nội vụ quy định mã số, tiêu chuẩn chức danh nghề nghiệp dân số. . Thông tư số 03/2022/TT-BYT ngày 26/4/2022 của Bộ Y tế sửa đổi, bổ sung một số quy định về tiêu chuẩn chức danh nghề nghiệp viên chức chuyên ngành y tế." ;
+    VLegalO:chapterOf VLegalKMaps:DEC171412 ;
+    VLegalO:rawText "III. CĂN CỨ PHÁP LÝ . Nghị định số 101/2017/NĐ-CP ngày 1/9/2017 của Chính phủ về đào tạo, bồi dưỡng cán bộ công chức, viên chức. . Nghị định số 89/2021/NĐ-CP ngày 18/10/2021 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định 101/2017/NĐ-CP ngày 1/9/2017 của Chính phủ về đào tạo, bồi dưỡng cán bộ, công chức, viên chức. . Thông tư số 01/2018/TT-BNV ngày 08/01/2018 của Bộ Nội vụ hướng dẫn một số điều của Nghị định số 101/2017/NĐ-CP về đào tạo, bồi dưỡng cán bộ, công chức, viên chức và các quy định hiện hành. . Thông tư liên tịch số 08/2016/TTLT-BYT-BNV ngày 15/4/2016 của Bộ Y tế - Bộ Nội vụ quy định mã số, tiêu chuẩn chức danh nghề nghiệp dân số. . Thông tư số 03/2022/TT-BYT ngày 26/4/2022 của Bộ Y tế sửa đổi, bổ sung một số quy định về tiêu chuẩn chức danh nghề nghiệp viên chức chuyên ngành y tế." .
+
+VLegalKMaps:CCL06592_c5 a VLegalO:Chapter ;
+    rdfs:label "IV. PHƯƠNG PHÁP THIẾT KẾ CHƯƠNG TRÌNH . Chương trình được thiết kế bao gồm các phần: Kiến thức chung và kiến thức, kỹ năng nghề nghiệp. . Chương trình phải được biên soạn theo quy trình biên soạn chương trình bồi dưỡng viên chức. . Học viên học đủ các phần kiến thức và kỹ năng, làm đầy đủ và đạt yêu cầu các bài kiểm tra, tiểu luận của chương trình sẽ được cấp chứng chỉ theo quy định." ;
+    VLegalO:chapterOf VLegalKMaps:DEC171412 ;
+    VLegalO:rawText "IV. PHƯƠNG PHÁP THIẾT KẾ CHƯƠNG TRÌNH . Chương trình được thiết kế bao gồm các phần: Kiến thức chung và kiến thức, kỹ năng nghề nghiệp. . Chương trình phải được biên soạn theo quy trình biên soạn chương trình bồi dưỡng viên chức. . Học viên học đủ các phần kiến thức và kỹ năng, làm đầy đủ và đạt yêu cầu các bài kiểm tra, tiểu luận của chương trình sẽ được cấp chứng chỉ theo quy định." .
+
+VLegalKMaps:CCL06592_c6 a VLegalO:Chapter ;
+    rdfs:label "V. KẾT CẤU CHƯƠNG TRÌNH" ;
+    VLegalO:chapterOf VLegalKMaps:DEC171412 ;
+    VLegalO:rawText "V. KẾT CẤU CHƯƠNG TRÌNH" .
+
+VLegalKMaps:VietNam a VLegalO:Location ;
+    rdfs:label "Việt Nam" .
+
+VLegalKMaps:CCL06592_c10 a VLegalO:Chapter ;
+    rdfs:label "VIII. NỘI DUNG CÁC CHUYÊN ĐỀ" ;
+    VLegalO:chapterOf VLegalKMaps:DEC171412 ;
+    VLegalO:hasSectionPart VLegalKMaps:CCL06592_c10_s4_sp0 ;
+    VLegalO:rawText "VIII. NỘI DUNG CÁC CHUYÊN ĐỀ" .
+
+VLegalKMaps:CCL06592_c10_s4_sp0 a VLegalO:Secpart ;
+    VLegalO:rawText """Phần II
+KIẾN THỨC, KỸ NĂNG NGHỀ NGHIỆP CHUYÊN NGÀNH VÀ ĐẠO ĐỨC NGHỀ NGHIỆP
+Chuyên đề 1
+Tổng quan về công tác dân số qua các thời kỳ""" ;
+    VLegalO:secPartOf VLegalKMaps:CCL06592_c10,
+        VLegalKMaps:CCL06592_c11 .
+
+VLegalKMaps:CCL06592_c11 a VLegalO:Chapter ;
+    rdfs:label "IX. TRÍCH DẪN TÀI LIỆU THAM KHẢO . Tài liệu tham khảo gồm: sách, các ấn phẩm, tạp chí, hoặc trang Web đã đọc và được trích dẫn hoặc được sử dụng để hình thành ý tưởng nghiên cứu. Lưu ý: Học viên chỉ trích dẫn trực tiếp, không trích lại từ nguồn khác, ít nhất phải có 50% tài liệu tham khảo được xuất bản trong 10 năm gần đây. . Trình tự sắp xếp theo định dạng Vancouver, còn gọi là “hệ thống thứ tự trích dẫn”; + Câu/đoạn trích dẫn được đánh số theo thứ tự trích dẫn trong bài viết. Khi đó, số được đặt trong ngoặc đơn hoặc đặt ở phía trên, liền sau câu/đoạn trích dẫn ngay cả khi tên tác giả xuất hiện trong đoạn văn; + Nếu có nhiều tài liệu được trích dẫn cho cùng một ý, dùng dấu phẩy (không có khoảng trắng) giữa các số. Ví dụ (1,3,5); + Nếu có dãy 3 số liên tục trở lên thì dùng dấu gạch nối (không có khoảng trắng) giữa số đầu và số cuối của dãy. Ví dụ: (2,3,4,5,8,9) viết tắt lại thành (2-5,8,9); + Các tài liệu có trích dẫn trong bài viết được xếp trong danh mục tham khảo cuối bài, theo đúng thứ tự trích dẫn; + Biểu tham khảo (bibliographic record/notice bibliographique) được sắp xếp theo thứ tự xuất hiện của tài liệu trong văn bản, không phân biệt tài liệu tiếng Việt và tiếng nước ngoài; . Tài liệu tham khảo là sách, luận án, báo cáo phải ghi đầy đủ các thông tin sau: Tên các tác giả hoặc cơ quan ban hành (Năm xuất bản) Tên sách, luận án hoặc báo cáo, Nhà xuất bản, Nơi xuất bản. . Tài liệu tham khảo là bài báo trong tạp chí, trong một cuốn sách ghi đầy đủ các thông tin sau: Tên các tác giả (năm công bố) “Tên bài báo” Tên tạp chí hoặc tên sách, Tập (số), Các số trang (gạch ngang giữa hai chữ số, dấu chấm kết thúc). . Trích dẫn tài liệu được đánh số theo thứ tự trích dẫn trong bài viết. Khi đó, số được đặt trong ngoặc đơn hoặc đặt ở phía trên, liền sau câu/đoạn trích dẫn ngay cả khi tên tác giả xuất hiện trong đoạn văn. . Đối với tài liệu online, ghi tên tác giả, tên bài, website và đường link, ngày truy cập." ;
+    VLegalO:chapterOf VLegalKMaps:DEC171412 ;
+    VLegalO:hasSectionPart VLegalKMaps:CCL06592_c10_s4_sp0 ;
+    VLegalO:rawText "IX. TRÍCH DẪN TÀI LIỆU THAM KHẢO . Tài liệu tham khảo gồm: sách, các ấn phẩm, tạp chí, hoặc trang Web đã đọc và được trích dẫn hoặc được sử dụng để hình thành ý tưởng nghiên cứu. Lưu ý: Học viên chỉ trích dẫn trực tiếp, không trích lại từ nguồn khác, ít nhất phải có 50% tài liệu tham khảo được xuất bản trong 10 năm gần đây. . Trình tự sắp xếp theo định dạng Vancouver, còn gọi là “hệ thống thứ tự trích dẫn”; + Câu/đoạn trích dẫn được đánh số theo thứ tự trích dẫn trong bài viết. Khi đó, số được đặt trong ngoặc đơn hoặc đặt ở phía trên, liền sau câu/đoạn trích dẫn ngay cả khi tên tác giả xuất hiện trong đoạn văn; + Nếu có nhiều tài liệu được trích dẫn cho cùng một ý, dùng dấu phẩy (không có khoảng trắng) giữa các số. Ví dụ (1,3,5); + Nếu có dãy 3 số liên tục trở lên thì dùng dấu gạch nối (không có khoảng trắng) giữa số đầu và số cuối của dãy. Ví dụ: (2,3,4,5,8,9) viết tắt lại thành (2-5,8,9); + Các tài liệu có trích dẫn trong bài viết được xếp trong danh mục tham khảo cuối bài, theo đúng thứ tự trích dẫn; + Biểu tham khảo (bibliographic record/notice bibliographique) được sắp xếp theo thứ tự xuất hiện của tài liệu trong văn bản, không phân biệt tài liệu tiếng Việt và tiếng nước ngoài; . Tài liệu tham khảo là sách, luận án, báo cáo phải ghi đầy đủ các thông tin sau: Tên các tác giả hoặc cơ quan ban hành (Năm xuất bản) Tên sách, luận án hoặc báo cáo, Nhà xuất bản, Nơi xuất bản. . Tài liệu tham khảo là bài báo trong tạp chí, trong một cuốn sách ghi đầy đủ các thông tin sau: Tên các tác giả (năm công bố) “Tên bài báo” Tên tạp chí hoặc tên sách, Tập (số), Các số trang (gạch ngang giữa hai chữ số, dấu chấm kết thúc). . Trích dẫn tài liệu được đánh số theo thứ tự trích dẫn trong bài viết. Khi đó, số được đặt trong ngoặc đơn hoặc đặt ở phía trên, liền sau câu/đoạn trích dẫn ngay cả khi tên tác giả xuất hiện trong đoạn văn. . Đối với tài liệu online, ghi tên tác giả, tên bài, website và đường link, ngày truy cập." .
+
+VLegalKMaps:CCL06592_c7 a VLegalO:Chapter ;
+    rdfs:label "Chương trình gồm 11 chuyên đề lý thuyết, thực tế và viết tiểu luận cuối khóa, được cấu trúc thành 2 phần: . Phần I. Kiến thức về chính trị, quản lý nhà nước và các kỹ năng chung gồm 04 chuyên đề giảng dạy. . Phần II. Kiến thức, kỹ năng nghề nghiệp chuyên ngành và đạo đức nghề nghiệp gồm 07 chuyên đề giảng dạy, thực tế và viết tiểu luận cuối khóa." ;
+    VLegalO:chapterOf VLegalKMaps:DEC171412 ;
+    VLegalO:hasSectionPart VLegalKMaps:CCL06592_c7_s2_sp0 ;
+    VLegalO:rawText "Chương trình gồm 11 chuyên đề lý thuyết, thực tế và viết tiểu luận cuối khóa, được cấu trúc thành 2 phần: . Phần I. Kiến thức về chính trị, quản lý nhà nước và các kỹ năng chung gồm 04 chuyên đề giảng dạy. . Phần II. Kiến thức, kỹ năng nghề nghiệp chuyên ngành và đạo đức nghề nghiệp gồm 07 chuyên đề giảng dạy, thực tế và viết tiểu luận cuối khóa." .
+
+VLegalKMaps:CCL06592_c8 a VLegalO:Chapter ;
+    rdfs:label "VI. PHƯƠNG ÁN TỔ CHỨC DẠY - HỌC: Các hoạt động của chương trình bồi dưỡng (học lý thuyết - thực hành, thực tế, kiểm tra,.) có thể triển khai trực tiếp, trực tuyến hoặc kết hợp trực tiếp - trực tuyến và ưu tiên phương án dạy - học trực tiếp. Cơ sở được phép đào tạo chủ động xây dựng quy định về dạy-học và hướng dẫn, giám sát việc thực hiện của học viên." ;
+    VLegalO:chapterOf VLegalKMaps:DEC171412 ;
+    VLegalO:hasSectionPart VLegalKMaps:CCL06592_c7_s2_sp0 ;
+    VLegalO:rawText "VI. PHƯƠNG ÁN TỔ CHỨC DẠY - HỌC: Các hoạt động của chương trình bồi dưỡng (học lý thuyết - thực hành, thực tế, kiểm tra,.) có thể triển khai trực tiếp, trực tuyến hoặc kết hợp trực tiếp - trực tuyến và ưu tiên phương án dạy - học trực tiếp. Cơ sở được phép đào tạo chủ động xây dựng quy định về dạy-học và hướng dẫn, giám sát việc thực hiện của học viên." .
+
+VLegalKMaps:CCL06592_c9 a VLegalO:Chapter ;
+    rdfs:label "VII. YÊU CẦU ĐỐI VỚI VIỆC BIÊN SOẠN TÀI LIỆU, GIẢNG DẠY VÀ HỌC TẬP CÁC CHUYÊN ĐỀ" ;
+    VLegalO:chapterOf VLegalKMaps:DEC171412 ;
+    VLegalO:hasSectionPart VLegalKMaps:CCL06592_c7_s2_sp0 ;
+    VLegalO:rawText "VII. YÊU CẦU ĐỐI VỚI VIỆC BIÊN SOẠN TÀI LIỆU, GIẢNG DẠY VÀ HỌC TẬP CÁC CHUYÊN ĐỀ" .
+
+VLegalKMaps:CCL06592_c7_s2_sp0 a VLegalO:Secpart ;
+    VLegalO:rawText "Phần II. Kiến thức, kỹ năng nghề nghiệp chuyên ngành và đạo đức nghề nghiệp - Kiểm tra, thực tế, viết tiểu luận cuối khóa (170 tiết)" ;
+    VLegalO:secPartOf VLegalKMaps:CCL06592_c7,
+        VLegalKMaps:CCL06592_c8,
+        VLegalKMaps:CCL06592_c9 .
+
+VLegalKMaps:DEC171412 a VLegalO:Decision,
+        VLegalO:Document ;
+    rdfs:label "Quyết định 1845/QĐ-BYT năm 2022 về chương trình bồi dưỡng theo tiêu chuẩn chức danh nghề nghiệp dân số do Bộ trưởng Bộ Y tế ban hành" ;
+    VLegalO:docCode "1845/QĐ-BYT" ;
+    VLegalO:hasArticle VLegalKMaps:CCL06592_c0_s0_p0_a1,
+        VLegalKMaps:CCL06592_c0_s0_p0_a2 ;
+    VLegalO:hasChapter VLegalKMaps:CCL06592_c1,
+        VLegalKMaps:CCL06592_c10,
+        VLegalKMaps:CCL06592_c11,
+        VLegalKMaps:CCL06592_c12,
+        VLegalKMaps:CCL06592_c2,
+        VLegalKMaps:CCL06592_c3,
+        VLegalKMaps:CCL06592_c4,
+        VLegalKMaps:CCL06592_c5,
+        VLegalKMaps:CCL06592_c6,
+        VLegalKMaps:CCL06592_c7,
+        VLegalKMaps:CCL06592_c8,
+        VLegalKMaps:CCL06592_c9 ;
+    VLegalO:issuedDate "2022-01-01"^^xsd:date ;
+    VLegalO:pursuantsOn VLegalKMaps:CCL06592,
+        VLegalKMaps:CCL08994,
+        VLegalKMaps:DCR0552,
+        VLegalKMaps:DCR0679,
+        VLegalKMaps:DCR1109,
+        VLegalKMaps:DCR1136,
+        VLegalKMaps:JCL21020 ;
+    VLegalO:relatedLocation VLegalKMaps:VietNam ;
+    VLegalO:relatedOrganization VLegalKMaps:DEC216552 ;
+    VLegalO:relatedPerson VLegalKMaps:5Phuong ;
+    VLegalO:relatedTo VLegalKMaps:CCL06592,
+        VLegalKMaps:CCL08994,
+        VLegalKMaps:DCR0552,
+        VLegalKMaps:DCR1109,
+        VLegalKMaps:DEC171412,
+        VLegalKMaps:DEC216545,
+        VLegalKMaps:DEC216550,
+        VLegalKMaps:DEC216552,
+        VLegalKMaps:JCL21020 .
+

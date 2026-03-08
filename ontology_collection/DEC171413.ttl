@@ -1,0 +1,65 @@
+@prefix VLegalKMaps: <https://aseados.ucd.ie/vlegal/resource/> .
+@prefix VLegalO: <https://aseados.ucd.ie/vlegal/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VLegalKMaps:BoYte a VLegalO:Organization ;
+    rdfs:label "Bộ Y tế",
+        "Bộ Y tế,",
+        "Bộ Y tế." .
+
+VLegalKMaps:TongcucDansoKehoach a VLegalO:Organization ;
+    rdfs:label "Tổng cục Dân số - Kế hoạch" .
+
+VLegalKMaps:VuBaohiemyte a VLegalO:Organization ;
+    rdfs:label "Vụ Bảo hiểm y tế," .
+
+VLegalKMaps:DEC179198_c0_s0_p0_a2 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DEC171413 ;
+    VLegalO:rawText "Điều 2. Quyết định này có hiệu lực kể từ ngày ký, ban hành. Các doanh nghiệp sản xuất, nhập khẩu, kinh doanh vật tư y tế, cơ quan bảo hiểm xã hội, các cơ quan, đơn vị có liên quan có trách nhiệm cập nhật tên, nước sản xuất và mã hãng sản xuất vật tư y tế ban hành kèm theo Quyết định này để thực hiện khai báo, cấp mã vật tư y tế theo quy định tại Quyết định số 5086/QĐ-BYT ngày 04 tháng 11 năm 2021 của Bộ trưởng Bộ Y tế." .
+
+VLegalKMaps:DEC179198_c0_s0_p0_a3 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DEC171413 ;
+    VLegalO:rawText "Điều 3. Các Ông, Bà Chánh Văn phòng Bộ Y tế, Vụ trưởng Vụ Bảo hiểm y tế, Vụ trưởng Vụ Trang thiết bị và công trình y tế, Cục trưởng Cục Công nghệ thông tin, Vụ trưởng các Vụ, Cục trưởng các Cục, Tổng cục trưởng Tổng cục Dân số - Kế hoạch hóa gia đình thuộc Bộ Y tế, Chánh Thanh tra Bộ Y tế, Giám đốc Sở Y tế các tỉnh, thành phố trực thuộc Trung ương, Thủ trưởng Y tế các Bộ, ngành và các cơ quan, đơn vị, tổ chức có liên quan chịu trách nhiệm thi hành Quyết định này./." .
+
+VLegalKMaps:DEC179198_c0_s0_sp0_a1_cl1 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DEC179198_c0_s0_p0_a1 ;
+    VLegalO:rawText "1. Phụ lục 1: Bổ sung mới 647 (Sáu trăm bốn mươi bảy) mã hãng sản xuất vật tư y tế." .
+
+VLegalKMaps:DEC179198_c0_s0_sp0_a1_cl2 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DEC179198_c0_s0_p0_a1 ;
+    VLegalO:rawText "2. Phụ lục 2: Bổ sung, cập nhật 24 (Hai mươi tư) nước sản xuất đã có mã hãng sản xuất vật tư y tế." .
+
+VLegalKMaps:DEC179198_c0_s0_sp0_a1_cl3 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:DEC179198_c0_s0_p0_a1 ;
+    VLegalO:rawText """3. Phụ lục 3: Đính chính tên 02 (Hai) hãng sản xuất vật tư y tế đã được cấp mã hãng sản xuất vật tư y tế theo Quyết định số 5086/QĐ-BYT ngày 04 tháng 11 năm 2021 và Quyết định số 637/QĐ-BYT ngày 16 tháng 3 năm 2022 của Bộ trưởng Bộ Y tế ban hành danh mục mã hãng sản xuất vật tư y tế để tạo lập mã vật tư y tế phục vụ quản lý và giám định, thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế (Đợt 2).
+Danh mục mã hãng sản xuất vật tư y tế bổ sung mới, danh mục cập nhật nước sản xuất và danh mục đính chính tên hãng sản xuất vật tư y tế nêu trên được ban hành tại các Phụ lục đính kèm theo Quyết định này và được đăng tải trên Cổng Thông tin điện tử của Bộ Y tế tại địa chỉ: https://moh.gov.vn""" .
+
+VLegalKMaps:Trunguong a VLegalO:Location ;
+    rdfs:label "Trung ương," .
+
+VLegalKMaps:DEC171413 a VLegalO:Decision,
+        VLegalO:Document ;
+    rdfs:label "Quyết định 1844/QĐ-BYT năm 2022 về danh mục mã hãng sản xuất vật tư y tế để tạo lập mã vật tư y tế phục vụ quản lý và giám định, thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế (Đợt 3) do Bộ trưởng Bộ Y tế ban hành" ;
+    VLegalO:docCode "1844/QĐ-BYT" ;
+    VLegalO:hasArticle VLegalKMaps:DEC179198_c0_s0_p0_a1,
+        VLegalKMaps:DEC179198_c0_s0_p0_a2,
+        VLegalKMaps:DEC179198_c0_s0_p0_a3 ;
+    VLegalO:issuedDate "2022-01-01"^^xsd:date ;
+    VLegalO:pursuantsOn VLegalKMaps:CCL8471,
+        VLegalKMaps:DCR1136,
+        VLegalKMaps:DEC179198,
+        VLegalKMaps:DOC42122,
+        VLegalKMaps:RES165773 ;
+    VLegalO:relatedLocation VLegalKMaps:Trunguong ;
+    VLegalO:relatedOrganization VLegalKMaps:DEC179198 ;
+    VLegalO:relatedTo VLegalKMaps:DEC174345,
+        VLegalKMaps:DEC179198 .
+
+VLegalKMaps:DEC179198_c0_s0_p0_a1 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DEC171413 ;
+    VLegalO:hasClause VLegalKMaps:DEC179198_c0_s0_sp0_a1_cl1,
+        VLegalKMaps:DEC179198_c0_s0_sp0_a1_cl2,
+        VLegalKMaps:DEC179198_c0_s0_sp0_a1_cl3 ;
+    VLegalO:rawText "Điều 1. Ban hành kèm theo Quyết định này danh mục mã hãng sản xuất vật tư y tế để tạo lập mã vật tư y tế phục vụ quản lý và giám định, thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế (Đợt 3), gồm:" .
+

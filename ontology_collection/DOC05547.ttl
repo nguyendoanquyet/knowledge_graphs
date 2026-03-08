@@ -1,0 +1,130 @@
+@prefix VLegalKMaps: <https://aseados.ucd.ie/vlegal/resource/> .
+@prefix VLegalO: <https://aseados.ucd.ie/vlegal/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+VLegalKMaps:BoGTVT a VLegalO:Organization ;
+    rdfs:label "Bộ GTVT" .
+
+VLegalKMaps:BoTuphap a VLegalO:Organization ;
+    rdfs:label "Bộ Tư pháp" .
+
+VLegalKMaps:TongcucDuongboVietNam a VLegalO:Organization ;
+    rdfs:label "Tổng cục Đường bộ Việt Nam," .
+
+VLegalKMaps:VanphongBo a VLegalO:Organization ;
+    rdfs:label "Văn phòng Bộ," .
+
+VLegalKMaps:VuPhap a VLegalO:Organization ;
+    rdfs:label "Vụ Pháp" .
+
+VLegalKMaps:VuPhapche a VLegalO:Organization ;
+    rdfs:label "Vụ Pháp chế",
+        "Vụ Pháp chế." .
+
+VLegalKMaps:CCL09118_c0_s0_p0_a1 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DOC05547 ;
+    VLegalO:rawText "Điều 1. Ban hành kèm theo Quyết định này Chương trình xây dựng văn bản QPPL triển khai Quyết định số 1977/QĐ-TTg ngày 24 tháng 11 năm 2021 của Thủ tướng Chính phủ về phê duyệt Phương án cắt giảm, đơn giản hóa quy định liên quan đến hoạt động kinh doanh thuộc phạm vi chức năng quản lý của Bộ GTVT (Danh mục kèm theo)." .
+
+VLegalKMaps:CCL09118_c0_s0_p0_a5 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DOC05547 ;
+    VLegalO:rawText """Điều 5. Quyết định này có hiệu lực thi hành kể từ ngày ký. Các Thứ trưởng, Chánh Văn phòng Bộ, Chánh Thanh tra Bộ, các Vụ trưởng, Tổng cục trưởng Tổng cục Đường bộ Việt Nam, Cục trưởng các Cục, Thủ trưởng các cơ quan, tổ chức và cá nhân có liên quan chịu trách nhiệm thi hành Quyết định này./.
+PHỤ LỤC 1
+DANH MỤC CÁC VĂN BẢN TRÌNH CHÍNH PHỦ
+(Ban hành kèm theo Quyết định số 236/QĐ-BGTVT ngày 25 tháng 02 năm 2022 của Bộ trưởng Bộ GTVT)
+PHỤ LỤC 2
+DANH MỤC CÁC THÔNG TƯ CỦA BỘ TRƯỞNG BỘ GTVT
+(Ban hành kèm theo Quyết định số 236/QĐ-BGTVT ngày 25 tháng 02 năm 2022 của Bộ trưởng Bộ GTVT)
+PHỤ LỤC 3
+DANH MỤC THÔNG TƯ BAN HÀNH QUY CHUẨN KỸ THUẬT QUỐC GIA
+(Ban hành kèm theo Quyết định số 236/QĐ-BGTVT ngày 25 tháng 02 năm 2022 của Bộ trưởng Bộ GTVT)""" .
+
+VLegalKMaps:CCL09118_c0_s0_sp0_a2_cl1 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL09118_c0_s0_p0_a2 ;
+    VLegalO:rawText "1. Các đồng chí Thứ trưởng phụ trách xây dựng văn bản giám sát chặt chẽ, chỉ đạo kịp thời các cơ quan, đơn vị hoàn thành nhiệm vụ theo Chương trình, đảm bảo tiến độ và chất lượng của văn bản." .
+
+VLegalKMaps:CCL09118_c0_s0_sp0_a2_cl2 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL09118_c0_s0_p0_a2 ;
+    VLegalO:rawText """2. Các Tổng cục, Cục, Vụ chủ trì soạn thảo, chủ trì tham mưu trình văn bản có trách nhiệm:
+. Soạn thảo văn bản theo đúng quy trình xây dựng văn bản QPPL; đảm bảo chất lượng, tiến độ xây dựng văn bản. Văn bản được ban hành đảm bảo thống nhất với các văn bản QPPL có liên quan và đáp ứng yêu cầu trong thực tiễn thi hành.
+. Gửi báo cáo về Vụ Pháp chế về tiến độ xây dựng văn bản, trình dự thảo văn bản trước ngày 23 hàng tháng.""" .
+
+VLegalKMaps:CCL09118_c0_s0_sp0_a2_cl3 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL09118_c0_s0_p0_a2 ;
+    VLegalO:rawText "3. Vụ Pháp chế có trách nhiệm: Theo dõi, đôn đốc, tổng hợp tình hình thực hiện Chương trình. Hàng tháng báo cáo Bộ trưởng và các Thứ trưởng kết quả thực hiện Chương trình của Bộ và của từng Vụ, Tổng cục, Cục." .
+
+VLegalKMaps:CCL09118_c0_s0_sp0_a2_cl4 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL09118_c0_s0_p0_a2 ;
+    VLegalO:rawText """4. Vụ Tài chính, Văn phòng Bộ, các Tổng cục, Cục:
+. Bố trí đủ kinh phí xây dựng văn bản QPPL theo quy định từ nguồn ngân sách và các nguồn kinh phí hỗ trợ khác;
+. Văn phòng Bộ theo dõi, đôn đốc, tổng hợp, báo cáo chung trong Chương trình công tác của Bộ.""" .
+
+VLegalKMaps:CCL09118_c0_s0_sp0_a3_cl5 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL09118_c0_s0_p0_a3 ;
+    VLegalO:rawText "1. Thông tư sửa đổi, bổ sung một số điều của Thông tư số 25/2018/TT- BGTVT ngày 14/5/2018 của Bộ trưởng Bộ GTVT quy định về đường ngang và cấp giấy phép xây dựng công trình thiết yếu trong phạm vi đất dành cho đường sắt (tại số thứ tự số 7, mục IV, Phụ lục II)." .
+
+VLegalKMaps:CCL09118_c0_s0_sp0_a3_cl6 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL09118_c0_s0_p0_a3 ;
+    VLegalO:rawText "2. Thông tư sửa đổi, bổ sung một số điều của Bộ quy chế an toàn hàng không dân dụng lĩnh vực tàu bay và khai thác tàu bay (tại số thứ tự số 11, mục V, Phụ lục II)." .
+
+VLegalKMaps:CCL09118_c0_s0_sp0_a3_cl7 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL09118_c0_s0_p0_a3 ;
+    VLegalO:rawText "3. Thông tư quy định về việc kiểm tra chất lượng, an toàn kỹ thuật và bảo vệ môi trường phương tiện giao thông đường sắt (thay thế Thông tư số 29/2018/TT-BGTVT ngày 14/5/2018 của Bộ trưởng Bộ GTVT), (tại số thứ tự số 13, mục VI, Phụ lục II)." .
+
+VLegalKMaps:CCL09118_c0_s0_sp0_a4_cl8 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL09118_c0_s0_p0_a4 ;
+    VLegalO:rawText "1. Đối với Nghị định của Chính phủ, Quyết định của Thủ tướng Chính phủ sau khi được ký ban hành: Chậm nhất ngày cuối cùng của tháng được Chính phủ, Thủ tướng Chính phủ ký ban hành văn bản, cơ quan tham mưu trình có trách nhiệm xây dựng Thông cáo báo chí gửi Vụ Pháp chế để tổng hợp gửi Bộ Tư pháp theo quy định." .
+
+VLegalKMaps:CCL09118_c0_s0_sp0_a4_cl9 a VLegalO:Article ;
+    VLegalO:clauseOf VLegalKMaps:CCL09118_c0_s0_p0_a4 ;
+    VLegalO:rawText "2. Đối với các văn bản sửa đổi, bổ sung trong Chương trình, chậm nhất 02 ngày làm việc, kể từ ngày văn bản sửa đổi, bổ sung được ký ban hành, cơ quan chủ trì soạn thảo có trách nhiệm gửi hồ sơ văn bản hợp nhất qua đường công văn và thư điện tử cho Vụ Pháp chế để kiểm tra, trình Bộ trưởng ký xác thực. Trường hợp dự thảo văn bản hợp nhất không tuân theo kỹ thuật quy định tại Pháp lệnh hợp nhất văn bản thì Vụ Pháp chế trả lại ngay cho cơ quan chủ trì soạn thảo để thực hiện theo đúng quy định. Cơ quan chủ trì soạn thảo có trách nhiệm hoàn chỉnh hồ sơ và gửi lại Vụ Pháp chế chậm nhất sau 02 ngày làm việc, kể từ ngày nhận được văn bản của Vụ Pháp chế." .
+
+VLegalKMaps:MUCCACVANBANTRINHCHINHPHUBan a VLegalO:Person ;
+    rdfs:label "MỤC CÁC VĂN BẢN TRÌNH CHÍNH PHỦ (Ban" ;
+    ns1:name "MỤC CÁC VĂN BẢN TRÌNH CHÍNH PHỦ (Ban" .
+
+VLegalKMaps:CCL09118_c0_s0_p0_a4 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DOC05547 ;
+    VLegalO:hasClause VLegalKMaps:CCL09118_c0_s0_sp0_a4_cl8,
+        VLegalKMaps:CCL09118_c0_s0_sp0_a4_cl9 ;
+    VLegalO:rawText "Điều 4. Trách nhiệm xây dựng Thông cáo báo chí và hợp nhất văn bản" .
+
+VLegalKMaps:CCL09118_c0_s0_p0_a3 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DOC05547 ;
+    VLegalO:hasClause VLegalKMaps:CCL09118_c0_s0_sp0_a3_cl5,
+        VLegalKMaps:CCL09118_c0_s0_sp0_a3_cl6,
+        VLegalKMaps:CCL09118_c0_s0_sp0_a3_cl7 ;
+    VLegalO:rawText "Điều 3. Điều chỉnh đưa ra khỏi Chương trình đối với các văn bản QPPL theo Quyết định số 2158/QĐ-BGTVT ngày 17 tháng 02 năm 2021 của Bộ trưởng Bộ GTVT ban hành Chương trình xây dựng văn bản QPPL năm 2022 của Bộ:" .
+
+VLegalKMaps:CCL09118_c0_s0_p0_a2 a VLegalO:Article ;
+    VLegalO:articleOf VLegalKMaps:DOC05547 ;
+    VLegalO:hasClause VLegalKMaps:CCL09118_c0_s0_sp0_a2_cl1,
+        VLegalKMaps:CCL09118_c0_s0_sp0_a2_cl2,
+        VLegalKMaps:CCL09118_c0_s0_sp0_a2_cl3,
+        VLegalKMaps:CCL09118_c0_s0_sp0_a2_cl4 ;
+    VLegalO:rawText "Điều 2. Giao nhiệm vụ cho các cơ quan, đơn vị:" .
+
+VLegalKMaps:DOC05547 a VLegalO:Document ;
+    rdfs:label "Quyết định 236/QĐ-BGTVT năm 2022 về Chương trình xây dựng văn bản quy phạm pháp luật (QPPL) triển khai Quyết định 1977/QĐ-TTg phê duyệt Phương án cắt giảm, đơn giản hóa quy định liên quan đến hoạt động kinh doanh thuộc phạm vi chức năng quản lý của Bộ Giao thông vận tải (Bộ GTVT)" ;
+    VLegalO:docCode "236/QĐ-BGTVT" ;
+    VLegalO:hasArticle VLegalKMaps:CCL09118_c0_s0_p0_a1,
+        VLegalKMaps:CCL09118_c0_s0_p0_a2,
+        VLegalKMaps:CCL09118_c0_s0_p0_a3,
+        VLegalKMaps:CCL09118_c0_s0_p0_a4,
+        VLegalKMaps:CCL09118_c0_s0_p0_a5 ;
+    VLegalO:issuedDate "2022-02-25"^^xsd:date ;
+    VLegalO:pursuantsOn VLegalKMaps:CCL09118,
+        VLegalKMaps:CCL9032,
+        VLegalKMaps:DCR01236,
+        VLegalKMaps:DCR01379,
+        VLegalKMaps:DCR0644,
+        VLegalKMaps:DEC269849,
+        VLegalKMaps:RES165804 ;
+    VLegalO:relatedOrganization VLegalKMaps:CCL08827 ;
+    VLegalO:relatedPerson VLegalKMaps:MUCCACVANBANTRINHCHINHPHUBan ;
+    VLegalO:relatedTo VLegalKMaps:CCL08827,
+        VLegalKMaps:DEC269849,
+        VLegalKMaps:DOC05547 ;
+    VLegalO:replaces VLegalKMaps:CCL08827 .
+
