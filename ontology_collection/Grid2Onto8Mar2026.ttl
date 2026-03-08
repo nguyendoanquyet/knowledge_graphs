@@ -1,0 +1,1243 @@
+@prefix : <http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology> .
+
+<http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology> rdf:type owl:Ontology ;
+                                                                         :contacts "emna.amdouni"@irt-systemx ;
+                                                                         :contributors "AMDOUNI Emna (IRT-SystemX), MAROT Antoine (RTE), ROZIER Alexandre (RTE), CROCHEPIERRE Laure (RTE)" ;
+                                                                         :creationDate "27th March 2023" ;
+                                                                         :creators "AMDOUNI Emna (IRT-SystemX)" ;
+                                                                         :status "beta" ;
+                                                                         owl:versionInfo "V1.2" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#acronym
+:acronym rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#contacts
+:contacts rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#contributors
+:contributors rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#creationDate
+:creationDate rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#creators
+:creators rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#description
+:description rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#status
+:status rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#List_float
+:List_float rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#achives
+:achives rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#bearer_of
+:bearer_of rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_goal
+:has_goal rdf:type owl:ObjectProperty ;
+          owl:inverseOf :is_goal_of .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_input
+:has_input rdf:type owl:ObjectProperty ;
+           owl:inverseOf :is_input_of .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_measurement
+:has_measurement rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :is_measurement_of .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_measurement_unit
+:has_measurement_unit rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :has_value_specification .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_output
+:has_output rdf:type owl:ObjectProperty ;
+            owl:inverseOf :is_output_of .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_part
+:has_part rdf:type owl:ObjectProperty ;
+          owl:inverseOf :is_part_of .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_participant
+:has_participant rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_profile
+:has_profile rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_quality
+:has_quality rdf:type owl:ObjectProperty ;
+             owl:inverseOf :is_quality_of .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_value_specification
+:has_value_specification rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_weights
+:has_weights rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#is_about
+:is_about rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#is_associated_with
+:is_associated_with rdf:type owl:ObjectProperty ,
+                             owl:SymmetricProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#is_goal_of
+:is_goal_of rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#is_input_of
+:is_input_of rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#is_measurement_of
+:is_measurement_of rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#is_output_of
+:is_output_of rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#is_part_of
+:is_part_of rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#is_quality_measurement_of
+:is_quality_measurement_of rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#is_quality_of
+:is_quality_of rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#is_realised_by
+:is_realised_by rdf:type owl:ObjectProperty ;
+                owl:inverseOf :realises .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#realises
+:realises rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#requests
+:requests rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_final_gen_p_value
+:has_final_gen_p_value rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :has_final_value .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_final_value
+:has_final_value rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :has_value .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_final_value_gen_q
+:has_final_value_gen_q rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :has_final_value .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_initial_value
+:has_initial_value rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :has_value .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_initial_value_gen_q
+:has_initial_value_gen_q rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :has_initial_value .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_intial_gen_p_value
+:has_intial_gen_p_value rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :has_initial_value .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#has_value
+:has_value rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:range xsd:float .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#A_or
+:A_or rdf:type owl:Class ;
+      rdfs:subClassOf :Grid_state .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Action
+:Action rdf:type owl:Class ;
+        rdfs:subClassOf :Grid_operations ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :is_realised_by ;
+                          owl:someValuesFrom :Operator
+                        ] ;
+        rdfs:comment "Consider the temporal aspects." ,
+                     "See:https://grid2op.readthedocs.io/en/latest/action.html#main-action-properties" .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Action_battery
+:Action_battery rdf:type owl:Class ;
+                rdfs:subClassOf :Action .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Action_execution
+:Action_execution rdf:type owl:Class ;
+                  rdfs:subClassOf :Grid_operations .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Action_prod
+:Action_prod rdf:type owl:Class ;
+             rdfs:subClassOf :Action ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :is_about ;
+                               owl:someValuesFrom :Load
+                             ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Action_topo
+:Action_topo rdf:type owl:Class ;
+             rdfs:subClassOf :Action ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :is_about ;
+                               owl:someValuesFrom [ owl:intersectionOf ( :Powerline
+                                                                         :Substation
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Atypic_observation
+:Atypic_observation rdf:type owl:Class ;
+                    rdfs:subClassOf :Observation ;
+                    rdfs:comment "We could call it Abnormal (to be discussed later)" .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Available_margins_for_dispatching
+:Available_margins_for_dispatching rdf:type owl:Class ;
+                                   rdfs:subClassOf :Qualitative_measurement_datum_KPI .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Base_infrastructure
+:Base_infrastructure rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Bus
+:Bus rdf:type owl:Class ;
+     rdfs:subClassOf :Substation .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Change_bus_vect
+:Change_bus_vect rdf:type owl:Class ;
+                 rdfs:subClassOf :Action_topo ,
+                                 :Powerline_overload_past_action .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Comfort
+:Comfort rdf:type owl:Class ;
+         rdfs:subClassOf :Goal ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :is_about ;
+                           owl:someValuesFrom :Operator
+                         ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Context
+:Context rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :has_part ;
+                                                      owl:someValuesFrom :Observation
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :has_part ;
+                                                      owl:someValuesFrom :Similar_situation
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :is_about ;
+                                                      owl:someValuesFrom :Issue
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:subClassOf :Environment .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Critical_observation
+:Critical_observation rdf:type owl:Class ;
+                      rdfs:subClassOf :Observation .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Current_action
+:Current_action rdf:type owl:Class ;
+                rdfs:subClassOf :Action .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Current_grid_KPI_measurement_datum
+:Current_grid_KPI_measurement_datum rdf:type owl:Class ;
+                                    rdfs:subClassOf :KPI_datum .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Datum_KPI_calcul
+:Datum_KPI_calcul rdf:type owl:Class ;
+                  rdfs:subClassOf :Action_execution ,
+                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :has_input ;
+                                                           owl:someValuesFrom :Initial_situation
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :has_output ;
+                                                           owl:someValuesFrom :Final_situation
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Decrease_energy_losses_objective
+:Decrease_energy_losses_objective rdf:type owl:Class ;
+                                  rdfs:subClassOf :Increase_grid_optimisation_objective .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Decrease_nb_actions_objective
+:Decrease_nb_actions_objective rdf:type owl:Class ;
+                               rdfs:subClassOf :Increase_operator_confort_objective .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Decrease_nb_overloads
+:Decrease_nb_overloads rdf:type owl:Class ;
+                       rdfs:subClassOf :Make_grid_safe_objective .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Decreasing_losses
+:Decreasing_losses rdf:type owl:Class ;
+                   rdfs:subClassOf :Request_function .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Decreasing_nb_actions
+:Decreasing_nb_actions rdf:type owl:Class ;
+                       rdfs:subClassOf :Request_function .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Decreasing_nb_overloads
+:Decreasing_nb_overloads rdf:type owl:Class ;
+                         rdfs:subClassOf :Request_function .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Decreasing_operator_workload
+:Decreasing_operator_workload rdf:type owl:Class ;
+                              rdfs:subClassOf :Request_function .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Distance_from_reference_topology
+:Distance_from_reference_topology rdf:type owl:Class ;
+                                  rdfs:subClassOf :Expected_grid_KPI_measurement_datum ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :is_about ;
+                                                    owl:someValuesFrom :Electrical_grid_topology
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :is_quality_measurement_of ;
+                                                    owl:someValuesFrom :Comfort
+                                                  ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Electrical_grid
+:Electrical_grid rdf:type owl:Class ;
+                 rdfs:subClassOf :Grid_infrastructure ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :has_part ;
+                                   owl:someValuesFrom :Electrical_grid_component
+                                 ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Electrical_grid_area
+:Electrical_grid_area rdf:type owl:Class ;
+                      rdfs:subClassOf :Electrical_grid ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :has_part ;
+                                        owl:someValuesFrom [ owl:intersectionOf ( :Powerline
+                                                                                  :Substation
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ]
+                                      ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Electrical_grid_component
+:Electrical_grid_component rdf:type owl:Class ;
+                           rdfs:subClassOf :Grid_infrastructure .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Electrical_grid_system
+:Electrical_grid_system rdf:type owl:Class ;
+                        rdfs:subClassOf :Grid_infrastructure ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :has_part ;
+                                          owl:someValuesFrom :Electrical_grid_area
+                                        ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Electrical_grid_topology
+:Electrical_grid_topology rdf:type owl:Class ;
+                          rdfs:subClassOf :Grid_infrastructure ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :is_about ;
+                                            owl:someValuesFrom :Electrical_grid
+                                          ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Energy_losses
+:Energy_losses rdf:type owl:Class ;
+               rdfs:subClassOf :Expected_grid_KPI_measurement_datum ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :is_quality_measurement_of ;
+                                 owl:someValuesFrom :Optimisation
+                               ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Environment
+:Environment rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf :Environment .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Expected_grid_KPI_measurement_datum
+:Expected_grid_KPI_measurement_datum rdf:type owl:Class ;
+                                     rdfs:subClassOf :KPI_datum .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Explanation
+:Explanation rdf:type owl:Class ;
+             rdfs:subClassOf :Grid_operations .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Final_situation
+:Final_situation rdf:type owl:Class ;
+                 rdfs:subClassOf :Situation .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Forecast
+:Forecast rdf:type owl:Class ;
+          rdfs:subClassOf :Grid_state .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Gen_p
+:Gen_p rdf:type owl:Class ;
+       rdfs:subClassOf :Grid_state .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Gen_q
+:Gen_q rdf:type owl:Class ;
+       rdfs:subClassOf :Grid_state .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Gen_v
+:Gen_v rdf:type owl:Class ;
+       rdfs:subClassOf :Grid_state .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Generator
+:Generator rdf:type owl:Class ;
+           rdfs:subClassOf :Electrical_grid_component .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Goal
+:Goal rdf:type owl:Class ;
+      rdfs:subClassOf :Environment .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Grid_infrastructure
+:Grid_infrastructure rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Grid_operations
+:Grid_operations rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Grid_region
+:Grid_region rdf:type owl:Class ;
+             rdfs:subClassOf :Electrical_grid ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :has_part ;
+                               owl:someValuesFrom [ owl:intersectionOf ( :Powerline
+                                                                         :Substation
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Grid_state
+:Grid_state rdf:type owl:Class ;
+            rdfs:subClassOf :Observation ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :has_part ;
+                              owl:someValuesFrom :Line_status
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :has_part ;
+                              owl:someValuesFrom :Topo_vect
+                            ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf :Operator .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Hydro_generator
+:Hydro_generator rdf:type owl:Class ;
+                 rdfs:subClassOf :Generator .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Increase_grid_optimisation_objective
+:Increase_grid_optimisation_objective rdf:type owl:Class ;
+                                      rdfs:subClassOf :Objective .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Increase_operator_confort_objective
+:Increase_operator_confort_objective rdf:type owl:Class ;
+                                     rdfs:subClassOf :Objective .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Initial_situation
+:Initial_situation rdf:type owl:Class ;
+                   rdfs:subClassOf :Situation .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Issue
+:Issue rdf:type owl:Class ;
+       rdfs:subClassOf :Environment .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Junior_profile
+:Junior_profile rdf:type owl:Class ;
+                rdfs:subClassOf :Profile .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#KPI_datum
+:KPI_datum rdf:type owl:Class ;
+           rdfs:subClassOf :Base_infrastructure ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :is_about ;
+                             owl:someValuesFrom :Grid_state
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :is_measurement_of ;
+                             owl:someValuesFrom :Goal
+                           ] ;
+           rdfs:comment "is_extracted from Physical grid measurement" .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Line_status
+:Line_status rdf:type owl:Class ;
+             rdfs:subClassOf :Grid_state ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :is_about ;
+                               owl:someValuesFrom :Powerline
+                             ] ;
+             rdfs:comment "Gives the status (connected / disconnected) for every powerline (True at position i means the powerline i is connected)" .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#List_of_actions
+:List_of_actions rdf:type owl:Class ;
+                 rdfs:subClassOf :Grid_operations .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#List_recommanded_actions
+:List_recommanded_actions rdf:type owl:Class ;
+                          rdfs:subClassOf :List_of_actions .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Load
+:Load rdf:type owl:Class ;
+      rdfs:subClassOf :Electrical_grid_component .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Load_p
+:Load_p rdf:type owl:Class ;
+        rdfs:subClassOf :Grid_state ;
+        rdfs:comment "The active load value of each consumption (expressed in MW)." .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Load_q
+:Load_q rdf:type owl:Class ;
+        rdfs:subClassOf :Grid_state .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Load_v
+:Load_v rdf:type owl:Class ;
+        rdfs:subClassOf :Grid_state .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Loss_of_line
+:Loss_of_line rdf:type owl:Class ;
+              rdfs:subClassOf :Event .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Machine
+:Machine rdf:type owl:Class ;
+         rdfs:subClassOf :Operator .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Maintenance
+:Maintenance rdf:type owl:Class ;
+             rdfs:subClassOf :Event .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Make_grid_safe_objective
+:Make_grid_safe_objective rdf:type owl:Class ;
+                          rdfs:subClassOf :Objective .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Measurement
+:Measurement rdf:type owl:Class ;
+             rdfs:subClassOf :Grid_state .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Node
+:Node rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :has_measurement ;
+                                                   owl:someValuesFrom :Voltage
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :has_part ;
+                                                   owl:someValuesFrom :Generator
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :has_part ;
+                                                   owl:someValuesFrom :Load
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :has_part ;
+                                                   owl:someValuesFrom :Powerline
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:subClassOf :Electrical_grid_component .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Normal_observation
+:Normal_observation rdf:type owl:Class ;
+                    rdfs:subClassOf :Observation .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Normal_powerline
+:Normal_powerline rdf:type owl:Class ;
+                  rdfs:subClassOf :Powerline .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Nuclear_generator
+:Nuclear_generator rdf:type owl:Class ;
+                   rdfs:subClassOf :Generator .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Number_of_actions
+:Number_of_actions rdf:type owl:Class ;
+                   rdfs:subClassOf :Expected_grid_KPI_measurement_datum ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :is_about ;
+                                     owl:someValuesFrom :Action
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :is_quality_measurement_of ;
+                                     owl:someValuesFrom :Comfort
+                                   ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Number_of_available_assets
+:Number_of_available_assets rdf:type owl:Class ;
+                            rdfs:subClassOf :Expected_grid_KPI_measurement_datum ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :is_quality_measurement_of ;
+                                              owl:someValuesFrom :Comfort
+                                            ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Number_of_available_flexibilities
+:Number_of_available_flexibilities rdf:type owl:Class ;
+                                   rdfs:subClassOf :Expected_grid_KPI_measurement_datum ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :is_quality_measurement_of ;
+                                                     owl:someValuesFrom :Optimisation
+                                                   ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Number_of_overloads
+:Number_of_overloads rdf:type owl:Class ;
+                     rdfs:subClassOf :Quantitative_measurement_datum_KPI .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Objective
+:Objective rdf:type owl:Class ;
+           rdfs:subClassOf :Environment .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Observation
+:Observation rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :has_part ;
+                                                          owl:someValuesFrom :Event
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :has_part ;
+                                                          owl:someValuesFrom :Observation
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :Base_infrastructure .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Operator
+:Operator rdf:type owl:Class ;
+          rdfs:subClassOf :Stakeholders ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :has_profile ;
+                            owl:someValuesFrom :Profile
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :has_weights ;
+                            owl:someValuesFrom :Goal
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :requests ;
+                            owl:someValuesFrom :Request_function
+                          ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Optimisation
+:Optimisation rdf:type owl:Class ;
+              rdfs:subClassOf :Goal ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :is_about ;
+                                owl:someValuesFrom :Electrical_grid
+                              ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#P_or
+:P_or rdf:type owl:Class ;
+      rdfs:subClassOf :Grid_state .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Past_action
+:Past_action rdf:type owl:Class ;
+             rdfs:subClassOf :Action .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Physical_grid_characteristics
+:Physical_grid_characteristics rdf:type owl:Class ;
+                               rdfs:subClassOf :Grid_infrastructure ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :is_about ;
+                                                 owl:someValuesFrom :Electrical_grid
+                                               ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Power_flow
+:Power_flow rdf:type owl:Class ;
+            rdfs:subClassOf :Physical_grid_characteristics .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Powerline
+:Powerline rdf:type owl:Class ;
+           rdfs:subClassOf :Electrical_grid_component ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :has_measurement ;
+                             owl:someValuesFrom :Power_flow
+                           ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Powerline_connection
+:Powerline_connection rdf:type owl:Class ;
+                      rdfs:subClassOf :Powerline_current_action ,
+                                      :Powerline_overload_past_action ,
+                                      :Powerline_recommanded_action .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Powerline_current_action
+:Powerline_current_action rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( :Current_action
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :is_associated_with ;
+                                                                       owl:someValuesFrom :Powerline_overload_issue
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf :Current_action .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Powerline_disconnection
+:Powerline_disconnection rdf:type owl:Class ;
+                         rdfs:subClassOf :Powerline_current_action ,
+                                         :Powerline_overload_past_action ,
+                                         :Powerline_recommanded_action .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Powerline_overload_issue
+:Powerline_overload_issue rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( :Issue
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :has_measurement ;
+                                                                       owl:someValuesFrom [ owl:intersectionOf ( :Rho
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty :has_value ;
+                                                                                                                   owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                        owl:onDatatype xsd:float ;
+                                                                                                                                        owl:withRestrictions ( [ xsd:minExclusive "1.0"^^xsd:float
+                                                                                                                                                               ]
+                                                                                                                                                             )
+                                                                                                                                      ]
+                                                                                                                 ]
+                                                                                                               ) ;
+                                                                                            rdf:type owl:Class
+                                                                                          ]
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf :Issue ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :is_associated_with ;
+                                            owl:someValuesFrom :Powerline_overload_past_action
+                                          ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Powerline_overload_past_action
+:Powerline_overload_past_action rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( :Past_action
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :is_about ;
+                                                                             owl:someValuesFrom :Powerline
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :is_associated_with ;
+                                                                             owl:someValuesFrom :Powerline_overload_issue
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] ;
+                                rdfs:subClassOf :Past_action ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :is_about ;
+                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :Powerline
+                                                ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Powerline_recommanded_action
+:Powerline_recommanded_action rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( :Recommanded_action
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :is_about ;
+                                                                           owl:someValuesFrom :Powerline
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :is_associated_with ;
+                                                                           owl:someValuesFrom :Powerline_overload_issue
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ;
+                              rdfs:subClassOf :Recommanded_action .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Profile
+:Profile rdf:type owl:Class ;
+         rdfs:subClassOf :Stakeholders .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Q_or
+:Q_or rdf:type owl:Class ;
+      rdfs:subClassOf :Grid_state .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Qualitative_measurement_datum_KPI
+:Qualitative_measurement_datum_KPI rdf:type owl:Class ;
+                                   rdfs:subClassOf :Current_grid_KPI_measurement_datum ,
+                                                   :Expected_grid_KPI_measurement_datum .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Quantitative_measurement_datum_KPI
+:Quantitative_measurement_datum_KPI rdf:type owl:Class ;
+                                    rdfs:subClassOf :Current_grid_KPI_measurement_datum ,
+                                                    :Expected_grid_KPI_measurement_datum .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Ranked_list_recommanded_actions
+:Ranked_list_recommanded_actions rdf:type owl:Class ;
+                                 rdfs:subClassOf :List_recommanded_actions ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :has_part ;
+                                                   owl:someValuesFrom :Recommanded_action
+                                                 ] ;
+                                 rdfs:comment "add ranking function (how much does it answer to a specific goal)." .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Recommandation_data
+:Recommandation_data rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty :has_part ;
+                                           owl:someValuesFrom [ owl:intersectionOf ( :Explanation
+                                                                                     :Recommanded_action
+                                                                                     :Similar_situation
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ]
+                                         ] ;
+                     rdfs:subClassOf :Grid_operations ;
+                     rdfs:comment "The process should satisfy the goal" .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Recommandation_process
+:Recommandation_process rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :has_input ;
+                                                                     owl:someValuesFrom :Grid_state
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :has_output ;
+                                                                     owl:someValuesFrom :Recommandation_data
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :has_part ;
+                                                                     owl:someValuesFrom :Request_function
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf :Grid_operations ;
+                        rdfs:comment "Antoine: consider mapping this calss with the notion of issue and alarm. The agent receives an alarm. Task is a problem to be resolved by an agent and associated with a notification." .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Recommanded_action
+:Recommanded_action rdf:type owl:Class ;
+                    rdfs:subClassOf :Action .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Remedial_action
+:Remedial_action rdf:type owl:Class ;
+                 rdfs:subClassOf :Action ;
+                 rdfs:comment """is an action that resolves a specific issue. 
+-> create an axiom""" .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Renewable_energy_share
+:Renewable_energy_share rdf:type owl:Class ;
+                        rdfs:subClassOf :Expected_grid_KPI_measurement_datum ,
+                                        :Quantitative_measurement_datum_KPI ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :is_quality_measurement_of ;
+                                          owl:someValuesFrom :Comfort
+                                        ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Request_function
+:Request_function rdf:type owl:Class ;
+                  rdfs:subClassOf :Environment ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :achives ;
+                                    owl:someValuesFrom :Goal
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :bearer_of ;
+                                    owl:someValuesFrom :Electrical_grid
+                                  ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Rho
+:Rho rdf:type owl:Class ;
+     rdfs:subClassOf :Grid_state ;
+     rdfs:comment "The capacity of each powerline. It is defined at the observed current flow divided by the thermal limit of each powerline (no unit)." .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Safety
+:Safety rdf:type owl:Class ;
+        rdfs:subClassOf :Goal ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :is_about ;
+                          owl:someValuesFrom :Electrical_grid
+                        ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Scalar_value_specification
+:Scalar_value_specification rdf:type owl:Class ;
+                            rdfs:subClassOf :Base_infrastructure ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :has_measurement_unit ;
+                                              owl:someValuesFrom :Unit
+                                            ] .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Senior_profile
+:Senior_profile rdf:type owl:Class ;
+                rdfs:subClassOf :Profile .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Set_line_status
+:Set_line_status rdf:type owl:Class ;
+                 rdfs:subClassOf :Action_topo .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Set_topo_vect
+:Set_topo_vect rdf:type owl:Class ;
+               rdfs:subClassOf :Action_topo .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Similar_situation
+:Similar_situation rdf:type owl:Class ;
+                   rdfs:subClassOf :Situation .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Situation
+:Situation rdf:type owl:Class ;
+           rdfs:subClassOf :Observation .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Solar_generator
+:Solar_generator rdf:type owl:Class ;
+                 rdfs:subClassOf :Generator .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Stakeholders
+:Stakeholders rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Storage
+:Storage rdf:type owl:Class ;
+         rdfs:subClassOf :Electrical_grid_component .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Substation
+:Substation rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ owl:intersectionOf ( :Generator
+                                                                       :Load
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :has_part ;
+                                                                         owl:someValuesFrom :Powerline
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_part ;
+                                                  owl:someValuesFrom :Node
+                                                ]
+                                              )
+                                ] ;
+            rdfs:subClassOf :Electrical_grid_component ;
+            rdfs:comment "The id of the substation to which the load is connected" .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Switch_line_status
+:Switch_line_status rdf:type owl:Class ;
+                    rdfs:subClassOf :Action_topo .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Thermal_generator
+:Thermal_generator rdf:type owl:Class ;
+                   rdfs:subClassOf :Generator .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Topo_vect
+:Topo_vect rdf:type owl:Class ;
+           rdfs:subClassOf :Grid_state ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :is_about ;
+                             owl:allValuesFrom :Electrical_grid
+                           ] ;
+           rdfs:comment "For each object (load, generator, ends of a powerline) it gives on which bus this object is connected in its substation." .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Transformer
+:Transformer rdf:type owl:Class ;
+             rdfs:subClassOf :Powerline .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Unit
+:Unit rdf:type owl:Class ;
+      rdfs:subClassOf :Base_infrastructure .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#V_or
+:V_or rdf:type owl:Class ;
+      rdfs:subClassOf :Grid_state .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Value
+:Value rdf:type owl:Class ;
+       rdfs:subClassOf :Base_infrastructure .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Voltage
+:Voltage rdf:type owl:Class ;
+         rdfs:subClassOf :Physical_grid_characteristics .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#Wind_generator
+:Wind_generator rdf:type owl:Class ;
+                rdfs:subClassOf :Generator .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#electrical_grid
+:electrical_grid rdf:type owl:NamedIndividual ,
+                          :Electrical_grid ;
+                 :has_part :line_54_55_145 ,
+                           :line_54_58_154 ,
+                           :line_58_60_156 .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#issue_115
+:issue_115 rdf:type owl:NamedIndividual ,
+                    :Issue ;
+           :has_measurement :rho_115 ;
+           :is_associated_with :set_bus .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#issue_120
+:issue_120 rdf:type owl:NamedIndividual ,
+                    :Issue ;
+           :has_measurement :rho_120 ;
+           :is_associated_with :set_bus .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#issue_175
+:issue_175 rdf:type owl:NamedIndividual ,
+                    :Issue ;
+           :has_measurement :rho_175 ;
+           :is_associated_with :set_bus .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#issue_751
+:issue_751 rdf:type owl:NamedIndividual ,
+                    :Issue ;
+           :has_measurement :rho_751 ;
+           :is_associated_with :set_bus .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#issue_89
+:issue_89 rdf:type owl:NamedIndividual ,
+                   :Issue ;
+          :has_measurement :rho_751 ;
+          :is_associated_with :set_bus .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#line_54_55_145
+:line_54_55_145 rdf:type owl:NamedIndividual ,
+                         :Powerline .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#line_54_58_154
+:line_54_58_154 rdf:type owl:NamedIndividual ,
+                         :Powerline .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#line_58_60_156
+:line_58_60_156 rdf:type owl:NamedIndividual ,
+                         :Powerline .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#rho_115
+:rho_115 rdf:type owl:NamedIndividual ,
+                  :Rho ;
+         :is_about :line_54_55_145 ;
+         :has_value "1.01"^^xsd:float .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#rho_120
+:rho_120 rdf:type owl:NamedIndividual ,
+                  :Rho ;
+         :is_about :line_58_60_156 ;
+         :has_value "1.01"^^xsd:float .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#rho_175
+:rho_175 rdf:type owl:NamedIndividual ,
+                  :Rho ;
+         :is_about :line_54_55_145 ;
+         :has_value "1.05"^^xsd:float .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#rho_751
+:rho_751 rdf:type owl:NamedIndividual ,
+                  :Rho ;
+         :is_about :line_54_58_154 ;
+         :has_value "1.006"^^xsd:float .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#rho_89
+:rho_89 rdf:type owl:NamedIndividual ,
+                 :Rho ;
+        :is_about :line_54_58_154 ;
+        :has_value "1.008"^^xsd:float .
+
+
+###  http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology#set_bus
+:set_bus rdf:type owl:NamedIndividual ,
+                  :Change_bus_vect .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

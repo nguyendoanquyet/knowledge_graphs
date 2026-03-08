@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1772959545610" name="http://www.semanticweb.org/ami/ontologies/2024/10/OBC-ONTO" uri="OBC-ONTO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1772959545610" name="http://www.semanticweb.org/ami/ontologies/2024/10/OBC-ONTO-Instance" uri="OBC-ONTO-Instance.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1772959545610" name="http://www.semanticweb.org/emna.amdouni/ontologies/2023/0/RTEOntology" uri="Grid2Onto_v1.2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1772959545610" name="http://www.w3.org/2004/02/skos/core" uri="skos.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1772959545610" name="https://bioportal.bioontology.org/ontologies/FishOntology" uri="FishOntology_no_import%20-%20Bioportal.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1772959545610" name="https://openenergyplatform.org/ontology/oeo/" uri="oeo-full.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1772959545610" name="https://w3id.org/ccso/ccso" uri="CCSO_071owl.owl"/>
+    </group>
+</catalog>
