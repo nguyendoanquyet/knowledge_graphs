@@ -1,0 +1,1358 @@
+@prefix : <file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix dblp: <https://dblp.org/rdf/schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix litre: <http://purl.org/spar/literal/> .
+@prefix locid: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
+@prefix locrel: <http://id.loc.gov/vocabulary/relators/> .
+@prefix schema: <https://schema.org/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@base <file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#> .
+
+<file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf> rdf:type owl:Ontology ;
+                                                                 owl:versionIRI <https://dblp.org/rdf/schema-2024-06-14> ;
+                                                                 dct:abstract "The dblp RDF schema is an ontology that models the semantic contents of the dblp computer science bibliography."@en ;
+                                                                 dct:creator <https://dblp.org> ;
+                                                                 dct:description "This ontology describes the RDF representation of the contents of the dblp computer science bibliography."@en ;
+                                                                 dct:title "dblp RDF schema" ;
+                                                                 owl:priorVersion <https://dblp.org/rdf/schema-2023-10-17> ;
+                                                                 owl:versionInfo "Fri 14 Jun 2024" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#creatorName
+:creatorName rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf wd:P2561 ,
+                                foaf:name ,
+                                schema:name .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#monthOfPublication
+:monthOfPublication rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf wd:P2922 .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#primaryCreatorName
+:primaryCreatorName rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dbo:commonName .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#primaryStreamTitle
+:primaryStreamTitle rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dbo:commonName .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedBy
+:publishedBy rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf dc:publisher .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedInBookChapter
+:publishedInBookChapter rdf:type owl:AnnotationProperty ;
+                        rdfs:subPropertyOf wd:P792 ,
+                                           schema:position .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedInJournalVolume
+:publishedInJournalVolume rdf:type owl:AnnotationProperty ;
+                          rdfs:subPropertyOf wd:P478 ,
+                                             schema:volumeNumber .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedInJournalVolumeIssue
+:publishedInJournalVolumeIssue rdf:type owl:AnnotationProperty ;
+                               rdfs:subPropertyOf wd:P433 ,
+                                                  schema:issueNumber .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedInSeriesVolume
+:publishedInSeriesVolume rdf:type owl:AnnotationProperty ;
+                         rdfs:subPropertyOf wd:P478 ,
+                                            schema:volumeNumber .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#streamTitle
+:streamTitle rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf wd:P2561 ,
+                                foaf:name ,
+                                schema:name .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#title
+:title rdf:type owl:AnnotationProperty ;
+       rdfs:subPropertyOf dc:title ,
+                          schema:name .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#webpage
+:webpage rdf:type owl:AnnotationProperty ;
+         rdfs:subPropertyOf wd:P2699 ,
+                            schema:url .
+
+
+###  http://dbpedia.org/ontology/commonName
+dbo:commonName rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+dct:abstract rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wikidata.org/entity/P2561
+wd:P2561 rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wikidata.org/entity/P2699
+wd:P2699 rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wikidata.org/entity/P2922
+wd:P2922 rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wikidata.org/entity/P433
+wd:P433 rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wikidata.org/entity/P478
+wd:P478 rdf:type owl:AnnotationProperty .
+
+
+###  http://www.wikidata.org/entity/P792
+wd:P792 rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/issueNumber
+schema:issueNumber rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/name
+schema:name rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/position
+schema:position rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/url
+schema:url rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/volumeNumber
+schema:volumeNumber rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#gMonth
+xsd:gMonth rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#archivedWebpage
+:archivedWebpage rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :webpage ;
+                 rdfs:domain :Entity ;
+                 rdfs:range foaf:Document ;
+                 rdfs:comment "The URL of an archived web page about this item, which may no longer be available in the web."@en ;
+                 rdfs:label "archivedWebpage"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#authorOf
+:authorOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :creatorOf ;
+          owl:inverseOf :authoredBy ;
+          rdfs:domain :Creator ;
+          rdfs:range :Publication ;
+          rdfs:comment "The creator is the author of the publication."@en ;
+          rdfs:label "authorOf"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#authoredBy
+:authoredBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :createdBy ;
+            rdfs:domain :Publication ;
+            rdfs:range :Creator ;
+            rdfs:comment "The publication is authored by the creator."@en ;
+            rdfs:label "authoredBy"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#awardWebpage
+:awardWebpage rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :webpage ;
+              rdfs:domain :Creator ;
+              rdfs:range foaf:Document ;
+              rdfs:comment "The URL of a web page about an award received by this creator."@en ;
+              rdfs:label "awardwebpage"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#bibtexType
+:bibtexType rdf:type owl:ObjectProperty ;
+            rdfs:domain :Publication ;
+            rdfs:range bibtex:Entry ;
+            rdfs:comment "The bibtex type of the publication, e.g. book, inproceedings, etc."@en ;
+            rdfs:label "bibtexType"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#coAuthorWith
+:coAuthorWith rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :coCreatorWith ;
+              rdf:type owl:SymmetricProperty ;
+              rdfs:domain :Creator ;
+              rdfs:range :Creator ;
+              rdfs:comment "The creator is co-author with the other creator."@en ;
+              rdfs:label "coAuthorWith"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#coCreatorWith
+:coCreatorWith rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf foaf:knows ;
+               rdf:type owl:SymmetricProperty ;
+               rdfs:domain :Creator ;
+               rdfs:range :Creator ;
+               rdfs:comment "The creator is co-creator with the other creator."@en ;
+               rdfs:label "coCreatorWith"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#coEditorWith
+:coEditorWith rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :coCreatorWith ;
+              rdf:type owl:SymmetricProperty ;
+              rdfs:domain :Creator ;
+              rdfs:range :Creator ;
+              rdfs:comment "The creator is co-editor with the other creator."@en ;
+              rdfs:label "coEditorWith"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#createdBy
+:createdBy rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf dc:creator ,
+                              foaf:maker ;
+           owl:inverseOf :creatorOf ;
+           rdfs:domain :Publication ;
+           rdfs:range :Creator ;
+           rdfs:comment "The publication is created by the creator."@en ;
+           rdfs:label "createdBy"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#creatorOf
+:creatorOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf foaf:made ;
+           rdfs:domain :Creator ;
+           rdfs:range :Publication ;
+           rdfs:comment "The creator of the publication."@en ;
+           rdfs:label "creatorOf"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#documentPage
+:documentPage rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :webpage ;
+              rdfs:domain :Publication ;
+              rdfs:range foaf:Document ;
+              rdfs:comment "The URL of the electronic edition of the publication."@en ;
+              rdfs:label "documentPage"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#doi
+:doi rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf :identifier ;
+     rdfs:domain :Publication ;
+     rdfs:range xsd:anyUri ;
+     rdfs:comment "A Digital Object Identifier."@en ;
+     rdfs:label "doi"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#editedBy
+:editedBy rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :createdBy ;
+          owl:inverseOf :editorOf ;
+          rdfs:domain :Publication ;
+          rdfs:range :Creator ;
+          rdfs:comment "The publication is edited by the creator."@en ;
+          rdfs:label "editedBy"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#editorOf
+:editorOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :creatorOf ;
+          rdfs:domain :Creator ;
+          rdfs:range :Publication ;
+          rdfs:comment "The creator is the editor of the publication."@en ;
+          rdfs:label "editorOf"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#hasSignature
+:hasSignature rdf:type owl:ObjectProperty ;
+              owl:inverseOf :signaturePublication ;
+              rdfs:domain :Publication ;
+              rdfs:range :Signature ;
+              rdfs:comment "A signature that links this publication to an creator."@en ;
+              rdfs:label "hasSignature"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#hasVersion
+:hasVersion rdf:type owl:ObjectProperty ;
+            owl:inverseOf :versionConcept ;
+            rdfs:domain :Publication ;
+            rdfs:range :VersionRelation ;
+            rdfs:comment "The publication has a different, more specific (instance) publication as its version."@en ;
+            rdfs:label "hasVersion"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#homepage
+:homepage rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :webpage ;
+          rdfs:domain :Creator ;
+          rdfs:range foaf:Document ;
+          rdfs:comment "The URL of an academic homepage of this creator."@en ;
+          rdfs:label "homepage"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#homonymousCreator
+:homonymousCreator rdf:type owl:ObjectProperty ,
+                            owl:SymmetricProperty ;
+                   rdfs:domain :Creator ;
+                   rdfs:range :Creator ;
+                   rdfs:comment "This creator shares a homonymous name with the other creator."@en ;
+                   rdfs:label "homonymousCreator"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#identifier
+:identifier rdf:type owl:ObjectProperty ;
+            rdfs:domain :Entity ;
+            rdfs:range xsd:anyUri ;
+            rdfs:comment "An abstract identifier."@en ;
+            rdfs:label "identifier"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#indexPage
+:indexPage rdf:type owl:ObjectProperty ;
+           rdfs:domain :Stream ;
+           rdfs:range foaf:Document ;
+           rdfs:comment "The URL of the dblp stream index page for this stream."@en ;
+           rdfs:label "indexPage"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#isVersion
+:isVersion rdf:type owl:ObjectProperty ;
+           owl:inverseOf :versionInstance ;
+           rdfs:domain :Publication ;
+           rdfs:range :VersionRelation ;
+           rdfs:comment "The publication is a version of another, more general (concept) publication."@en ;
+           rdfs:label "isVersion"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#isVersionOf
+:isVersionOf rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty ;
+             rdfs:domain :Publication ;
+             rdfs:range :Publication ;
+             rdfs:comment "The publication is a version of another, more general (concept) publication."@en ;
+             rdfs:label "isVersionOf"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#isbn
+:isbn rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf :identifier ;
+      rdfs:domain :Publication ;
+      rdfs:range xsd:anyUri ;
+      rdfs:comment "An International Standard Book Number."@en ;
+      rdfs:label "isbn"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#issn
+:issn rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf :identifier ;
+      rdfs:domain :Stream ;
+      rdfs:range xsd:anyUri ;
+      rdfs:comment "An International Standard Serial Number."@en ;
+      rdfs:label "issn"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#listedOnTocPage
+:listedOnTocPage rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Publication ;
+                 rdfs:range foaf:Document ;
+                 rdfs:comment "The url of the dblp table of contents page listing this publication."@en ;
+                 rdfs:label "listedOnTocPage"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#omid
+:omid rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf :identifier ;
+      rdfs:domain :Publication ;
+      rdfs:range xsd:anyUri ;
+      rdfs:comment "An OpenCitations Meta Identifier."@en ;
+      rdfs:label "omid"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#orcid
+:orcid rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :identifier ;
+       rdfs:domain :Creator ;
+       rdfs:range xsd:anyUri ;
+       rdfs:comment "An Open Researcher and Contributor ID."@en ;
+       rdfs:label "orcid"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#possibleActualCreator
+:possibleActualCreator rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :homonymousCreator ;
+                       owl:inverseOf :proxyAmbiguousCreator ;
+                       rdfs:domain :AmbiguousCreator ;
+                       rdfs:range :Creator ;
+                       rdfs:comment "This ambiguous creator may be (or may be not) just a disambiguation proxy for the other creator. Further actual creator candidates are possible."@en ;
+                       rdfs:label "possibleActualCreator"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#predecessorStream
+:predecessorStream rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :relatedStream ;
+                   owl:inverseOf :successorStream ;
+                   rdfs:domain :Stream ;
+                   rdfs:range :Stream ;
+                   rdfs:comment "This stream is a predecessor of the other stream."@en ;
+                   rdfs:label "predecessorStream"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#primaryDocumentPage
+:primaryDocumentPage rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :documentPage ;
+                     rdfs:domain :Publication ;
+                     rdfs:range foaf:Document ;
+                     rdfs:comment "The primary URL of the electronic edition of the publication."@en ;
+                     rdfs:label "primaryDocumentPage"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#primaryHomepage
+:primaryHomepage rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :homepage ;
+                 rdfs:domain :Creator ;
+                 rdfs:range foaf:Document ;
+                 rdfs:comment "The primary URL of an academic homepage of this creator."@en ;
+                 rdfs:label "primaryHomepage"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#proxyAmbiguousCreator
+:proxyAmbiguousCreator rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :homonymousCreator ;
+                       rdfs:domain :Creator ;
+                       rdfs:range :AmbiguousCreator ;
+                       rdfs:comment "This creator (and any of her fellow homonymous creators) is also represented by the given ambiguous creator in cases where the authorship of a publication is undetermined."@en ;
+                       rdfs:label "proxyAmbiguousCreator"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedAsPartOf
+:publishedAsPartOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf wd:P1433 ,
+                                      schema:isPartOf ;
+                   rdf:type owl:TransitiveProperty ;
+                   rdfs:domain :Publication ;
+                   rdfs:range :Publication ;
+                   rdfs:comment "The publication has been published as a part of the other publication."@en ;
+                   rdfs:label "publishedAsPartOf"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedIn
+:publishedIn rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf wd:P1433 ,
+                                schema:isPartOf .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedInStream
+:publishedInStream rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf wd:P1433 ,
+                                      schema:isPartOf ;
+                   rdfs:domain :Publication ;
+                   rdfs:range :Stream ;
+                   rdfs:comment "The conference series, the journal, or the repository in which the publication has been published."@en ;
+                   rdfs:label "publishedInStream"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#relatedStream
+:relatedStream rdf:type owl:ObjectProperty ,
+                        owl:SymmetricProperty ;
+               rdfs:domain :Stream ;
+               rdfs:range :Stream ;
+               rdfs:comment "This stream is related to the other stream in some unspecified way."@en ;
+               rdfs:label "relatedStream"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#signatureCreator
+:signatureCreator rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Signature ;
+                  rdfs:range :Creator ;
+                  rdfs:comment "A linked creator of the publication."@en ;
+                  rdfs:label "signatureCreator"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#signatureOrcid
+:signatureOrcid rdf:type owl:ObjectProperty ;
+                rdfs:domain :Signature ;
+                rdfs:range xsd:anyUri ;
+                rdfs:comment "An ORCID that links the publication to a creator."@en ;
+                rdfs:label "signatureOrcid"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#signaturePublication
+:signaturePublication rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Signature ;
+                      rdfs:range :Publication ;
+                      rdfs:comment "The publication of this signature."@en ;
+                      rdfs:label "signaturePublication"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#subStream
+:subStream rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :relatedStream ;
+           owl:inverseOf :superStream ;
+           rdfs:domain :Stream ;
+           rdfs:range :Stream ;
+           rdfs:comment "This stream is (or was) a part of the other stream."@en ;
+           rdfs:label "subStream"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#successorStream
+:successorStream rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :relatedStream ;
+                 rdfs:domain :Stream ;
+                 rdfs:range :Stream ;
+                 rdfs:comment "This stream is a successor of the other stream."@en ;
+                 rdfs:label "successorStream"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#superStream
+:superStream rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :relatedStream ;
+             rdfs:domain :Stream ;
+             rdfs:range :Stream ;
+             rdfs:comment "This stream has (or had) the other stream as a part."@en ;
+             rdfs:label "superStream"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#versionConcept
+:versionConcept rdf:type owl:ObjectProperty ;
+                rdfs:domain :VersionRelation ;
+                rdfs:range :Publication ;
+                rdfs:comment "The linked general (concept) publication."@en ;
+                rdfs:label "versionConcept"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#versionInstance
+:versionInstance rdf:type owl:ObjectProperty ;
+                 rdfs:domain :VersionRelation ;
+                 rdfs:range :Publication ;
+                 rdfs:comment "The linked specific (instance) publication version."@en ;
+                 rdfs:label "versionInstance"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#versionUri
+:versionUri rdf:type owl:ObjectProperty ;
+            rdfs:domain :VersionRelation ;
+            rdfs:range xsd:anyUri ;
+            rdfs:comment "An (optional) URI of identifying the linked specific (instance) publication version."@en ;
+            rdfs:label "versionUri"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#webpage
+:webpage rdf:type owl:ObjectProperty ;
+         rdfs:domain :Entity ;
+         rdfs:range foaf:Document .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#wikidata
+:wikidata rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :identifier ;
+          rdfs:domain :Entity ;
+          rdfs:range xsd:anyUri ;
+          rdfs:comment "A wikidata item."@en ;
+          rdfs:label "wikidata"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#wikipedia
+:wikipedia rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :webpage ;
+           rdfs:domain :Entity ;
+           rdfs:range foaf:Document ;
+           rdfs:comment "The URL of an (English) Wikipedia article about this item."@en ;
+           rdfs:label "wikipedia"@en .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:ObjectProperty .
+
+
+###  http://www.wikidata.org/entity/P1433
+wd:P1433 rdf:type owl:ObjectProperty .
+
+
+###  http://xmlns.com/foaf/0.1/knows
+foaf:knows rdf:type owl:ObjectProperty .
+
+
+###  http://xmlns.com/foaf/0.1/made
+foaf:made rdf:type owl:ObjectProperty .
+
+
+###  http://xmlns.com/foaf/0.1/maker
+foaf:maker rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/isPartOf
+schema:isPartOf rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#affiliation
+:affiliation rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :creatorNote ;
+             rdfs:domain :Creator ;
+             rdfs:range xsd:string ;
+             rdfs:comment "A (past or present) affiliation of the creator. (Remark: This property currently just gives literal xsd:string values until institutions are modelled as proper entities.)"@en ;
+             rdfs:label "affiliation"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#creatorName
+:creatorName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Creator ;
+             rdfs:range xsd:string .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#creatorNote
+:creatorNote rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Creator ;
+             rdfs:range xsd:string ;
+             rdfs:comment "An additional note about the creator."@en ;
+             rdfs:label "creatorNote"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#formerStreamTitle
+:formerStreamTitle rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :streamTitle ;
+                   rdfs:domain :Stream ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "A former title of the stream."@en ;
+                   rdfs:label "formerStreamTitle"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#iso4
+:iso4 rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Stream ;
+      rdfs:range xsd:string ;
+      rdfs:comment "The stream's ISO4 abbreviation."@en ;
+      rdfs:label "iso4"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#monthOfPublication
+:monthOfPublication rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Publication ;
+                    rdfs:range xsd:gMonth .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#numberOfCreators
+:numberOfCreators rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Publication ;
+                  rdfs:range xsd:integer ;
+                  rdfs:comment "The number of creators who created this publication."@en ;
+                  rdfs:label "numberOfCreators"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#pagination
+:pagination rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Publication ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The page numbers where the publication can be found."@en ;
+            rdfs:label "pagination"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#primaryAffiliation
+:primaryAffiliation rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :affiliation ;
+                    rdfs:domain :Creator ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "The primary affiliation of the creator. (Remark: This property currently just gives literal xsd:string values until institutions are modelled as proper entities.)"@en ;
+                    rdfs:label "primaryAffiliation"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#primaryCreatorName
+:primaryCreatorName rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :creatorName ;
+                    rdfs:domain :Creator ;
+                    rdfs:range xsd:string .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#primaryStreamTitle
+:primaryStreamTitle rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :streamTitle ;
+                    rdfs:domain :Stream ;
+                    rdfs:range xsd:string .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publicationNote
+:publicationNote rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Publication ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "An additional note to the publication."@en ;
+                 rdfs:label "publicationNote"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedBy
+:publishedBy rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Publication ;
+             rdfs:range xsd:string .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedIn
+:publishedIn rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Publication ;
+             rdfs:range xsd:string .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedInBook
+:publishedInBook rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :publishedIn ;
+                 rdfs:domain :Publication ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "The name of the book in which the publication has been published. (Remark: This is currently an intermediate property that will be removed once journals and conference series are modelled as proper entities.)"@en ;
+                 rdfs:label "publishedInBook"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedInBookChapter
+:publishedInBookChapter rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Publication ;
+                        rdfs:range xsd:string .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedInJournal
+:publishedInJournal rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :publishedIn ;
+                    rdfs:domain :Publication ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "The name of the journal in which the publication has been published. (Remark: This is currently an intermediate property that will be removed once journals and conference series are modelled as proper entities.)"@en ;
+                    rdfs:label "publishedInJournal"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedInJournalVolume
+:publishedInJournalVolume rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Publication ;
+                          rdfs:range xsd:string .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedInJournalVolumeIssue
+:publishedInJournalVolumeIssue rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :Publication ;
+                               rdfs:range xsd:string .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedInSeries
+:publishedInSeries rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :publishedIn ;
+                   rdfs:domain :Publication ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "The name of the series in which the publication has been published. (Remark: This is currently an intermediate property that will be removed once journals and conference series are modelled as proper entities.)"@en ;
+                   rdfs:label "publishedInSeries"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishedInSeriesVolume
+:publishedInSeriesVolume rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Publication ;
+                         rdfs:range xsd:string .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#publishersAddress
+:publishersAddress rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Publication ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "The address of the publisher. (Remark: This is currently an intermediate property that will be removed once publishers are modelled as proper entities.)"@en ;
+                   rdfs:label "publishersAddress"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#signatureDblpName
+:signatureDblpName rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Signature ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "A dblp name (including any possible trailing homonym number) that links the publication to a creator."@en ;
+                   rdfs:label "signatureDblpName"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#signatureOrdinal
+:signatureOrdinal rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Signature ;
+                  rdfs:range xsd:integer ;
+                  rdfs:comment "The ordinal number of this signature for the publication, starting with 1."@en ;
+                  rdfs:label "signatureOrdinal"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#streamTitle
+:streamTitle rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Stream ;
+             rdfs:range xsd:string .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#thesisAcceptedBySchool
+:thesisAcceptedBySchool rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Publication ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "The school where the publication (typically a thesis) has been accepted. (Remark: This property currently just gives literal xsd:string values until institutions are modelled as proper entities.)"@en ;
+                        rdfs:label "thesisAcceptedBySchool"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Publication ;
+       rdfs:range xsd:string .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#versionLabel
+:versionLabel rdf:type owl:DatatypeProperty ;
+              rdfs:domain :VersionRelation ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The human-readable version label of the specific (instance) publication version."@en ;
+              rdfs:label "versionLabel"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#versionOrdinal
+:versionOrdinal rdf:type owl:DatatypeProperty ;
+                rdfs:domain :VersionRelation ;
+                rdfs:range xsd:integer ;
+                rdfs:comment "The ordinal number of the specific (instance) publication version. This number is solely intended for sorting purposes: bigger numbers indicate later versions. Version ordinals do not need to describe a complete number range, nor is there a necessary relationship to the version labels."@en ;
+                rdfs:label "versionOrdinal"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#yearOfEvent
+:yearOfEvent rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Publication ;
+             rdfs:range xsd:gYear ;
+             rdfs:comment "The year the conference or workshop contribution has been presented."@en ;
+             rdfs:label "yearOfEvent"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#yearOfPublication
+:yearOfPublication rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Publication ;
+                   rdfs:range xsd:gYear ;
+                   rdfs:comment "The year the publication's issue or volume has been published."@en ;
+                   rdfs:label "yearOfPublication"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#AmbiguousCreator
+:AmbiguousCreator rdf:type owl:Class ;
+                  rdfs:subClassOf :Creator ,
+                                  wd:Q48522 ;
+                  rdfs:comment "Not an actual creator, but an ambiguous proxy for an unknown number of unrelated actual creators of the same name. Associated publications do not have their true creators determined yet."@en ;
+                  rdfs:label "AmbiguousCreator"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Article
+:Article rdf:type owl:Class ;
+         owl:equivalentClass dbo:Article ;
+         rdfs:subClassOf :Publication ,
+                         bibo:AcademicArticle ,
+                         wd:Q13442814 ,
+                         schema:Article ;
+         rdfs:comment "A journal article."@en ;
+         rdfs:label "Article"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#AuthorSignature
+:AuthorSignature rdf:type owl:Class ;
+                 rdfs:subClassOf :Signature ;
+                 rdfs:comment "The information that links a publication to an author."@en ;
+                 rdfs:label "AuthorSignature"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Book
+:Book rdf:type owl:Class ;
+      owl:equivalentClass dbo:Book ,
+                          bibo:Book ,
+                          wd:Q571 ,
+                          schema:Book ;
+      rdfs:subClassOf :Publication ;
+      rdfs:comment "A book or a thesis."@en ;
+      rdfs:label "Book"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Conference
+:Conference rdf:type owl:Class ;
+            owl:equivalentClass wd:Q47258130 ;
+            rdfs:subClassOf :Stream ;
+            rdfs:comment "A conference or workshop series."@en ;
+            rdfs:label "Conference"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Creator
+:Creator rdf:type owl:Class ;
+         rdfs:subClassOf :Entity ,
+                         dbo:Agent ,
+                         bf:Agent ,
+                         dct:Agent ,
+                         wd:Q24229398 ,
+                         foaf:Agent ;
+         rdfs:comment "A creator of a publication."@en ;
+         rdfs:label "Creator"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Data
+:Data rdf:type owl:Class ;
+      owl:equivalentClass wd:Q17051824 ,
+                          schema:Dataset ;
+      rdfs:subClassOf :Publication ;
+      rdfs:comment "Research data or artifacts."@en ;
+      rdfs:label "Data"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#EditorSignature
+:EditorSignature rdf:type owl:Class ;
+                 rdfs:subClassOf :Signature ;
+                 rdfs:comment "The information that links a publication to an editor."@en ;
+                 rdfs:label "EditorSignature"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Editorship
+:Editorship rdf:type owl:Class ;
+            rdfs:subClassOf :Publication ;
+            rdfs:comment "An edited publication."@en ;
+            rdfs:label "Editorship"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Entity
+:Entity rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ,
+                        wd:Q35120 ,
+                        schema:Thing ;
+        rdfs:comment "An abstract, identifiable entity in dblp."@en ;
+        rdfs:label "Entity"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Group
+:Group rdf:type owl:Class ;
+       owl:equivalentClass dbo:Organisation ,
+                           bf:Organisation ,
+                           wd:Q43229 ,
+                           foaf:Group ,
+                           schema:Organization ;
+       rdfs:subClassOf :Creator ;
+       rdfs:comment "A creator alias used by a group or consortium of persons."@en ;
+       rdfs:label "Group"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Incollection
+:Incollection rdf:type owl:Class ;
+              rdfs:subClassOf :Publication ,
+                              bibo:AcademicArticle ,
+                              wd:Q13442814 ,
+                              schema:Chapter ;
+              rdfs:comment "A part/chapter in a book or a collection."@en ;
+              rdfs:label "Incollection"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Informal
+:Informal rdf:type owl:Class ;
+          owl:equivalentClass wd:Q1148359 ;
+          rdfs:subClassOf :Publication ;
+          rdfs:comment "An informal or other publication."@en ;
+          rdfs:label "Informal"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Inproceedings
+:Inproceedings rdf:type owl:Class ;
+               rdfs:subClassOf :Publication ,
+                               bibo:AcademicArticle ,
+                               wd:Q13442814 ,
+                               schema:Chapter ;
+               rdfs:comment "A conference or workshop paper."@en ;
+               rdfs:label "Inproceedings"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Journal
+:Journal rdf:type owl:Class ;
+         owl:equivalentClass wd:Q5633421 ;
+         rdfs:subClassOf :Stream ,
+                         schema:Periodical ;
+         rdfs:comment "A periodically published journal."@en ;
+         rdfs:label "Journal"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Person
+:Person rdf:type owl:Class ;
+        owl:equivalentClass dbo:Person ,
+                            bf:Person ,
+                            wd:Q5 ,
+                            foaf:Person ,
+                            schema:Person ;
+        rdfs:subClassOf :Creator ;
+        rdfs:comment "An actual person, who is a creator of a publication."@en ;
+        rdfs:label "Person"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Publication
+:Publication rdf:type owl:Class ;
+             owl:equivalentClass wd:Q591041 ;
+             rdfs:subClassOf :Entity ,
+                             dbo:WrittenWork ,
+                             bf:Work ,
+                             dct:BibliographicResource ,
+                             bibo:Document ,
+                             foaf:Document ,
+                             schema:CreativeWork ;
+             rdfs:comment "A publication."@en ;
+             rdfs:label "Publication"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Reference
+:Reference rdf:type owl:Class ;
+           owl:equivalentClass bibo:ReferenceSource ,
+                               wd:Q10389811 ;
+           rdfs:subClassOf :Publication ;
+           rdfs:comment "A reference work entry."@en ;
+           rdfs:label "Reference"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Repository
+:Repository rdf:type owl:Class ;
+            owl:equivalentClass wd:Q5227240 ;
+            rdfs:subClassOf :Stream ;
+            rdfs:comment "A source of data and/or artifact publications."@en ;
+            rdfs:label "Repository"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Series
+:Series rdf:type owl:Class ;
+        owl:equivalentClass wd:Q2217301 ;
+        rdfs:subClassOf :Stream ;
+        rdfs:comment "A published series of volumes."@en ;
+        rdfs:label "Series"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Signature
+:Signature rdf:type owl:Class ;
+           rdfs:comment "The information that links a publication to a creator."@en ;
+           rdfs:label "Signature"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Stream
+:Stream rdf:type owl:Class ;
+        rdfs:subClassOf :Entity ,
+                        schema:CreativeWorkSeries ;
+        rdfs:comment "A publication stream, i.e., a venue or source for publications."@en ;
+        rdfs:label "Stream"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#VersionRelation
+:VersionRelation rdf:type owl:Class ;
+                 rdfs:comment "The information that links an (instanced) publication version to its general (concept) publication."@en ;
+                 rdfs:label "VersionRelation"@en .
+
+
+###  file:/D:/knowledge_graphs/ontology_collection/DBPL-schema.rdf#Withdrawn
+:Withdrawn rdf:type owl:Class ;
+           owl:equivalentClass wd:Q45182324 ;
+           rdfs:subClassOf :Publication ;
+           rdfs:comment "A withdrawn publication item."@en ;
+           rdfs:label "Withdrawn"@en .
+
+
+###  http://dbpedia.org/ontology/Agent
+dbo:Agent rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/Article
+dbo:Article rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/Book
+dbo:Book rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/Organisation
+dbo:Organisation rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/Person
+dbo:Person rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/WrittenWork
+dbo:WrittenWork rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/Agent
+bf:Agent rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/Organisation
+bf:Organisation rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/Person
+bf:Person rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/Work
+bf:Work rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/Agent
+dct:Agent rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/BibliographicResource
+dct:BibliographicResource rdf:type owl:Class .
+
+
+###  http://purl.org/net/nknouf/ns/bibtex#Entry
+bibtex:Entry rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/AcademicArticle
+bibo:AcademicArticle rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/Book
+bibo:Book rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/Document
+bibo:Document rdf:type owl:Class .
+
+
+###  http://purl.org/ontology/bibo/ReferenceSource
+bibo:ReferenceSource rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#anyUri
+xsd:anyUri rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q10389811
+wd:Q10389811 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q1148359
+wd:Q1148359 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q13442814
+wd:Q13442814 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q17051824
+wd:Q17051824 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q2217301
+wd:Q2217301 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q24229398
+wd:Q24229398 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q35120
+wd:Q35120 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q43229
+wd:Q43229 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q45182324
+wd:Q45182324 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q47258130
+wd:Q47258130 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q48522
+wd:Q48522 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q5
+wd:Q5 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q5227240
+wd:Q5227240 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q5633421
+wd:Q5633421 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q571
+wd:Q571 rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q591041
+wd:Q591041 rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Document
+foaf:Document rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Group
+foaf:Group rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class .
+
+
+###  https://schema.org/Article
+schema:Article rdf:type owl:Class .
+
+
+###  https://schema.org/Book
+schema:Book rdf:type owl:Class .
+
+
+###  https://schema.org/Chapter
+schema:Chapter rdf:type owl:Class .
+
+
+###  https://schema.org/CreativeWork
+schema:CreativeWork rdf:type owl:Class .
+
+
+###  https://schema.org/CreativeWorkSeries
+schema:CreativeWorkSeries rdf:type owl:Class .
+
+
+###  https://schema.org/Dataset
+schema:Dataset rdf:type owl:Class .
+
+
+###  https://schema.org/Organization
+schema:Organization rdf:type owl:Class .
+
+
+###  https://schema.org/Periodical
+schema:Periodical rdf:type owl:Class .
+
+
+###  https://schema.org/Person
+schema:Person rdf:type owl:Class .
+
+
+###  https://schema.org/Thing
+schema:Thing rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:creatorName rdfs:comment "The full name of the creator."@en ;
+             rdfs:label "creatorname"@en .
+
+
+:monthOfPublication rdfs:comment "The month the publication has been published."@en ;
+                    rdfs:label "monthOfPublication"@en .
+
+
+:primaryCreatorName rdfs:comment "The primary full name of the creator."@en ;
+                    rdfs:label "primaryCreatorName"@en .
+
+
+:primaryStreamTitle rdfs:comment "The primary title of the stream."@en ;
+                    rdfs:label "primaryStreamTitle"@en .
+
+
+:publishedBy rdfs:comment "The publisher of the publication. (Remark: This property currently just gives literal xsd:string values until publishers are modelled as proper entities.)"@en ;
+             rdfs:label "publishedBy"@en .
+
+
+:publishedIn rdfs:comment "The name of the series, the journal, or the book in which the publication has been published. (Remark: This property currently just gives literal xsd:string values until journals and conference series are modelled as proper entities.)"@en ;
+             rdfs:label "publishedIn"@en .
+
+
+:publishedInBookChapter rdfs:comment "The chapter of the book in which the publication has been published. (Remark: This is currently an intermediate property that will be removed once journals and conference series are modelled as proper entities.)"@en ;
+                        rdfs:label "publishedInBookChapter"@en .
+
+
+:publishedInJournalVolume rdfs:comment "The volume of the journal in which the publication has been published. (Remark: This is currently an intermediate property that will be removed once journals and conference series are modelled as proper entities.)"@en ;
+                          rdfs:label "publishedInJournalVolume"@en .
+
+
+:publishedInJournalVolumeIssue rdfs:comment "The issue of the journal in which the publication has been published. (Remark: This is currently an intermediate property that will be removed once journals and conference series are modelled as proper entities.)"@en ;
+                               rdfs:label "publishedInJournalIssue"@en .
+
+
+:publishedInSeriesVolume rdfs:comment "The volume of the series in which the publication has been published. (Remark: This is currently an intermediate property that will be removed once journals and conference series are modelled as proper entities.)"@en ;
+                         rdfs:label "publishedInSeriesVolume"@en .
+
+
+:streamTitle rdfs:comment "A title of the stream."@en ;
+             rdfs:label "streamTitle"@en .
+
+
+:title rdfs:comment "The title of the publication."@en ;
+       rdfs:label "title"@en .
+
+
+:webpage rdfs:comment "The URL of a web page about this item."@en ;
+         rdfs:label "webpage"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
