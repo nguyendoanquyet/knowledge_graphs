@@ -1,0 +1,269 @@
+@prefix focosa-f: <https://dbwis.gitlab.io/focosa/src/modules/health-nutrition/food#> .
+@prefix focosa-fsc: <https://dbwis.gitlab.io/focosa/src/modules/sustainability/foodSupplyChain#> .
+@prefix focosa-sa: <https://dbwis.gitlab.io/focosa/src/modules/sensory-analysis#> .
+@prefix transformon: <https://quantum.mia-ps.inrae.fr/PO2/Ontology/TransformON/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+focosa-sa:Ontology a owl:Ontology ;
+    <http://purl.org/dc/elements/1.1/creator> "Ada Bagozi, Devis Bianchini, Massimiliano Garda, Michele Melchiori, Stefano Picchi, Anisa Rula" ;
+    <http://purl.org/dc/elements/1.1/contributor> "" ;
+    owl:versionIRI <https://dbwis.gitlab.io/focosa/> ;
+    <http://purl.org/dc/elements/1.1/publisher> "UNIBS" ;
+    <http://purl.org/dc/elements/1.1/title> "FoCOSA ontology - Sensory Analysis Module" ;
+    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+    <http://purl.org/vocab/vann/preferredNamespacePrefix> "focosa-sa" ;
+    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://dbwis.gitlab.io/focosa/src/modules/sensory-analysis" ;
+    owl:versionInfo "1.0.0" .
+
+
+
+focosa-sa:SensoryProfile a owl:Class ;
+    rdfs:label "Sensory Profile" ;
+    rdfs:comment "Set of sensory characteristics that describe a food item" .
+
+
+focosa-sa:Taster a owl:Class ;
+    rdfs:label "Taster" ;
+    owl:equivalentClass transformon:c_jwB2ZK ;
+    rdfs:comment "Person who performs sensory evaluation of food items" .
+
+
+focosa-sa:TasterExpertise a owl:Class ;
+    rdfs:label "Taster Expertise" ;
+    rdfs:comment "Level of competence and specialization of a taster" .
+
+
+focosa-sa:SensoryAnalysisCertificationAuthority a owl:Class ;
+    rdfs:label "Sensory Analysis Certification Authority" ;
+    rdfs:comment "Organization that issues certifications for sensory analysis" .
+
+focosa-sa:Certificate a owl:Class ;
+    rdfs:label "Certificate" ;
+    rdfs:comment "Document that certifies results of sensory analysis" .
+
+
+focosa-sa:Descriptor a owl:Class ;
+    rdfs:label "Descriptor" ;
+    owl:equivalentClass transformon:c_tjvl8U ;
+    rdfs:comment "Sensory attribute used to describe characteristics of a food item" .
+
+
+focosa-sa:HedonicDescriptor a owl:Class ;
+    rdfs:subClassOf focosa-sa:Descriptor ;
+    owl:equivalentClass transformon:c_rm8ztE ;
+    rdfs:label "Hedonic Descriptor" ;
+    rdfs:comment "Descriptor that expresses subjective preference or liking" .
+
+
+focosa-sa:ObjectiveDescriptor a owl:Class ;
+    rdfs:subClassOf focosa-sa:Descriptor ;
+    owl:equivalentClass transformon:c_KqGBzs ;
+    rdfs:label "Objective Descriptor" ;
+    rdfs:comment "Descriptor that expresses objectively measurable characteristics" .
+
+
+focosa-sa:VisualDescriptor a owl:Class ;
+    rdfs:subClassOf focosa-sa:ObjectiveDescriptor ;
+    owl:equivalentClass transformon:c_gGkRqu ;
+    rdfs:label "Visual Descriptor" ;
+    rdfs:comment "Descriptor related to visual aspects of food" .
+
+
+focosa-sa:Saturation a owl:Class ;
+    rdfs:subClassOf focosa-sa:VisualDescriptor ;
+    owl:equivalentClass transformon:c_04uCoh9D ;
+    rdfs:label "Saturation" ;
+    rdfs:comment "Intensity of color" .
+
+focosa-sa:Texture a owl:Class ;
+    rdfs:subClassOf focosa-sa:VisualDescriptor ;
+    owl:equivalentClass transformon:c_3CYlUO ;
+    rdfs:label "Texture" ;
+    rdfs:comment "Visible surface structure" .
+
+focosa-sa:Homogeneity a owl:Class ;
+    rdfs:subClassOf focosa-sa:VisualDescriptor ;
+    rdfs:label "Homogeneity" ;
+    rdfs:comment "Uniformity of visual appearance" .
+
+
+focosa-sa:OlfactoryDescriptor a owl:Class ;
+    rdfs:subClassOf focosa-sa:ObjectiveDescriptor ;
+    owl:equivalentClass transformon:c_Vz5jTw ;
+    rdfs:label "Olfactory Descriptor" ;
+    rdfs:comment "Descriptor related to olfactory aspects of food" .
+
+focosa-sa:Empyreumatic a owl:Class ;
+    rdfs:subClassOf focosa-sa:OlfactoryDescriptor ;
+    owl:equivalentClass transformon:c_iwWqaB ;
+    rdfs:label "Empyreumatic" ;
+    rdfs:comment "Burnt, toasted or smoky odor" .
+
+focosa-sa:Complexity a owl:Class ;
+    rdfs:subClassOf focosa-sa:OlfactoryDescriptor ;
+    rdfs:label "Complexity" ;
+    rdfs:comment "Richness and variety of aromas" .
+
+focosa-sa:Intensity a owl:Class ;
+    rdfs:subClassOf focosa-sa:OlfactoryDescriptor ;
+    owl:equivalentClass transformon:c_6Go9Me ;
+    rdfs:label "Intensity" ;
+    rdfs:comment "Strength of perceived aroma" .
+
+focosa-sa:TactileDescriptor a owl:Class ;
+    rdfs:subClassOf focosa-sa:ObjectiveDescriptor ;
+    owl:equivalentClass transformon:c_LyQBuO ;
+    rdfs:label "Tactile Descriptor" ;
+    rdfs:comment "Descriptor related to tactile sensations in mouth" .
+
+focosa-sa:Crumbly a owl:Class ;
+    rdfs:subClassOf focosa-sa:TactileDescriptor ;
+    owl:equivalentClass transformon:c_0l7ziI ;
+    rdfs:label "Crumbly" ;
+    rdfs:comment "Tendency to crumble or break apart" .
+
+focosa-sa:Crisp a owl:Class ;
+    rdfs:subClassOf focosa-sa:TactileDescriptor ;
+    owl:equivalentClass transformon:c_tBISyec1 ;
+    rdfs:label "Crisp" ;
+    rdfs:comment "Crispy texture" .
+
+focosa-sa:Astringency a owl:Class ;
+    rdfs:subClassOf focosa-sa:TactileDescriptor ;
+    owl:equivalentClass transformon:c_a5aeup56 ;
+    rdfs:label "Astringency" ;
+    rdfs:comment "Drying sensation in mouth" .
+
+focosa-sa:Crunch a owl:Class ;
+    rdfs:subClassOf focosa-sa:AuditoryDescriptor ;
+    owl:equivalentClass transformon:c_YX4D4J ;
+    rdfs:label "Crunch" ;
+    rdfs:comment "Sound produced during chewing" .
+
+focosa-sa:TasteDescriptor a owl:Class ;
+    rdfs:subClassOf focosa-sa:ObjectiveDescriptor ;
+    owl:equivalentClass transformon:c_vd0DBO ;
+    rdfs:label "Taste Descriptor" ;
+    rdfs:comment "Descriptor related to basic tastes" .
+
+focosa-sa:Sweet a owl:Class ;
+    rdfs:subClassOf focosa-sa:TasteDescriptor ;
+    owl:equivalentClass transformon:c_AT5oWjAm ;
+    rdfs:label "Sweet" ;
+    rdfs:comment "Sweet taste" .
+
+focosa-sa:Salty a owl:Class ;
+    rdfs:subClassOf focosa-sa:TasteDescriptor ;
+    owl:equivalentClass transformon:c_FqcIMaK7 ;
+    rdfs:label "Salty" ;
+    rdfs:comment "Salty taste" .
+
+focosa-sa:Sour a owl:Class ;
+    rdfs:subClassOf focosa-sa:TasteDescriptor ;
+    owl:equivalentClass transformon:c_f1dtje1I ;
+    rdfs:label "Sour" ;
+    rdfs:comment "Sour taste" .
+
+focosa-sa:Effervescence a owl:Class ;
+    rdfs:subClassOf focosa-sa:AuditoryDescriptor ;
+    owl:equivalentClass transformon:c_XHyb8P ;
+    rdfs:label "Effervescence" ;
+    rdfs:comment "Sensation of bubbles" .
+
+focosa-sa:AuditoryDescriptor a owl:Class ;
+    rdfs:subClassOf focosa-sa:ObjectiveDescriptor ;
+    rdfs:label "Auditory Descriptor" ;
+    rdfs:comment "Descriptor related to sounds produced during chewing" .
+
+
+focosa-sa:HedonicLevel a owl:Class ;
+    rdfs:subClassOf focosa-sa:HedonicDescriptor ;
+    rdfs:label "Hedonic Level" ;
+    rdfs:comment "Overall level of liking or preference" .
+
+focosa-sa:Balance a owl:Class ;
+    rdfs:subClassOf focosa-sa:HedonicDescriptor ;
+    rdfs:label "Balance" ;
+    rdfs:comment "Harmony between different flavors and aromas" .
+
+focosa-sa:Attractiveness a owl:Class ;
+    rdfs:subClassOf focosa-sa:HedonicDescriptor ;
+    rdfs:label "Attractiveness" ;
+    rdfs:comment "Ability to attract consumers" .
+
+focosa-sa:Pleasantness a owl:Class ;
+    rdfs:subClassOf focosa-sa:HedonicDescriptor ;
+    owl:equivalentClass transformon:c_ftlguH ;
+    rdfs:label "Pleasantness" ;
+    rdfs:comment "Degree of sensory pleasure" .
+
+focosa-sa:Appeal a owl:Class ;
+    rdfs:subClassOf focosa-sa:HedonicDescriptor ;
+    rdfs:label "Appeal" ;
+    rdfs:comment "Ability to generate interest" .
+
+focosa-sa:Fullness a owl:Class ;
+    rdfs:subClassOf focosa-sa:HedonicDescriptor ;
+    rdfs:label "Fullness" ;
+    rdfs:comment "Sensation of sensory completeness" .
+
+
+
+focosa-sa:hasProfile a owl:ObjectProperty ;
+    rdfs:label "has profile" ;
+    rdfs:comment "Connects a food item to its sensory profile" ;
+    rdfs:domain focosa-f:FoodItem ;
+    rdfs:range focosa-sa:SensoryProfile .
+
+focosa-sa:isDescribedBy a owl:ObjectProperty ;
+    rdfs:label "is described by" ;
+    rdfs:comment "Connects a sensory profile to the descriptors that characterize it" ;
+    rdfs:domain focosa-sa:SensoryProfile ;
+    rdfs:range focosa-sa:Descriptor .
+
+focosa-sa:evaluatedBy a owl:ObjectProperty ;
+    rdfs:label "evaluated by" ;
+    rdfs:comment "Indicates who evaluated a descriptor" ;
+    rdfs:domain focosa-sa:Descriptor ;
+    rdfs:range focosa-sa:Taster .
+
+focosa-sa:hasTasterExpertise a owl:ObjectProperty ;
+    rdfs:label "has taster expertise" ;
+    rdfs:comment "Defines the level of expertise of a taster" ;
+    rdfs:domain focosa-sa:Taster ;
+    rdfs:range focosa-sa:TasterExpertise .
+
+focosa-sa:definesSetOf a owl:ObjectProperty ;
+    rdfs:label "defines set of" ;
+    rdfs:comment "Indicates the set of descriptors used for a food category" ;
+    rdfs:domain focosa-f:FoodCategory ;
+    rdfs:range focosa-sa:Descriptor .
+
+focosa-sa:recommendedBy a owl:ObjectProperty ;
+    rdfs:label "recommended by" ;
+    rdfs:comment "Indicates that a food item is recommended by a taster" ;
+    rdfs:domain focosa-f:FoodItem ;
+    rdfs:range focosa-sa:Taster .
+
+focosa-sa:emittedBy a owl:ObjectProperty ;
+    rdfs:label "emitted by" ;
+    rdfs:comment "Indicates the authority that issued the certificate" ;
+    rdfs:domain focosa-sa:Certificate ;
+    rdfs:range focosa-sa:SensoryAnalysisCertificationAuthority .
+
+focosa-sa:certifies a owl:ObjectProperty ;
+    rdfs:label "certifies" ;
+    rdfs:comment "Indicates that a sensory profile is certified" ;
+    rdfs:domain focosa-sa:Certificate ;
+    rdfs:range focosa-sa:SensoryProfile .
+
+focosa-sa:isStakeHolderIn a owl:ObjectProperty ;
+    rdfs:label "is stakeHolder in" ;
+    rdfs:comment "Indicates that the sensory analysis certification authority is a stakeholder in the food supply chain" ;
+    rdfs:domain focosa-sa:SensoryAnalysisCertificationAuthority ;
+    rdfs:range focosa-fsc:FoodSupplyChain .

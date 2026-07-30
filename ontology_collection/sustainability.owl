@@ -1,0 +1,231 @@
+@prefix focosa-f: <https://dbwis.gitlab.io/focosa/src/modules/health-nutrition/food#> .
+@prefix focosa-s: <https://dbwis.gitlab.io/focosa/src/modules/sustainability#> .
+@prefix focosa-fsc: <https://dbwis.gitlab.io/focosa/src/modules/sustainability/foodSupplyChain#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rso: <http://www.fortiss.org/diprolea/ontosustain/rso#> .
+@prefix foodon: <http://purl.obolibrary.org/obo/FOODON_> .
+@prefix iof-sc: <https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/> .
+@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+
+focosa-s:Ontology a owl:Ontology ;
+    <http://purl.org/dc/elements/1.1/creator> "Ada Bagozi, Devis Bianchini, Massimiliano Garda, Michele Melchiori, Stefano Picchi, Anisa Rula" ;
+    <http://purl.org/dc/elements/1.1/contributor> " " ;
+    owl:versionIRI <https://dbwis.gitlab.io/focosa/> ;
+    <http://purl.org/dc/elements/1.1/publisher> "UNIBS" ;
+    <http://purl.org/dc/elements/1.1/title> "FoCOSA ontology - Sustainability Module" ;
+    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+    <http://purl.org/vocab/vann/preferredNamespacePrefix> "focosa-s" ;
+    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://dbwis.gitlab.io/focosa/src/modules/sustainability" ;
+    owl:versionInfo "1.0.0" .
+
+focosa-fsc:Stakeholder a owl:Class ;
+    rdfs:label "Stakeholder" ;
+    rdfs:subClassOf iof-core:Agent ;
+    rdfs:comment "Represents stakeholders in the food supply chain." .
+
+focosa-fsc:Distributor a owl:Class ;
+    rdfs:subClassOf focosa-fsc:Stakeholder ;
+    owl:equivalentClass iof-sc:Distributor ;
+    rdfs:label "Distributor" ;
+    rdfs:comment "Represents distributors in the food supply chain." .
+
+focosa-fsc:Retailer a owl:Class ;
+    rdfs:subClassOf focosa-fsc:Stakeholder ;
+    owl:equivalentClass iof-sc:Retailer ;
+    rdfs:label "Retailer" ;
+    rdfs:comment "Represents retailers in the food supply chain." .
+
+focosa-fsc:CertificationAuthority a owl:Class ;
+    rdfs:subClassOf focosa-fsc:Stakeholder ;
+    rdfs:label "Certification Authority" ;
+    rdfs:comment "Represents certification authorities in the food supply chain." .
+
+focosa-fsc:Producer a owl:Class ;
+    rdfs:subClassOf focosa-fsc:Stakeholder ;
+    rdfs:subClassOf iof-core:Manufacturer ;
+    rdfs:label "Producer" ;
+    rdfs:comment "Represents producers in the food supply chain." .
+
+focosa-fsc:Farmer a owl:Class ;
+    rdfs:subClassOf focosa-fsc:Stakeholder ;
+    rdfs:label "Farmer" ;
+    rdfs:comment "Represents farmers in the food supply chain." .
+
+focosa-fsc:FoodSupplyChain a owl:Class ;
+    rdfs:label "Food Supply Chain" ;
+    rdfs:subClassOf iof-sc:SupplyChainSystem ;
+    rdfs:comment "Represents the food supply chain." .
+
+focosa-s:Sustainability a owl:Class ;
+    rdfs:label "Sustainability" ;
+    owl:equivalentClass rso:SustainabilityTopic ;
+    rdfs:comment "Represents the sustainability aspects." .
+   
+focosa-s:SustainabilityMetric a owl:Class ;
+    rdfs:label "Sustainability Metric" ;
+    owl:equivalentClass rso:SustainabilityIndicator ;
+    rdfs:comment "Represents the sustainability metrics." .
+
+focosa-s:EnvironmentalSustainability a owl:Class ;
+    rdfs:subClassOf focosa-s:Sustainability ;
+    rdfs:label "Environmental Sustainability" ;
+    owl:equivalentClass rso:GRIEnvironmentTopic ;
+    rdfs:comment "Aspects related to the environmental impact of food production and consumption." .
+
+focosa-s:WaterFootprint a owl:Class ;
+    rdfs:subClassOf focosa-s:EnvironmentalSustainability ;
+    rdfs:subClassOf rso:EnvironmentalIndicator ;
+    rdfs:label "Water Footprint" ;
+    rdfs:comment "The amount of water used in the production of food." .
+
+focosa-s:CarbonFootprint a owl:Class ;
+    rdfs:subClassOf focosa-s:EnvironmentalSustainability ;
+    rdfs:subClassOf rso:EnvironmentalIndicator ;
+    rdfs:label "Carbon Footprint" ;
+    rdfs:comment "The total greenhouse gases emitted during food production." .
+
+focosa-s:EnergyUse a owl:Class ;
+    rdfs:subClassOf focosa-s:EnvironmentalSustainability ;
+    rdfs:subClassOf rso:EnergyIndicator ;
+    rdfs:label "Energy Use" ;
+    rdfs:comment "Energy consumed in various stages of the food supply chain (FSC)." .
+
+focosa-s:BiodiversityImpact a owl:Class ;
+    rdfs:subClassOf focosa-s:EnvironmentalSustainability ;
+    rdfs:subClassOf rso:EnvironmentalIndicator ;
+    rdfs:label "Biodiversity Impact" ;
+    rdfs:comment "Effects of food production on biodiversity." .
+
+focosa-s:EconomicSustainability a owl:Class ;
+    rdfs:subClassOf focosa-s:Sustainability ;
+    rdfs:label "Economic Sustainability" ;
+owl:subClassOf rso:SustainabilityTopic   ;
+        rdfs:comment "Financial aspects affecting the food supply chain (FSC)." .
+
+focosa-s:CostEfficiency a owl:Class ;
+    rdfs:subClassOf focosa-s:EconomicSustainability ;
+    rdfs:subClassOf rso:SustainabilityIndicator ;
+    rdfs:label "Cost Efficiency" ;
+    rdfs:comment "Measures to reduce costs and improve economic viability." .
+
+focosa-s:FairTrade a owl:Class ;
+    rdfs:subClassOf focosa-s:EconomicSustainability ;
+    rdfs:subClassOf rso:SocialIndicator ;
+    rdfs:label "Fair Trade" ;
+    rdfs:comment "Ensuring fair prices and wages for producers." .
+
+focosa-s:SocialSustainability a owl:Class ;
+    rdfs:subClassOf focosa-s:Sustainability ;
+    rdfs:label "Social Sustainability" ;
+    owl:equivalentClass rso:GRISocialTopic ;
+    rdfs:comment "Social implications of food production and consumption." .
+
+focosa-s:FoodSecurity a owl:Class ;
+    rdfs:subClassOf focosa-s:SocialSustainability ;
+    rdfs:subClassOf rso:SocialIndicator ;
+    rdfs:label "Food Security" ;
+    rdfs:comment "Ensuring all people have access to sufficient, safe, and nutritious food." .
+
+focosa-s:LaborConditions a owl:Class ;
+    rdfs:subClassOf focosa-s:SocialSustainability ;
+    rdfs:subClassOf rso:SocialIndicator ;
+    rdfs:label "Labor Conditions" ;
+    rdfs:comment "Working conditions of individuals involved in the FSC." .
+
+focosa-s:CommunityImpact a owl:Class ;
+    rdfs:subClassOf focosa-s:SocialSustainability ;
+    rdfs:subClassOf rso:SocialIndicator ;
+    rdfs:label "Community Impact" ;
+    rdfs:comment "Effects on local communities." .
+
+focosa-s:WasteManagement a owl:Class ;
+    rdfs:subClassOf focosa-s:Sustainability ;
+    rdfs:label "Waste Management" ;
+    rdfs:subClassOf rso:Waste ;
+    rdfs:subClassOf rso:GRITopic ;
+    rdfs:comment "Aspects related to reducing and managing waste within the FSC." .
+
+focosa-s:Recycling a owl:Class ;
+    rdfs:subClassOf focosa-s:WasteManagement ;
+    rdfs:subClassOf rso:WasteIndicator ;
+    rdfs:label "Recycling" ;
+    rdfs:comment "Practices related to recycling and reuse of food products and packaging." .
+
+focosa-s:Composting a owl:Class ;
+    rdfs:subClassOf focosa-s:WasteManagement ;
+    rdfs:subClassOf rso:WasteIndicator ;
+    rdfs:label "Composting" ;
+    rdfs:comment "Organic waste management through composting." .
+
+focosa-s:SustainableAlternative a owl:Class ;
+    rdfs:label "Sustainable Alternative" ;
+    rdfs:subClassOf focosa-f:FoodItem ;
+    rdfs:comment "Sustainable food item alternatives." .
+
+
+focosa-s:correspondsTo a owl:ObjectProperty ;
+    rdfs:label "corresponds to" ;
+    rdfs:domain focosa-s:SustainabilityMetric ;    
+    rdfs:range focosa-s:Sustainability ;
+    rdfs:comment "Connects a sustainability metric to the corresponding sustainability aspect it assesses." .
+
+focosa-s:hasSustainabilityMetrics a owl:ObjectProperty ;
+    rdfs:label "has sustainability metrics" ;
+    rdfs:domain focosa-f:FoodItem ;    
+    rdfs:range focosa-s:SustainabilityMetric ;
+    rdfs:comment "Links a food item to its associated sustainability metrics." .
+
+focosa-s:hasSustainability a owl:ObjectProperty ;
+    rdfs:label "has sustainability" ;
+    rdfs:domain focosa-fsc:FoodSupplyChain ;    
+    rdfs:range focosa-s:SustainabilityMetric ;
+    rdfs:comment "Links a food supply chain to its associated sustainability metrics." .
+
+focosa-s:hasSustainableAlternatives a owl:ObjectProperty ;
+    rdfs:label "has sustainable alternatives" ;
+    rdfs:domain focosa-f:FoodItem ;    
+    rdfs:range focosa-s:SustainableAlternative ;
+    rdfs:comment "Connects a food item to its sustainable alternatives." .
+
+focosa-fsc:isStakeholderIn a owl:ObjectProperty ;
+    rdfs:label "is stakeholder in" ;
+    rdfs:domain focosa-fsc:Stakeholder ;
+    rdfs:range focosa-fsc:FoodSupplyChain ;
+    rdfs:comment "Specifies that a stakeholder is a stakeholder of a food supply chain" .
+
+focosa-fsc:processedIn a owl:ObjectProperty ;
+    rdfs:label "processed in" ;
+    rdfs:domain focosa-f:FoodItem ;
+    rdfs:range focosa-fsc:FoodSupplyChain ;
+    rdfs:comment "Indicates that a food item is processed within a food supply chain." .
+
+focosa-s:impacts a owl:ObjectProperty ;
+    rdfs:label "impacts" ;
+    rdfs:domain focosa-fsc:Stakeholder ;
+    rdfs:range focosa-s:SustainabilityMetric ;
+    rdfs:comment "Indicates that a stakeholder impacts a sustainability metric." .
+
+
+focosa-s:expirationDate a owl:DatatypeProperty ;
+    rdfs:label "expiration date" ;
+    rdfs:domain focosa-f:FoodItem ;
+    rdfs:range xsd:date ;
+    rdfs:comment "Specifies that a food item has an expiration date." .
+
+
+focosa-s:SustainabilityMetric owl:disjointWith focosa-s:Sustainability .
+
+
+focosa-f:FoodItem owl:disjointWith focosa-s:SustainabilityMetric .
+focosa-f:FoodItem owl:disjointWith focosa-fsc:FoodSupplyChain .
+focosa-fsc:FoodSupplyChain owl:disjointWith focosa-s:SustainabilityMetric .
+focosa-fsc:Stakeholder owl:disjointWith focosa-fsc:FoodSupplyChain .
+focosa-fsc:Stakeholder owl:disjointWith focosa-s:SustainabilityMetric .
+
+focosa-f:FoodItem owl:disjointWith focosa-s:Sustainability .
+focosa-fsc:FoodSupplyChain owl:disjointWith focosa-s:Sustainability .
+focosa-fsc:Stakeholder owl:disjointWith focosa-s:Sustainability .
+focosa-s:SustainableAlternative owl:disjointWith focosa-s:Sustainability .
